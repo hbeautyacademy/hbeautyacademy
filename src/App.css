@@ -425,8 +425,9 @@ a {
 
 .intro-brand__txt-con {
   margin: 0 auto;
+  margin-bottom: 300px;
   width: 100%;
-  max-width: 650px;
+  max-width: 680px;
   /* height: 350px; */
   overflow-y: hidden;
   transition: all 1s;
@@ -450,6 +451,31 @@ a {
   line-height: 35px;
   font-weight: 400;
  }
+
+ .intro-brand__txt-sub > span {
+  font-weight: 600;
+ }
+
+
+ .typing-txt {
+  border-bottom: 3px solid rgb(16, 142, 215);
+ }
+
+.typing-txt::after {
+  content: '';
+  margin-left: 1px;
+  border-right: 3px solid #111;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  from {
+    border-right: 4px solid #111;
+  }
+  to {
+    border-right: 4px solid #aaa;
+  }
+}
 
 
 

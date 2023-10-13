@@ -7,8 +7,6 @@ export default function Intro(){
     // 인트로 스포트라이트 부분 텍스트 효과
     const [spotText, setSpotText] = useState(null);
     const spotTextData = [
-        // 'Rethink,',
-        // 'architecture.',
         'GO  FURTHER,',
         'WITHUS',
         ''

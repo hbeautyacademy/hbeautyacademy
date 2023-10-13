@@ -4,21 +4,54 @@ import './../App.css';
 function Component2(){
     const [brandText, setBrandText] = useState(null);
 
+    // 브랜드 설명 부분에 브랜드를 타이핑해주는 효과
+    const typingTextData = [
+        '위더스',
+        'WITHUS'
+    ]
+    let [typingTxt, setTypingTxt] = useState('')
+    let i = 0; // 함수 반복횟수
+    let j = 0; // textData 배열 순서
+    let txt = ''; // HTML에 입력될 내용
 
+    const typing = () => {
+        if (i < typingTextData[j].length) { // 해당 문자가 조합되기 전
+            const string = typingTextData[j][i++]
+            setTypingTxt(txt);
+            txt = txt + string;
+        } else { // 해당 문자가 조합된 후
+            setTypingTxt(txt);
+            // txt = ''; // 제거 옵션1. 한번에 지워지게
+            txt = txt.slice(0, -1); // 제거 옵션2. 한글자씩 지워지게
+            if (txt.length == 0) { // 텍스트 내용이 모두 사라진 경우
+                i = 0; 
+                if (j == 0) {
+                    j = 1; // 배열 순서 변경
+                } else {
+                    j = 0;
+                }
+            }
+        }
+    }
+
+    // 브랜드 설명 부분까지 스크롤하면 롤업하며 사라지는 효과
     let checkerBrandTxt = false; // 이벤트 중복을 막기위한 체커
     const moveBrandTxt = () => { 
         const targetTop = document.querySelector('.intro-brand__txt-con').offsetTop; // 이벤트 대상의 scrollTop 위치
         if (window.scrollY > targetTop + 800 && checkerBrandTxt == false) {
             setBrandText(true);
             checkerBrandTxt = true;
-            console.log('1231231')
         } else if (window.scrollY < targetTop + 700 && checkerBrandTxt == true) {           
             setBrandText(null);
             checkerBrandTxt = false;
         }
     };
 
-// 11
+
+
+
+
+ 
 
 
 
@@ -38,7 +71,8 @@ function Component2(){
 
 
     useEffect(() => {
-        let timer = setInterval(()=>{window.addEventListener('scroll', moveBrandTxt);}, 100)
+        const timer_moveBrandTxt = setInterval(()=>{window.addEventListener('scroll', moveBrandTxt);}, 100)
+        const timer_typing = setInterval(typing, 250)
 
         let timer1 = setInterval(()=>{window.addEventListener('scroll', handleScroll1);}, 100)
         // let timer2 = setInterval(()=>{window.addEventListener('scroll', handleScroll2);}, 100)
@@ -47,7 +81,7 @@ function Component2(){
         let timer3_3 = setInterval(()=>{window.addEventListener('scroll', cardEnd);}, 100)        
         // let timer3_3 = setInterval(()=>{window.addEventListener('scroll', cardScroll3);}, 100)        
         return () => {
-            clearInterval(timer1, timer3_1, timer3_2, timer3_3);
+            clearInterval(timer_typing, timer1, timer3_1, timer3_2, timer3_3);
             window.removeEventListener('scroll', handleScroll1);
             // window.removeEventListener('scroll', handleScroll2);
             window.removeEventListener('scroll', cardScroll1);
@@ -60,7 +94,7 @@ function Component2(){
     // 멘트 팝업
     const handleScroll1 = () => {
         let count = false;
-        if (window.scrollY > 280 && count == false) {
+        if (window.scrollY > 350 && count == false) {
             setFade('up--end2');
             count = true;
             // console.log('scrolled');
@@ -127,18 +161,16 @@ function Component2(){
 
     return (
         <>  
-            {/* {window.addEventListener('scroll', function(){
-                console.log(window.scrollY);
-            })} */}
-
             <div className={'intro-brand up--start ' + fade}>
                 <div className='intro-brand__con'>
                     <div className='intro-brand__txt-con' style={{
-                    opacity: brandText ? '0' : '1',
-                    height: brandText ? '0' : '350px'
+                    // opacity: brandText ? '0' : '1',
+                    // height: brandText ? '0' : '350px'
                     }}>
-                            <span className='intro-brand__txt-title'>차별화된 홈페이지, 위더스를 소개합니다</span>
-                            <span className='intro-brand__txt-sub'>자신만의 홈페이지를 만들기 위해 알아보고 계신가요?&nbsp;&nbsp;원하는 성과를 내기 위해서는 제대로된 회사를 만나야합니다. 홈페이지는 단순히 업체를 소개하는 용도가 아니라 광고효과까지 있어야 하는데요. 저희는 오랜 마케팅 경험을 바탕으로 매출에 도움이 되는 홈페이지를 직접 개발해서 만듭니다. </span>
+                            <span className='intro-brand__txt-title'>
+                                차별화된 개발팀, <span className='typing-txt' dangerouslySetInnerHTML={{__html: typingTxt}}></span>를 소개합니다
+                            </span>
+                            <span className='intro-brand__txt-sub'>홈페이지를 알아보고 계신가요?&nbsp;&nbsp;이것은 단지 명함의 역할을 넘어서 <span>매출을 상승시키는 광고효과</span>까지 있어야 합니다. 그렇기에 제대로된 제작사를 만나야 하는데요. 저희는 마케팅 경험을 바탕으로 사업에 도움이 되는 홈페이지를 <span>직접 개발해서 제작</span>합니다.</span>
 
                     </div>
                     <div className='intro-brand__box sticky' style={{opacity: card1_1, transform: `scale(${card1_2})`}}>
