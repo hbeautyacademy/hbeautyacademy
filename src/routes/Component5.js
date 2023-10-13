@@ -14,14 +14,14 @@ function Component5(){
             <div className='content5'>
                 <div className='content5__container'>
                     <div>
-                        상호명 : 우수히뷰티 | USUHI BEAUTY <br></br><br></br>
-                        대표자 : 최우경<br></br><br></br>
-                        사업자등록번호 : 225-35-01143
+                        상호명 : 네일을담다 | NAIL DAMDA <br></br><br></br>
+                        대표자 : 김태호<br></br><br></br>
+                        사업자등록번호 : 777-22-01377
                     </div>
                     <div>
-                        소재지 : 제주도 제주시 인다2길 8-2, 101호<br></br><br></br>
-                        전화번호 : 010.9187.0291<br></br><br></br>
-                        © 2023 USUHIBEAUTY All rights reserved.
+                        소재지 : 서울 강동구 올림픽로71길 18-16 1층 101호<br></br><br></br>
+                        전화번호 : 010.8550.6957<br></br><br></br>
+                        © 2023 NAIL DAMDA All rights reserved.
                     </div>
                 </div>
             </div>
