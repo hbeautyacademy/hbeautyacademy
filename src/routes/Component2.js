@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
+import ScrollOneway from '../components/ScrollOneway';
+
 import './../App.css';
 
 function Component2(){
-    const [brandText, setBrandText] = useState(null);
 
     // 브랜드 설명 부분에 브랜드를 타이핑해주는 효과
     const typingTextData = [
-        '위더스',
-        'WITHUS'
+        '위더스' + '  ', // 마지막에 띄어쓰기 2번 이상하면 그만큼 완성단어를 오래 보여줌
+        'WITHUS' + '  '
     ]
     let [typingTxt, setTypingTxt] = useState('')
     let i = 0; // 함수 반복횟수
@@ -35,19 +36,42 @@ function Component2(){
     }
 
     // 브랜드 설명 부분까지 스크롤하면 롤업하며 사라지는 효과
+    const [brandText, setBrandText] = useState(null);
     let checkerBrandTxt = false; // 이벤트 중복을 막기위한 체커
     const moveBrandTxt = () => { 
         const targetTop = document.querySelector('.intro-brand__txt-con').offsetTop; // 이벤트 대상의 scrollTop 위치
         if (window.scrollY > targetTop + 800 && checkerBrandTxt == false) {
             setBrandText(true);
             checkerBrandTxt = true;
-        } else if (window.scrollY < targetTop + 700 && checkerBrandTxt == true) {           
+        } else if (window.scrollY < targetTop + 800 && checkerBrandTxt == true) {           
             setBrandText(null);
             checkerBrandTxt = false;
         }
     };
 
 
+
+    // 멘트 팝업
+    const [brandDetail, setBrandDetail] = useState(null);
+    let checker_OneWay = false; // 이벤트 중복 막ㅣ
+    const handleScroll1 = () => {
+        if (window.scrollY > (document.querySelector('.intro-brand__txt-title').offsetTop) && checker_OneWay == false) {
+            setBrandDetail(true);
+            checker_OneWay = true;        
+    }
+    };
+
+    // 멘트 팝업
+    const [brandDetail2, setBrandDetail2] = useState(null);
+    let checker_OneWay2 = false; // 이벤트 중복 막ㅣ
+    const handleScroll2 = () => {
+        if (window.scrollY > (document.querySelector('.intro-brand__txt-sub').offsetTop + 50) && checker_OneWay2 == false) {
+            setBrandDetail2(true);
+            checker_OneWay2 = true;        
+    }
+    };
+
+    // ScrollOneway();
 
 
 
@@ -72,17 +96,21 @@ function Component2(){
 
     useEffect(() => {
         const timer_moveBrandTxt = setInterval(()=>{window.addEventListener('scroll', moveBrandTxt);}, 100)
-        const timer_typing = setInterval(typing, 250)
+        const timer_typing = setInterval(typing, 150)
 
         let timer1 = setInterval(()=>{window.addEventListener('scroll', handleScroll1);}, 100)
+        let timer2 = setInterval(()=>{window.addEventListener('scroll', handleScroll2);}, 100)
+
+
         // let timer2 = setInterval(()=>{window.addEventListener('scroll', handleScroll2);}, 100)
         let timer3_1 = setInterval(()=>{window.addEventListener('scroll', cardScroll1);}, 100)        
         let timer3_2 = setInterval(()=>{window.addEventListener('scroll', cardScroll2);}, 100)        
         let timer3_3 = setInterval(()=>{window.addEventListener('scroll', cardEnd);}, 100)        
         // let timer3_3 = setInterval(()=>{window.addEventListener('scroll', cardScroll3);}, 100)        
         return () => {
-            clearInterval(timer_typing, timer1, timer3_1, timer3_2, timer3_3);
+            clearInterval(timer_typing, timer1, timer2, timer3_1, timer3_2, timer3_3);
             window.removeEventListener('scroll', handleScroll1);
+            window.removeEventListener('scroll', handleScroll2);
             // window.removeEventListener('scroll', handleScroll2);
             window.removeEventListener('scroll', cardScroll1);
             window.removeEventListener('scroll', cardScroll2);
@@ -91,15 +119,7 @@ function Component2(){
         };
     }, [fade])
 
-    // 멘트 팝업
-    const handleScroll1 = () => {
-        let count = false;
-        if (window.scrollY > 350 && count == false) {
-            setFade('up--end2');
-            count = true;
-            // console.log('scrolled');
-    }
-    };
+    
 
     // // 배경 투명도 조절
     // const handleScroll2 = () => {
@@ -161,16 +181,21 @@ function Component2(){
 
     return (
         <>  
-            <div className={'intro-brand up--start ' + fade}>
+            <div className= 'intro-brand'>
                 <div className='intro-brand__con'>
                     <div className='intro-brand__txt-con' style={{
                     // opacity: brandText ? '0' : '1',
                     // height: brandText ? '0' : '350px'
                     }}>
-                            <span className='intro-brand__txt-title'>
-                                차별화된 개발팀, <span className='typing-txt' dangerouslySetInnerHTML={{__html: typingTxt}}></span>를 소개합니다
-                            </span>
-                            <span className='intro-brand__txt-sub'>홈페이지를 알아보고 계신가요?&nbsp;&nbsp;이것은 단지 명함의 역할을 넘어서 <span>매출을 상승시키는 광고효과</span>까지 있어야 합니다. 그렇기에 제대로된 제작사를 만나야 하는데요. 저희는 마케팅 경험을 바탕으로 사업에 도움이 되는 홈페이지를 <span>직접 개발해서 제작</span>합니다.</span>
+                        <div className={`intro-brand__triangle up--start  + ${brandDetail ? 'up--end1' : ''}`}></div>
+                        <span className={`intro-brand__txt-title up--start  + ${brandDetail ? 'up--end1' : ''}`}>
+                            차별화된 개발팀, <span className='typing-txt' dangerouslySetInnerHTML={{__html: typingTxt}}></span>를 소개합니다
+                        </span>
+                        <span className={`intro-brand__txt-sub up--start  + ${brandDetail2 ? 'up--end1' : ''}`}>홈페이지는 단순히 명함의 역할을 넘어서 <span>매출을 상승시키는 광고효과</span>까지 있어야 합니다. 그렇기에 제대로된 제작사를 만나야 하죠. 저희는 마케팅 경험을 바탕으로 사업에 도움이 되는 홈페이지를 <span>직접 개발해서 제작</span>합니다.</span>
+
+                        {/* <div className={`up--start + ${window.scrollY > document.querySelector(this).offsetTop  ? 'up--end1' : ''}`}>
+                            <hr/>testtest
+                        </div> */}
 
                     </div>
                     <div className='intro-brand__box sticky' style={{opacity: card1_1, transform: `scale(${card1_2})`}}>

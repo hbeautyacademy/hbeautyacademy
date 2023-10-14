@@ -252,6 +252,7 @@ a {
   z-index: 100;
 }
 
+
 .intro-spot__txt-con span {
   display: inline-block;
   color: #fff;
@@ -418,19 +419,33 @@ a {
 .intro-brand__con {
   padding: var(--page-padding-pc);
   margin: 0 auto;
-  width: 100%;
   max-width: var(--page-width);
 
 }
 
 .intro-brand__txt-con {
+  position: relative;
   margin: 0 auto;
-  margin-bottom: 300px;
+  margin-bottom: 80px;
   width: 100%;
   max-width: 680px;
   /* height: 350px; */
   overflow-y: hidden;
   transition: all 1s;
+}
+
+.intro-brand__triangle {
+  position: absolute;
+  left: 0px;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid rgb(16, 142, 215);
+  border-left: 15px solid rgb(16, 142, 215);
+  /* border-top: 15px solid #dfdfdf; */
+  /* border-left: 15px solid #dfdfdf; */
+  border-right: 15px solid transparent;
 }
 
 .intro-brand__txt-title,
@@ -439,7 +454,7 @@ a {
   font-size: 40px;
   font-weight: 700;
   line-height: 62px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   /* text-shadow: 1px 1px 2px #afafaf; */
  }
 
@@ -453,12 +468,12 @@ a {
  }
 
  .intro-brand__txt-sub > span {
-  font-weight: 600;
+  /* font-weight: 600; */
  }
 
 
  .typing-txt {
-  border-bottom: 3px solid rgb(16, 142, 215);
+  border-bottom: 4px solid rgb(16, 142, 215);
  }
 
 .typing-txt::after {
@@ -478,6 +493,42 @@ a {
 }
 
 
+@media (max-width:834px) {
+  .intro-brand {
+    padding: 120px 0;
+  }
+  .intro-brand__con {
+    padding: var(--page-padding-mo);
+  }
+
+  .intro-brand__triangle {
+    top: -22px;
+  }
+
+
+  .intro-brand__txt-title,
+  .intro-brand__txt-sub {
+    /* display: block; */
+    font-size: 20px;
+    /* font-weight: 700; */
+    line-height: 41px;
+    /* letter-spacing: -2px; */
+  }
+  .intro-brand__txt-sub {
+    /* display: inline-block; */
+    margin-top: 30px;
+    /* margin-bottom: 60px; */
+    font-size: 16px;
+    line-height: 30px;
+    /* font-weight: 400; */
+  }
+  .typing-txt {
+    border-bottom: 3px solid rgb(16, 142, 215);
+   }
+  
+}
+
+
 
 .sticky {
   position: sticky;
@@ -490,7 +541,7 @@ a {
 .intro-brand__box {
   max-width: 1000px;
   height: 550px;
-  margin-top: 150px;
+  margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -554,16 +605,9 @@ a {
   display: none;
 }
 
-@media (max-width:834px) {
-  .intro-brand {
-    padding: 100px 0;
-  }
-  .intro-brand__con {
-    padding: 0 30px;
-  }
-  .intro-brand__txt-con > span {
-    font-size: 35px;
-  }
+
+
+  @media (max-width:834px) {  
   .intro-brand__box {
     max-width: 400px;
     height: 550px;
