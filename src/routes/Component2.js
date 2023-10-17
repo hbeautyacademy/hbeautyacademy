@@ -126,11 +126,11 @@ function Component2(){
                     className={`intro-brand__box-con up--start  + ${useScroll('.intro-brand__box-con').isShow ? 'up--end1' : ''}`}
                     >
                         <div className='intro-brand__box sticky' style={{opacity: card1_1, transform: `scale(${card1_2})`}}>
-                            <div></div>
+                            <div style={{backgroundImage: 'url(/img/test23.jpg)'}}></div>
                             <div>
                                 <div className='intro-brand__pc-text'>
-                                    <span>맞춤형 시술</span><br></br><br></br>
-                                    <span>눈매를 돋보이게 하는<br></br><span>맞춤형 시술</span>을 진행해요.</span>
+                                    <span>완성도 높은 결과물</span><br></br><br></br>
+                                    <span>위더스는 하나의 홈페이지를 만들기 위해서 많은 노력을 합니다. 그 결과, 감각적인 디자인을 구상하고 웹개발을 진행하게 되죠. 제대로된 홈페이지 제작을 원한다면 위더스가 있습니다.</span>
                                 </div>
                                 <div className='intro-brand__mobile-text'>
                                     <span>맞춤형 시술</span><br></br><br></br><br></br>
@@ -139,11 +139,11 @@ function Component2(){
                             </div>
                         </div>
                         <div className='intro-brand__box sticky' style={{opacity: card2_1, transform: `scale(${card2_2})`}}>
-                            <div></div>
+                            <div style={{backgroundImage: 'url(/img/test21.jpg)'}}></div>
                             <div>
                                 <div className='intro-brand__pc-text'>
-                                    <span>꼼꼼한 케어</span><br></br><br></br>
-                                    <span>충분한 영양 케어로<br></br><span>예쁜 속눈썹</span>을 연출해요.</span>
+                                    <span>마케팅 최적화</span><br></br><br></br>
+                                    <span>사업에 진짜 도움이 되는 홈페이지를 원하시나요? 저희는 오랜 마케팅 노하우를 담아 홈페이지를 제작합니다. 결과적으로 매출 상승에 실제로 도움이되는 사이트를 만들어냅니다.</span>
                                 </div>
                                 <div className='intro-brand__mobile-text'>
                                     <span>꼼꼼한 케어</span><br></br><br></br><br></br>
@@ -152,11 +152,11 @@ function Component2(){
                             </div>
                         </div>
                         <div className='intro-brand__box sticky'>
-                            <div></div>
+                            <div style={{backgroundImage: 'url(/img/test20.jpg)'}}></div>
                             <div>
                                 <div className='intro-brand__pc-text'>
-                                    <span>바쁜 일상, 나를 위해</span><br></br><br></br>
-                                    <span>담래쉬의 속눈썹펌으로<br></br><span>준비시간</span>을 단축해 보세요.</span>
+                                    <span>바쁜 일상, 빠른 제작</span><br></br><br></br>
+                                    <span>고객님의 시간은 소중합니다. 따라서 저희는 계약과 동시에 홈페이지 제작에 들어갑니다. 위더스는 전문 개발팀이 디자인에 맞춰 빠르게 사이트를 만듭니다. 신속하게 결과물을 만나보세요.</span>
                                 </div>
                                 <div className='intro-brand__mobile-text'>
                                     <span>바쁜 일상, 나를 위해</span><br></br><br></br><br></br>
