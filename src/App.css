@@ -396,6 +396,22 @@ a {
   transition: 0.5s;
 }
 
+.fade-in00 {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+}
+
+.fade-in01 {
+  opacity: 1;
+  width: 100%;
+  transition: width 1s ease-in;  
+}
+
+
 
 .left--start {
   opacity: 0;  
@@ -426,7 +442,6 @@ a {
 .intro-brand__txt-con {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 80px;
   width: 100%;
   max-width: 680px;
   /* height: 350px; */
@@ -470,7 +485,6 @@ a {
  .intro-brand__txt-sub > span {
   /* font-weight: 600; */
  }
-
 
  .typing-txt {
   border-bottom: 4px solid rgb(16, 142, 215);
@@ -516,7 +530,7 @@ a {
   }
   .intro-brand__txt-sub {
     /* display: inline-block; */
-    margin-top: 30px;
+    margin-top: 20px;
     /* margin-bottom: 60px; */
     font-size: 16px;
     line-height: 30px;
@@ -528,134 +542,25 @@ a {
   
 }
 
-
-
-
-.intro-brand__box-con {
+.intro-brand__img-wrap {
+  margin-top: 80px;
+  width: 100%;
+  height: 400px;
   position: relative;
+  overflow-y: hidden;
 }
 
-.sticky {
-  position: sticky;
-}
-
-.sticky:not(:nth-of-type(1)){
-  top: 15%;
-}
-
-.intro-brand__box {
-  max-width: 1000px;
-  height: 550px;
-  margin-top: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  /* border: 3px solid lightgray; */
-  box-shadow:10px 10px 10px rgba(0,0,0,0.3),
-    0 14px 28px rgba(0,0,0,0.3),
-    -5px 14px 28px rgba(0,0,0,0.3);
-  border-radius: 20px;
-  display: flex;
-}
-
-.intro-brand__box > div:nth-of-type(1) {
-  width: 90%;
-  background-size: cover;
-  background-position: center;
+.intro-brand__img {
   background-repeat: no-repeat;
-  border-radius: 20px 0px 0px 20px;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-/* .intro-brand__box-con > .intro-brand__box:nth-of-type(1) > div:nth-of-type(1) {
-  background-image: url(./pic/f);
-}
-.intro-brand__box-con > .intro-brand__box:nth-of-type(2) > div:nth-of-type(1) {
-  background-image: url(./pic/shop02.jpg);
-}
-.intro-brand__box-con > .intro-brand__box:nth-of-type(3) > div:nth-of-type(1) {
-  background-image: url(./pic/shop03.jpg);
-} */
-
-.intro-brand__box > div:nth-of-type(2) {
-  display: flex;
-  flex-basis: 100%;
-  column-width: 100%;
-  justify-content: left;
-  align-items: center;
-  text-align: center;
-}
-
-.intro-brand__pc-text {
-  padding: 45px;
-  font-size: 35px;
-  font-weight: 500;
-  text-align: left;
-  letter-spacing: -1px;
-
-}
-
-.intro-brand__pc-text > span:nth-of-type(2) {
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 35px;
-  color: #111;
-}
-
-.intro-brand__pc-text > span:nth-of-type(2) > span {
-  /* background-color: var(--company-color); */
-  color: white;
-  text-shadow: 1px 0px 2px var(--card-font-shadow),
-    0px 1px 2px var(--card-font-shadow),
-    -1px 0px 2px var(--card-font-shadow),
-    0px -1px 2px var(--card-font-shadow);
-}
-
-.intro-brand__mobile-text {
-  display: none;
-}
-
-
-
-  @media (max-width:834px) {  
-  .intro-brand__box {
-    max-width: 400px;
-    height: 550px;
-    margin-top: 140px;
-    display: block;
-    box-shadow:5px 5px 5px rgba(0,0,0,0.3),
-    0 7px 10px rgba(0,0,0,0.3),
-    -5px 7px 5px rgba(0,0,0,0.3);
-    border-radius: 5px;
-
-  }
-  .sticky:not(:nth-of-type(1)){
-    top: 115px;
-  }
-  .intro-brand__box > div:nth-of-type(1) {
-    width: 100%;
-    height: 50%;
-    background-size: cover;
-  }
-  .intro-brand__pc-text {
-    display: none;
-  }
-  .intro-brand__mobile-text {
-    display: block;
-    font-size: 30px;
-    padding: 55px 25px;
-    text-align: left;
-  }
-  .intro-brand__mobile-text > span:nth-of-type(2) {
-    font-size: 24px;
-    color: var(--card-font);
-  }
-  .intro-brand__mobile-text > span:nth-of-type(2) > span {
-    color: white;
-    text-shadow: 1px 0px 2px var(--card-font-shadow),
-      0px 1px 2px var(--card-font-shadow),
-      -1px 0px 2px var(--card-font-shadow),
-      0px -1px 2px var(--card-font-shadow);
+@media (max-width:834px) {  
+  .intro-brand__img-wrap {
+    margin-top: 60px;
+    height: 300px;
   }
 }
 

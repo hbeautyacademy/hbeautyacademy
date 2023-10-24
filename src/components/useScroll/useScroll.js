@@ -4,23 +4,9 @@ import ReactDOM from "react-dom";
 // 커스텀 훅. useScroll
 // 유저의 현재 스크롤 위치를 알려주는 훅
 const useScroll = (el) => {
-    // const [state, setState] = useState({
-    //   x: 0,
-    //   y: 0
-    // });
-    // const onScroll = () => {
-    //   setState({y:window.scrollY, x:window.scrollX});
-    // };
-    // useEffect(() => {
-    //   window.addEventListener("scroll", onScroll);
-    //   return () => window.removeEventListener("scroll", onScroll);
-    // }, []);
-    // return state;
-
-
-
+  const [stateY, setStateY] = useState(0);
   const [isShow, setIsShow] = useState(false);
-
+  
   useEffect(() => {
     window.addEventListener('scroll', onCheckScroll);
     return () => {
@@ -35,8 +21,13 @@ const useScroll = (el) => {
     if (window.scrollY + window.innerHeight*0.97 > absoluteTop) {
       setIsShow(true);
     }
+
+    const relativeTop = eleY - window.innerHeight // 뷰포트 기준 상대좌표
+    setStateY(relativeTop);
   };
-  return { isShow };
+  return { isShow,
+    stateY
+  };
 };
 
 
