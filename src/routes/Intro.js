@@ -117,25 +117,25 @@ export default function Intro(){
                     // opacity: brandText ? '0' : '1',
                     // height: brandText ? '0' : '350px'
                     }}>
-                        <div className={`intro-brand__triangle up--start  + ${useScroll('.intro-brand__triangle', 0.95).isShow ? 'up--end1' : ''}`}></div>
-                        <span className={`intro-brand__txt-title up--start  + ${useScroll('.intro-brand__triangle', 0.95).isShow ? 'up--end1' : ''}`}>
+                        <div className={`intro-brand__triangle up--start  + ${useScroll('.intro-brand__triangle', 0.90).isShow ? 'up--end1' : ''}`}></div>
+                        <span className={`intro-brand__txt-title up--start  + ${useScroll('.intro-brand__triangle', 0.90).isShow ? 'up--end1' : ''}`}>
                             &nbsp;안녕하세요, <span className='typing-txt' dangerouslySetInnerHTML={{__html: typingTxt}}></span>를 소개합니다
                         </span>
-                        <span className={`intro-brand__txt-sub up--start  + ${useScroll('.intro-brand__txt-sub', 0.95).isShow ? 'up--end1' : ''}`}>지금 홈페이지를 알아보고 계신가요? 이것은 단순한 명함의 역할을 넘어서 <span>매출을 상승시키는 광고효과</span>까지 있어야 합니다. 그렇기에 제대로된 제작사를 만나는 것은 정말로 중요하죠. 저희는 마케팅 경험을 바탕으로 사업에 도움이 되는 홈페이지를 <span> 개발해서 제작</span>합니다.</span>
+                        <span className={`intro-brand__txt-sub up--start  + ${useScroll('.intro-brand__txt-sub', 0.90).isShow ? 'up--end1' : ''}`}>지금 홈페이지를 알아보고 계신가요? 이것은 단순한 명함의 역할을 넘어서 <span>매출을 상승시키는 광고효과</span>까지 있어야 합니다. 그렇기에 제대로된 제작사를 만나는 것은 정말로 중요하죠. 저희는 마케팅 경험을 바탕으로 사업에 도움이 되는 홈페이지를 <span> 개발해서 제작</span>합니다.</span>
                     </div>
 
                 </div>
                 <div className='intro-brand__img-wrap'>
                         <div className={`intro-brand__img fade-in00  + ${useScroll('.intro-brand__img-wrap', 0.85).isShow ? 'fade-in01' : ''}`}
                          style={{backgroundImage: 'url(/img/it05.jpg)',
-                         backgroundPositionY: (500 + useScroll('.intro-brand__img', 0.95).stateY * 0.85) + 'px' 
+                         backgroundPositionY: (500 + useScroll('.intro-brand__img', 0.90).stateY * 0.85) + 'px' 
                          }}></div>
                 </div>
             </div>
             <div className='intro-detail'>
                 <div className='intro-detail__con'>
                     <div className='intro-detail__header-con'>
-                        <div className={`intro-detail__header-txt up--start  + ${useScroll('.intro-detail__header-txt', 0.95).isShow ? 'up--end1' : ''}`}>
+                        <div className={`intro-detail__header-txt up--start  + ${useScroll('.intro-detail__header-txt', 0.90).isShow ? 'up--end1' : ''}`}>
                             왜 우리에게 웹사이트를<br/>맡겨야 할까요?
                         </div>
                     </div>
@@ -144,11 +144,12 @@ export default function Intro(){
                             <div className={`intro-detail__content-txt-item + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.65).isShow ? 'opacity-1' : ''} + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.3).isShow ? 'opacity-point3' : ''}`}
                             >
                                 <div className='intro-detail__content-txt-title'>
-                                    소비자의 마음을 움직이니까
+                                    소비자의 마음을 움직이다
                                 </div>
                                 <div className='intro-detail__content-txt-sub'>
                                     위더스는 소비자의 입장에서 홈페이지를 구상합니다. 나의 사업 매출에 직접적으로 도움이되는 결과물을 만들기 위해 노력합니다.
                                 </div>
+                                <div className='arrow'></div>
                             </div>
                             <div className={`intro-detail__content-txt-item + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? 'opacity-1' : ''} + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.3).isShow ? 'opacity-point3' : ''}`}>
                                 <div className='intro-detail__content-txt-title'>
@@ -171,16 +172,29 @@ export default function Intro(){
                                     업종에 최적화된 홈페이지
                                 </div>
                                 <div className='intro-detail__content-txt-sub'>
-                                    의뢰인이 운영중인 업종을 이해하고 가장 적합한 홈페이지를 구상합니다.
+                                    의뢰인의 업종을 이해하고 사업에 적합한 사이트를 구상합니다.
                                 </div>
                             </div>
+                            {/* <div className='intro-detail__content-more'><a>+&nbsp;MORE</a></div> */}
                          </div>
                          <div className='intro-detail__content-img-con'>
                             <div className='intro-detail__triangle'></div>
-                            <div className='intro-detail__content-img' style={{backgroundImage: 'url(/img/it07.jpg)'}}></div>
+                            <div className='intro-detail__content-img'>
+                                <img src= './img/it12.jpg' decoding="async"/>
+                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? './img/it14.jpg' : ''} decoding="async"
+                                style={{opacity: useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? '1' : '0'}}
+                                />
+                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65).isShow ? './img/it08.jpg' : ''} decoding="async"
+                                style={{opacity: useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65).isShow ? '1' : '0'}}
+                                />
+                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65).isShow ? './img/it07.jpg' : ''} decoding="async"
+                                style={{opacity: useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65).isShow ? '1' : '0'}}
+                                />
+                            </div>
                          </div>
                     </div>
                 </div>
+                <div style={{height: '2000px'}}></div>
             </div>
         </>
     )
