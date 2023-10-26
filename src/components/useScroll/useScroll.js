@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 // 커스텀 훅. useScroll
 // 유저의 현재 스크롤 위치를 알려주는 훅
-const useScroll = (el) => {
+const useScroll = (el1, el2) => {
   const [stateY, setStateY] = useState(0);
   const [isShow, setIsShow] = useState(false);
   
@@ -15,10 +15,10 @@ const useScroll = (el) => {
   });
 
   const onCheckScroll = () => {
-    const ele = document.querySelector(el);
+    const ele = document.querySelector(el1);
     const eleY = ele.getBoundingClientRect().y;
     const absoluteTop = window.pageYOffset + eleY // 컨텐츠 시작점 기준 절대좌표
-    if (window.scrollY + window.innerHeight*0.97 > absoluteTop) {
+    if (window.scrollY + window.innerHeight*el2 > absoluteTop) {
       setIsShow(true);
     }
 
