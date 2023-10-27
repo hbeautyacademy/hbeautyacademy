@@ -67,6 +67,7 @@ export default function Intro(){
     }, [])
 
 
+    // -----------------------------------------------------------------------
 
     
     
@@ -81,7 +82,7 @@ export default function Intro(){
                         <div className='intro-spot__txt-sub01'>
                             {
                                 spotTextData[0].split("").map((a, i) => {
-                                    return <SpotTextItem a={a} i={i} spotText={spotText} />
+                                    return <SpotTextItem a={a} i={i}spotText={spotText} />
                                 })
                             }
                         </div>
@@ -194,7 +195,21 @@ export default function Intro(){
                          </div>
                     </div>
                 </div>
-                <div style={{height: '2000px'}}></div>
+            </div>
+            <div className='intro-pf'>
+                <div className='intro-pf__con'>
+                    <div className={`intro-pf__title + up--start  + ${useScroll('.intro-pf__title', 0.90).isShow ? 'up--end1' : ''}`}>
+                        감각적인 디자인의<br/>
+                        홈페이지를 만나세요.
+                    </div>
+                    <ul className='intro-pf__grid-con'>
+                        {
+                            [1,2,3,4,5,6].map((a, i) => {
+                                return <GridItem a={a} i={i} />
+                            })
+                        }
+                    </ul>
+                </div>
             </div>
         </>
     )
@@ -210,6 +225,20 @@ function SpotTextItem(props){
             transition: `all 0.8s ${(props.i * 0.03)}s cubic-bezier(0, 0, 0.17, 0.93)`}}>
                 {props.a == ' ' ? <span>&nbsp;</span> : props.a}
             </span>
+        </>
+    )
+}
+
+function GridItem(props){
+    return (
+        <>
+            <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
+                style={{marginTop: (props.i * 100) + 'px', transitionDelay: (props.i * 0.1) + 's'}}
+                >
+                <img className='intro-pf__box-img' src= {`./img/it0${props.i + 1}.jpg`} decoding="async"/><img />
+                <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div>
+                <div className='intro-pf__grid-sub'>강렬한 색감에 동적인 기능을 추가하여 유저의 반응도를 높인 사례</div>
+            </li>
         </>
     )
 }
