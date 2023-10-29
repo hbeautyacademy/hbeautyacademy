@@ -4,9 +4,6 @@ import './../App.css';
 
 
 export default function Intro(){
-
-    console.log(useScroll('.intro-detail__content-txt-item').stateY)
-
     // 인트로 스포트라이트 부분 텍스트 효과
     const [spotText, setSpotText] = useState(null);
     const spotTextData = [
@@ -127,7 +124,7 @@ export default function Intro(){
 
                 </div>
                 <div className='intro-brand__img-wrap'>
-                        <div className={`intro-brand__img fade-in00  + ${useScroll('.intro-brand__img-wrap', 0.85).isShow ? 'fade-in01' : ''}`}
+                        <div className={`intro-brand__img slide-in00  + ${useScroll('.intro-brand__img-wrap', 0.85).isShow ? 'slide-in01' : ''}`}
                          style={{backgroundImage: 'url(/img/it05.jpg)',
                          backgroundPositionY: (500 + useScroll('.intro-brand__img', 0.90).stateY * 0.85) + 'px' 
                          }}></div>
@@ -211,6 +208,96 @@ export default function Intro(){
                     </ul>
                 </div>
             </div>
+            <div className='intro-review'>
+                <div className='intro-review__con'>
+                    <div className='intro-review__header-con'>
+                        <div className={`intro-review__header-title up--start  + ${useScroll('.intro-review__header-title', 0.90).isShow ? 'up--end1' : ''}`}>
+                            저희를 만난 고객님들의<br/>
+                            실제 후기입니다.
+                        </div>
+                        <div className={`btn-more up--start + ${useScroll('.intro-review__header-title', 0.90).isShow ? 'up--end1' : ''}`}>
+                            <a>+ more</a>
+                        </div>
+                    </div>
+                    <ul className='intro-review__txt-con'>
+                        <li className={`intro-review__txt-item up--start + ${useScroll('.intro-review__txt-item:nth-child(1)', 0.90).isShow ? 'up--end1' : ''}`}>
+                            <div className='intro-review__stars'>
+                                {/* test */}
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                            </div>
+                            <div className='intro-review__txt-title'>"가격, 속도, 완성도까지 생각한다면 정답은 여기 하나인 것 같네요"</div>
+                            <div className='intro-review__txt-sub'>제조업 대표, 김**</div>
+                        </li>
+                        <li className={`intro-review__txt-item up--start + ${useScroll('.intro-review__txt-item:nth-child(2)', 0.90).isShow ? 'up--end1' : ''}`}>
+                            <div className='intro-review__stars'>
+                                {/* test */}
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                            </div>
+                            <div className='intro-review__txt-title'>"홈페이지 제작은 어려워 보여서 막막했는데 친절한 대표님을 만나서 편하게 상담받았어요. 덕분에 고객 연락이 더 늘었습니다!"</div>
+                            <div className='intro-review__txt-sub'>제조업 대표, 김**</div>
+                        </li>
+                        <li className={`intro-review__txt-item up--start + ${useScroll('.intro-review__txt-item:nth-child(3)', 0.90).isShow ? 'up--end1' : ''}`}>
+                            <div className='intro-review__stars'>
+                                {/* test */}
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                            </div>
+                            <div className='intro-review__txt-title'>"아는 사장님을 통해서 이곳을 소개를 받았습니다. 결과를 보니 여기서 하길 잘했네요. 디테일까지 완벽하게 해주셔서 감사합니다"</div>
+                            <div className='intro-review__txt-sub'>미용업 대표, 박**</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className='intro-img-wrap'>
+                <img className='intro-img' src= {`./img/img10.jpg`} decoding="async" />
+                <div className={`intro-img__txt fade-in00 + ${useScroll('.intro-img__txt', 0.90).isShow ? 'fade-in01' : ''}`}>
+                        이제<br/>
+                        당신도<br/>
+                        위더스를<br/>
+                        만날 시간입니다.
+                </div>
+            </div>
         </>
     )
 }
@@ -233,9 +320,11 @@ function GridItem(props){
     return (
         <>
             <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
-                style={{marginTop: (props.i * 100) + 'px', transitionDelay: (props.i * 0.1) + 's'}}
+                style={{marginTop: (props.i * 100) + 'px',
+                transitionDelay: (props.i * 0.2) + 's',
+                transitionDuration: '2s'}}
                 >
-                <img className='intro-pf__box-img' src= {`./img/it0${props.i + 1}.jpg`} decoding="async"/><img />
+                <img className='intro-pf__box-img' src= {`./img/bd0${props.i + 1}.jpg`} decoding="async"/><img />
                 <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div>
                 <div className='intro-pf__grid-sub'>강렬한 색감에 동적인 기능을 추가하여 유저의 반응도를 높인 사례</div>
             </li>

@@ -12,6 +12,15 @@
  font-family: 'Nanum Myeongjo', serif;
 }
 
+/* material-icons */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 body {
   /* overflow-x: hidden; */
   width: 100%;
@@ -266,6 +275,7 @@ a {
   font-weight: 600;
   overflow-y: hidden;
   letter-spacing: -5px;
+  
 }
 
 
@@ -396,7 +406,7 @@ a {
   transition: 0.5s;
 }
 
-.fade-in00 {
+.slide-in00 {
   opacity: 1;
   position: absolute;
   top: 0;
@@ -405,12 +415,22 @@ a {
   width: 0;
 }
 
-.fade-in01 {
+.slide-in01 {
   opacity: 1;
   width: 92%;
   /* width: 92%; */
   transition: width 0.6s ease-in;  
 }
+
+.fade-in00 {
+  opacity: 0;
+  transition: opacity 1s 0.5s ease-in;
+}
+
+.fade-in01 {
+  opacity: 1;
+}
+
 
 
 .left--start {
@@ -471,6 +491,7 @@ a {
   line-height: 62px;
   letter-spacing: -1px;
   /* text-shadow: 1px 1px 2px #afafaf; */
+  word-break: keep-all;
  }
 
  .intro-brand__txt-sub {
@@ -575,7 +596,6 @@ a {
 }
 
 .intro-detail__con {
-  /* margin: 0 auto; */
   width: 100%;
   /* max-width: var(--page-width); */
   /* display: flex;
@@ -663,6 +683,7 @@ a {
   font-weight: 400;
   line-height: 40px;
   letter-spacing: -1px;
+  word-break: keep-all;
 }
 
 .intro-detail__content-more > a {
@@ -684,14 +705,14 @@ a {
 
 .intro-detail__triangle {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: -5px;
+  top: -5px;
   width: 0;
   height: 0;
-  border-bottom: 60px solid transparent;
-  border-top: 60px solid #fff;
-  border-left: 60px solid #fff;
-  border-right: 60px solid transparent;
+  border-bottom: 65px solid transparent;
+  border-top: 65px solid #fff;
+  border-left: 65px solid #fff;
+  border-right: 65px solid transparent;
   z-index: 100;
 }
 
@@ -728,7 +749,7 @@ a {
   position: relative;
   font-size: 44px;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 60px;
   letter-spacing: -1px;
 
   text-align: right;
@@ -739,11 +760,11 @@ a {
   margin-top: -80px;
   display: flex;
   flex-wrap: nowrap;
-  margin-left: -15px;
+  margin-left: -20px;
 }
 
 .intro-pf__grid-item {
-  margin: 0 15px;
+  margin: 0 20px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -751,11 +772,12 @@ a {
 }
 
 .intro-pf__box-img {
-  width: calc( (100vw) / 5.2 );
+  width: calc( (100vw) / 5.5 );
   /* 이미지 비율 (가로/세로) */
   aspect-ratio: 8/10; 
   object-fit: cover;
 }
+
 
 .intro-pf__grid-title {
   margin-top: 20px;
@@ -768,4 +790,115 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+}
+
+/* -------------------------------------------------- */
+.intro-review {
+  padding-top: 0px;
+  margin: 0 8vw;
+  margin-top: -60px;
+}
+
+.intro-review__con {
+  /* max-width: var(--page-width); */
+  width: 100%;
+  /* padding: var(--page-padding-pc); */
+  /* margin: 0 auto; */
+}
+
+.intro-review__header-con {
+  position: relative;
+}
+
+.intro-review__header-title {
+  position: relative;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+
+.btn-more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  cursor: pointer;
+}
+
+.intro-review__txt-con {
+  padding-top: 60px;
+}
+
+.intro-review__txt-item {
+  padding: 40px 0;
+  border-bottom: 1px solid rgb(150,150,150, 0.5);
+}
+
+.intro-review__txt-item > div {
+  max-width: 600px;
+  width: 100%;
+  padding: var(--page-padding-pc);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-review__stars > span {
+  font-size: 35px;
+  color: gold;
+  text-shadow: 3px 3px 2px orangered;
+}
+
+.intro-review__txt-title {
+  margin-top: 20px !important;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+
+.intro-review__txt-sub {
+  margin-top: 20px !important;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: rgba(100, 100, 100, 0.6);
+}
+
+
+/* -------------------------------------------------- */
+.intro-img-wrap {
+  position: relative;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.intro-img {
+  width: 100%;
+  height: 105vh;
+  object-fit: cover;
+  transition: transform 2s;
+}
+
+.intro-img:hover {
+  transform: scale(1.1);
+}
+
+
+.intro-img__txt {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+
+  z-index: 100;
 }
