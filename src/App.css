@@ -424,7 +424,7 @@ a {
 
 .fade-in00 {
   opacity: 0;
-  transition: opacity 1s 0.5s ease-in;
+  transition: opacity 1s 0.2s ease-in;
 }
 
 .fade-in01 {
@@ -885,7 +885,7 @@ a {
 }
 
 .intro-img:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 
@@ -901,4 +901,13 @@ a {
   line-height: 60px;
 
   z-index: 100;
+}
+
+.intro-img__txt span {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: 1px solid rgb(255,255,255, 0.5);
+  border-radius: 30px;
+  cursor: pointer;
 }

@@ -295,7 +295,8 @@ export default function Intro(){
                         이제<br/>
                         당신도<br/>
                         위더스를<br/>
-                        만날 시간입니다.
+                        만날 시간입니다.<br/><br/>
+                        <a><span>+ contact</span></a>
                 </div>
             </div>
         </>
