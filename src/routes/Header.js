@@ -49,6 +49,9 @@ export default function Header(props){
                     {/* 메뉴 */}
                     <ul className='header__category-con'>
                         <li>
+                            <a  href='/'>HOME</a>
+                        </li>
+                        <li>
                             <a onClick={() => showSubMenu(1)}>COMPANY</a>
                             <ul className={`header__category-sub-con + ${clickMenu == 1 ? "block" : "" }`}>
                                 <li><a href='/company/introduction'>회사소개</a></li>
