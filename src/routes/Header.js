@@ -38,11 +38,12 @@ export default function Header(props){
         <>
             <header className={`header  + ${clickHamburger ? "header-click" : "header-unclick"}`}>
                 <div className='header__con'>
-
                     {/* 로고 */}
                     <ul className='header__logo-con'>
                         {/* <li className='header__logo'><a href='/'>H ROAD</a></li> */}
-                        <li className='header__hamburger'><a><img src={clickHamburger ? `/img/btn_x.png` : `/img/btn_hamburger.png`} style={{width: '24px'}} onClick={showList}/></a></li>
+                        {/* <li className='header__hamburger'><a onClick={showList}>{clickHamburger ? "-" : "+"}</a></li> */}
+                        <li className='header__hamburger'
+                        style={{transform : clickHamburger ? "rotate(45deg)" : "rotate(0)"}}><a onClick={showList}>+</a></li>
                     </ul>
                     
                     {/* 메뉴 */}
