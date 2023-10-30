@@ -63,10 +63,7 @@ export default function Intro(){
         };
     }, [])
 
-
-    // -----------------------------------------------------------------------
-
-    
+    // ----------------------------------------------------------------------- 
     
     return (
         <>
@@ -173,7 +170,6 @@ export default function Intro(){
                                     의뢰인의 업종을 이해하고 사업에 적합한 사이트를 구상합니다.
                                 </div>
                             </div>
-                            {/* <div className='intro-detail__content-more'><a>+&nbsp;MORE</a></div> */}
                          </div>
                          <div className='intro-detail__content-img-con'>
                             <div className='intro-detail__triangle'></div>

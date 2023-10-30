@@ -1,18 +1,13 @@
 import { Route, Router, Routes } from 'react-router-dom';
 import './App.css';
 import {
-  Header, Intro,
+  Header, Intro, Footer,
   Introduction, OurService,
   WeddingSong, WeddingMc, WeddingCamera, WeddingDirecting, WeddingEvent,
   Portfolio,
   Review, Reason,
   Contact
 } from './routes'
-
-import { 
-  // Footer, // Header,
-} from './routes';
-
 
 function App() {
   return (
@@ -48,6 +43,7 @@ function App() {
         </Route>
       </Routes>
 
+      <Footer />
     </div>
   );
 }

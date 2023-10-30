@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Intro from "./Intro";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 import Introduction from "./Menu/Company/Introduction"
 import OurService from "./Menu/Company/OurService"
 import WeddingSong from "./Menu/Service/WeddingSong"
@@ -17,7 +17,7 @@ import Contact from "./Menu/Contact/Contact"
 export { 
         Header, 
         Intro,
-        // Footer,
+        Footer,
         Introduction, OurService,
         WeddingSong, WeddingMc, WeddingCamera, WeddingDirecting, WeddingEvent,
         Portfolio,
