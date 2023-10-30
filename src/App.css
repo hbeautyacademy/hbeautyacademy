@@ -82,145 +82,185 @@ a {
   --page-padding-mo: 0 20px;
 }
 
-  /* navbar */
-.p-navbar {
-  /* test */
-  display: none;
 
+/* ======================================================== */
+/* Header  */
+
+.header {
+  height: 85px;
+  /* 평상시에 height를 초과한 서브메뉴가 안보이게 hidden */
+  overflow: hidden;
+  /* background: rgba(100,100,100,.1); */
+  /* border-bottom: 1px solid rgba(255,255,255,0.3); */
   position: fixed;
-  z-index: var(--nav-index);
   width: 100%;
-  height: var(--navbar-height);
-}
-
-.p-navbar--dark {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(30px);
+  z-index: 500;
+  transition: all .4s;
 }
 
 
-.p-container--default {
-  max-width: 1140px;
+.header:hover {
+  height: 300px;
+  background: rgba(30,30,30,.9); 
 }
 
-.p-container {
-  height: 100%;
-  margin: auto;
+.header__con {
+  height: 85px;
+  max-width: var(--page-width);
   width: 100%;
-}
-
-.p-container__inner {
-  max-width: calc(100% - 50px);
-  margin: auto;
-  height: 100%;
-}
-
-.p-navbar__inner-container {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.p-navbar__logo-container {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-}
-
-.p-navbar__logo-icon {
+  margin: 0 auto;
+  padding: var(--page-padding-mo);
   display: block;
-}
-
-.p-navbar__mobile {
-  display: none;
-}
-
-.button-hamberger {
-  cursor: pointer;
-  border: none;
-  margin-top: -3px;
-  width: 20px;
-  height: 20px;
-  background-image: url(./pic/hamberger.png); 
-  background-size: contain;
-  background-color: transparent;
-}
-
-.button-xline {
-  background-image: url(./pic/xline.png); 
-}
-
-.p-navbar__content {
-  display: flex;
-  flex: 1;
-  overflow-y: hidden;
-  max-height: 100%;
   justify-content: space-between;
-  transition: 0.3s;
+  color: white;
+  z-index: 300 !important;
 }
 
-
-.p-navbar__menu {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.p-navbar__item {
+.header__logo-con {
   height: 100%;
-  list-style: none;
+  /* display: flex;
+  justify-content: space-between; */
+  position: relative;
+}
+
+.header__logo-con > li {
+  height: 100%; 
+  font-size: 27px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 28px;
+}
+
+.header__hamburger {
+  position: absolute;
+  right: 0;
+}
+
+.header__logo-con > li > a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo > a {
+  font-size: 22px;
+}
+
+.header__category-con {
+  height: auto; /* 세로 길이만큼 높이를 설정  */
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header__category-con > li {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+
+.header__category-con > li > a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #707070;
+  justify-content: flex-start;
+  padding: 12px 0;
+}
+
+.header__category-con > li > a::before {
+  content: '+';
+  padding: 0 7px;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+
+
+.header-unclick {
+  height: 60px !important;
+}
+
+.header-click {
+  height: 90% !important;
+}
+
+.header__category-sub-con {
+  display: none;
+  padding-top: 10px;
+}
+
+.block  {
+  display: block !important;
+}
+
+.header__category-sub-con a {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: #cdcccc;  
+  line-height: 35px;
+  font-weight: 600;
+  transition: all .5s ease-in;
+}
+
+.header__category-sub-con a:hover {
+  color: #fff;
+}
+
+.header__icon-con {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #cdcccc;
+}
+
+
+.header__icon-con {
+  border-left: 1px solid rgba(255,255,255,0.2);
+  padding-left: 40px;
   display: flex;
   align-items: center;
+
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  line-height: 11px;
+  font-weight: 500;
+}
+
+.header__icon-con li {
   padding: 0 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-.p-navbar__item > a {
-  padding: 12px 10px;
-  border-radius: 5px;
-  border: 0;
-  text-align: left;
-  color: whitesmoke;
+.header__icon-con li:not(:nth-last-child(1)) {
+  border-right: 0.1px solid #fff;
 }
 
-.p-navbar__item > a:hover {
-  background: rgba(255, 255, 255, 0.1);
+
+@media (max-width: 1023px) {
+  .header__con {
+    height: 60px;
+  }
+  
+
 }
 
-@media (max-width:834px) {
-  .p-navbar {
-  }
-  .p-navbar__mobile {
-    display: flex;
-    align-items: center;
-  }
-
-  .p-navbar__content {
-    width:100%;
-    flex-direction: column;
-    position: absolute;
-    top: var(--navbar-height);
-    left: 0;
-
-    /* 탈부착 */
-    /* 햄버거누르기 전은 max-height: 0 */
-    /* Q. 근데 왜 100%일 때는 자식 a의 패딩을 못 받을까? */
-    max-height: 0;
-  }
-  .p-navbar__menu {
-    flex-direction: column;
-  }
-  .p-navbar__item {
-    padding: 0;
-    width: 100%;
-  }
-  .p-navbar__item > a {
-    padding: 18px 20px;
-    border-radius: 0;
-    width: 100%;
-  }
-}
-
+/* ======================================================== */
 .bg-black {
   background: black;
 }
