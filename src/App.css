@@ -123,6 +123,8 @@ a {
   /* background-color: rgb(2, 137, 215); */
   border-radius: 50%;
   overflow: hidden;
+
+  cursor: pointer;
 }
 
 .header__hamburger a {

@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import './../../../App.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function OurService(){
@@ -20,8 +18,11 @@ export default function OurService(){
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
                         <li className='detail-page__btn-home'><a href='/'>
-                            {/* <FontAwesomeIcon icon={faHome} className='manage-sb__icon'/> */}
-                            </a></li>
+                                <span   class="material-symbols-outlined">
+                                        home
+                                </span>
+                            </a>
+                        </li>
                         {/* 현재 페이지 메인메뉴 */}
                         <li className='detail-page__btn-menu'><a>COMPANY</a></li>
                         <li className={`detail-page__btn-submenu + ${ clickBtn ? 'overflow-visible' : ''}`} onClick={showList}>
