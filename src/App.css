@@ -492,7 +492,7 @@ a {
 
 @media (max-width:834px) {
   .intro-spot {
-    height: 95vh;
+    height: 100vh;
   }  
   .intro-spot__txt-con {
     left: 8%;
@@ -511,8 +511,8 @@ a {
   .intro-spot__scroll {
     top: 83%;
     right: 8%;
-    width: 30px;
-    height: 55px;
+    width: 40px;
+    height: 70px;
     &::before {
       width: 8px;
       height: 8px;
@@ -642,7 +642,7 @@ a {
 
 @media (max-width:834px) {
   .intro-brand {
-    padding: 120px 0 0 0;
+    padding: 100px 0 0 0;
   }
 
   .intro-brand__con {
@@ -1585,6 +1585,15 @@ a {
   opacity: 1;
 }
 
+.display-in-block-pc {
+  display: inline-block;
+}
+
+.display-in-block-mo {
+  display: none;
+}
+
+
 .display-block-mo {
   display: none;
 }
@@ -1627,8 +1636,16 @@ a {
     opacity: 1;
   }
 
+  .display-in-block-pc {
+    display: none;
+  }  
+
   .display-none-mo {
     display: none;
+  }
+
+  .display-in-block-mo {
+    display: inline-block;
   }
 
   .display-block-mo {

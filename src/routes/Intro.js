@@ -109,9 +109,9 @@ export default function Intro(){
                     }}>
                         <div className={`intro-brand__triangle up--start  + ${useScroll('.intro-brand__triangle', 0.90).isShow ? 'up--end1' : ''}`}></div>
                         <span className={`intro-brand__txt-title up--start  + ${useScroll('.intro-brand__triangle', 0.90).isShow ? 'up--end1' : ''}`}>
-                            안녕하세요,<br className='display-block-mo'/><span className='typing-txt' dangerouslySetInnerHTML={{__html: typingTxt}}></span>를 소개합니다
+                            웹 개발팀,&nbsp;&nbsp;<span className='typing-txt' dangerouslySetInnerHTML={{__html: typingTxt}}></span><span className='display-in-block-pc'>를 소개합니다.</span><span className='display-in-block-mo'>입니다.</span>
                         </span>
-                        <span className={`intro-brand__txt-sub up--start  + ${useScroll('.intro-brand__txt-sub', 0.90).isShow ? 'up--end1' : ''}`}>지금 홈페이지를 알아보고 계신가요? 이것은 단순한 명함의 역할을 넘어서 <span>매출을 상승시키는 광고효과</span>까지 있어야 합니다. 그렇기에 제대로된 제작사를 만나는 것은 정말로 중요하죠. 저희는 마케팅 경험을 바탕으로 사업에 도움이 되는 홈페이지를 <span> 개발해서 제작</span>합니다.</span>
+                        <span className={`intro-brand__txt-sub up--start  + ${useScroll('.intro-brand__txt-sub', 0.90).isShow ? 'up--end1' : ''}`}>지금 홈페이지를 알아보고 계신가요? 이것은 단순한 명함의 역할을 넘어서 매출을 상승시키는 광고효과 까지 있어야 합니다. <span className='display-block-mo'><br/></span>그렇기에 제대로된 제작사를 만나는 것은 정말로 중요하죠. 저희는 마케팅 경험을 바탕으로 사업에 도움이 되는 홈페이지를 개발해서 제작합니다.</span>
                     </div>
 
                 </div>
@@ -126,7 +126,7 @@ export default function Intro(){
                 <div className='intro-detail__con'>
                     <div className='intro-detail__header-con'>
                         <div className={`intro-detail__header-txt up--start  + ${useScroll('.intro-detail__header-txt', 0.90).isShow ? 'up--end1' : ''}`}>
-                            왜 우리에게 웹사이트를<br/>맡겨야 할까요?
+                            왜 우리에게 홈페이지를<br/>맡겨야 할까요?
                         </div>
                     </div>
                     <div className='intro-detail__content-con'>
