@@ -492,7 +492,7 @@ a {
 
 @media (max-width:834px) {
   .intro-spot {
-    height: 90vh;
+    height: 95vh;
   }  
   .intro-spot__txt-con {
     left: 8%;
@@ -500,8 +500,8 @@ a {
   }
   .intro-spot__txt-sub01,
   .intro-spot__txt-sub02 {
-    font-size: 43px;
-    height: 58px; /* 폰트사이즈보다 더 높아야 예쁨 */
+    font-size: 48px;
+    height: 65px; /* 폰트사이즈보다 더 높아야 예쁨 */
     font-weight: 600;
     letter-spacing: -3px;
   }
@@ -965,10 +965,6 @@ a {
 }
 
 .intro-review__con {
-  /* max-width: var(--page-width); */
-  width: 100%;
-  /* padding: var(--page-padding-pc); */
-  /* margin: 0 auto; */
 }
 
 .intro-review__header-con {
@@ -1034,6 +1030,65 @@ a {
   color: rgba(100, 100, 100, 0.6);
 }
 
+@media (max-width:834px) {
+  .intro-review {
+    padding-top: 100px;
+    margin: 0;
+  }
+  
+  .intro-review__con {
+    padding: var(--page-padding-mo);
+  }
+  
+  .intro-review__header-con {
+    position: relative;
+  }
+  
+  .intro-review__header-title {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .intro-review__txt-con {
+    padding-top: 20px;
+  }
+  .intro-review__txt-item {
+    padding: 30px 0;
+  }
+  .intro-review__txt-item:nth-child(3) {
+    /* padding: 40px 0; */
+    border-bottom: none;
+  }
+  
+  .intro-review__txt-item > div {
+    max-width: 300px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .intro-review__stars > span {
+    font-size: 30px;
+    text-shadow: 2px 2px 1px orangered;
+    letter-spacing: -2px;
+  }
+  .intro-review__txt-title {
+    margin-top: 15px !important;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .intro-review__txt-sub {
+    margin-top: 10px !important;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  
+  
+  
+    
+}
+
+
 
 /* -------------------------------------------------- */
 .intro-img-wrap {
@@ -1078,7 +1133,46 @@ a {
   cursor: pointer;
 }
 
-/* ------------------------------------------------ */
+@media (max-width:834px) {
+  .intro-img-wrap {
+    /* position: relative; */
+    margin-top: 60px;
+    overflow: hidden;
+    height: 90vh;
+  }
+  
+  .intro-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transform: translateX(10px); */
+    transition: all 2s ease;
+  }
+
+  .img-position-before {
+    object-position: -100px 0;
+  }
+
+  .img-position-after {
+    object-position: -200px 0;
+  }
+
+  .intro-img__txt {
+    left: 42%;
+    /* top: 50%; */
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 35px;
+  }
+  .intro-img__txt span {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 9px 13px;
+    border-radius: 20px;
+  }
+
+
+}
 
 /* ========================================================= */
 

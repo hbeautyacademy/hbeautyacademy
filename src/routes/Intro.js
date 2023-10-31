@@ -192,7 +192,7 @@ export default function Intro(){
                                     의뢰인의 업종을 이해하고 사업에 적합한 사이트를 구상합니다.
                                 </div>
                             </div>
-                            <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.btn-more-static', 0.90).isShow ? '.intro-detail up--end1-mo' : ''}`}>
+                            <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-detail .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
                                 <a>+ more</a>
                             </div>
                          </div>
@@ -236,7 +236,7 @@ export default function Intro(){
                             저희를 만난 고객님들의<br/>
                             실제 후기입니다.
                         </div>
-                        <div className={`btn-more up--start + ${useScroll('.intro-review__header-title', 0.90).isShow ? 'up--end1' : ''}`}>
+                        <div className={`btn-more up--start display-none-mo + ${useScroll('.intro-review__header-title', 0.90).isShow ? 'up--end1' : ''}`}>
                             <a>+ more</a>
                         </div>
                     </div>
@@ -308,10 +308,13 @@ export default function Intro(){
                             <div className='intro-review__txt-sub'>미용업 대표, 박**</div>
                         </li>
                     </ul>
+                    <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-review .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
+                        <a>+ more</a>
+                    </div>
                 </div>
             </div>
             <div className='intro-img-wrap'>
-                <img className='intro-img' src= {`./img/img10.jpg`} decoding="async" />
+                <img className={`intro-img img-position-before + ${useScroll('.intro-img', 0.90).isShow ? 'img-position-after' : ''}`} src= {`./img/img10.jpg`} decoding="async" />
                 <div className={`intro-img__txt fade-in00 + ${useScroll('.intro-img__txt', 0.90).isShow ? 'fade-in01' : ''}`}>
                         이제<br/>
                         당신도<br/>
