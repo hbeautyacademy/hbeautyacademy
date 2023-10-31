@@ -100,21 +100,16 @@ export default function Intro(){
                     transition: `all 1s ${(lengthTextSub03 * 0.03 + 0.3)}s cubic-bezier(0, 0, 0.17, 0.93)`
                     }}></div>
 
-                    {/* <div className='intro-spot__arrow'>
-                        <img src={arrow} width='50' height='50' alt='arrow'/>
-                    </div> */}
                 </div>
             </div>
 
             <div className= 'intro-brand'>
                 <div className='intro-brand__con'>
                     <div className='intro-brand__txt-con' style={{
-                    // opacity: brandText ? '0' : '1',
-                    // height: brandText ? '0' : '350px'
                     }}>
                         <div className={`intro-brand__triangle up--start  + ${useScroll('.intro-brand__triangle', 0.90).isShow ? 'up--end1' : ''}`}></div>
                         <span className={`intro-brand__txt-title up--start  + ${useScroll('.intro-brand__triangle', 0.90).isShow ? 'up--end1' : ''}`}>
-                            &nbsp;안녕하세요, <span className='typing-txt' dangerouslySetInnerHTML={{__html: typingTxt}}></span>를 소개합니다
+                            안녕하세요,<br className='display-block-mo'/><span className='typing-txt' dangerouslySetInnerHTML={{__html: typingTxt}}></span>를 소개합니다
                         </span>
                         <span className={`intro-brand__txt-sub up--start  + ${useScroll('.intro-brand__txt-sub', 0.90).isShow ? 'up--end1' : ''}`}>지금 홈페이지를 알아보고 계신가요? 이것은 단순한 명함의 역할을 넘어서 <span>매출을 상승시키는 광고효과</span>까지 있어야 합니다. 그렇기에 제대로된 제작사를 만나는 것은 정말로 중요하죠. 저희는 마케팅 경험을 바탕으로 사업에 도움이 되는 홈페이지를 <span> 개발해서 제작</span>합니다.</span>
                     </div>
@@ -136,9 +131,16 @@ export default function Intro(){
                     </div>
                     <div className='intro-detail__content-con'>
                          <div className='intro-detail__content-txt'>
-                            <div className={`intro-detail__content-txt-item + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.65).isShow ? 'opacity-1' : ''} + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.3).isShow ? 'opacity-point3' : ''}`}
+                            <div className={`intro-detail__content-txt-item 
+                            + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.65).isShow ? 'opacity-1' : ''}
+                            + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.3).isShow ? 'opacity-point3' : ''}
+                            // 모바일
+                            + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.85).isShow ? 'up--end1-mo' : ''}`}
                             >
-                                <div className='intro-detail__content-txt-title'>
+                                <div className='intro-detail__img-wrap-mo'>
+                                    <img src= './img/it12.jpg' decoding="async"/>
+                                </div>
+                                <div className='intro-detail__content-txt-title '>
                                     소비자의 마음을 움직이다
                                 </div>
                                 <div className='intro-detail__content-txt-sub'>
@@ -146,7 +148,15 @@ export default function Intro(){
                                 </div>
                                 <div className='arrow'></div>
                             </div>
-                            <div className={`intro-detail__content-txt-item + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? 'opacity-1' : ''} + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.3).isShow ? 'opacity-point3' : ''}`}>
+                            <div className={`intro-detail__content-txt-item 
+                            + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? 'opacity-1' : ''}
+                            + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.3).isShow ? 'opacity-point3' : ''}
+                            // 모바일
+                            + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.85).isShow ? 'up--end1-mo' : ''}`}
+                            >
+                                <div className='intro-detail__img-wrap-mo'>
+                                    <img src= './img/it14.jpg' decoding="async"/>
+                                </div>
                                 <div className='intro-detail__content-txt-title'>
                                     빠른 제작, 완성도 높은 결과
                                 </div>
@@ -154,7 +164,15 @@ export default function Intro(){
                                     전문 개발팀이 결과물을 빠르게 만들면서도 퀄리티 있게 제작합니다.
                                 </div>
                             </div>
-                            <div className={`intro-detail__content-txt-item + ${useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65).isShow ? 'opacity-1' : ''} + ${useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.3).isShow ? 'opacity-point3' : ''}`}>
+                            <div className={`intro-detail__content-txt-item 
+                            + ${useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65).isShow ? 'opacity-1' : ''}
+                            + ${useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.3).isShow ? 'opacity-point3' : ''}
+                            // 모바일
+                            + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.85).isShow ? 'up--end1-mo' : ''}`}
+                            >
+                                <div className='intro-detail__img-wrap-mo'>
+                                    <img src= './img/it08.jpg' decoding="async"/>
+                                </div>
                                 <div className='intro-detail__content-txt-title'>
                                     꼼꼼한 유지보수 시스템
                                 </div>
@@ -162,13 +180,20 @@ export default function Intro(){
                                     홈페이지는 만들어진 뒤가 중요합니다. 우리는 꼼꼼한 유지보수 시스템으로 사이트가 문제없이 운영되도록 노력합니다.
                                 </div>
                             </div>
-                            <div className={`intro-detail__content-txt-item + ${useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65).isShow ? 'opacity-1' : ''} + ${useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.3).isShow ? 'opacity-point3' : ''}`}>
+                            <div className={`intro-detail__content-txt-item + ${useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65).isShow ? 'opacity-1' : ''} + ${useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.3).isShow ? 'opacity-point3' : ''}
+                            + display-none-mo`}>
+                                <div className='intro-detail__img-wrap-mo'>
+                                    <img src= './img/it07.jpg' decoding="async"/>
+                                </div>
                                 <div className='intro-detail__content-txt-title'>
                                     업종에 최적화된 홈페이지
                                 </div>
                                 <div className='intro-detail__content-txt-sub'>
                                     의뢰인의 업종을 이해하고 사업에 적합한 사이트를 구상합니다.
                                 </div>
+                            </div>
+                            <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.btn-more-static', 0.90).isShow ? '.intro-detail up--end1-mo' : ''}`}>
+                                <a>+ more</a>
                             </div>
                          </div>
                          <div className='intro-detail__content-img-con'>
