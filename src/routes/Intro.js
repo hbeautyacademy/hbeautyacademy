@@ -63,6 +63,36 @@ export default function Intro(){
         };
     }, [])
 
+    // ------------------------------------------------------------------
+    // [event] 캐러셀 터치 스와이핑
+    const [startX, setStartX] = useState(null); // 클릭한 시점
+    const [lengthX, setLengthX] = useState(null); // 이번에 드래그길이
+    const [preLengthX, setPreLengthX] = useState(null) // 지난번 드래그길이
+    const [onClick, setOnClick] = useState(false); // 클릭여부
+
+    console.log(lengthX);
+    const mouseDown = (e) => {
+        setOnClick(true);
+        setStartX(e.clientX);
+    }
+    const mouseMove = (e) => {
+        let totalLengthX = preLengthX + e.clientX - startX // 최종 드래그길이
+        if (onClick == true) { // 이미지가 화면 밖 벗어남 방지
+            if (totalLengthX >= 0) {
+                totalLengthX = 0
+                setPreLengthX(0)
+                setLengthX((totalLengthX))    
+            }
+            else {
+                setLengthX(totalLengthX) // 최종 길이가 (-) 이면 0으로 인식
+            }
+        }
+    }
+    const mouseUp = (e) => {
+        setOnClick(false)
+        setPreLengthX(lengthX) // 
+    }
+
     // ----------------------------------------------------------------------- 
     
     return (
@@ -220,13 +250,30 @@ export default function Intro(){
                         감각적인 디자인의<br/>
                         홈페이지를 만나세요.
                     </div>
-                    <ul className='intro-pf__grid-con'>
+                    <ul className='intro-pf__grid-con'
+                    
+                        onMouseDown={(e) => {mouseDown(e)}}
+                        onMouseMove={(e) => {mouseMove(e)}}
+                        onMouseUp={(e) => {mouseUp(e)}}
+
+                        onTouchStart={(e) => {mouseDown(e)}}
+                        onTouchMove={(e) => {mouseMove(e)}}
+                        // onTouchEnd={(e) => {mouseUp(e)}}
+                        // onTouchStart={(e) => {console.log(1)}}
+                        // onTouchMove={(e) => {console.log(2)}}
+                        onTouchEnd={(e) => {console.log(3)}}
+
+                        style={{transform: `translateX(${lengthX}px)`}}
+                    > 
                         {
                             [1,2,3,4,5,6].map((a, i) => {
                                 return <GridItem a={a} i={i} />
                             })
                         }
                     </ul>
+                    <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-pf .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
+                        <a>+ more</a>
+                    </div>
                 </div>
             </div>
             <div className='intro-review'>
@@ -342,13 +389,15 @@ function SpotTextItem(props){
 }
 
 function GridItem(props){
+
+
     return (
         <>
             <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
                 style={{marginTop: (props.i * 100) + 'px',
                 transitionDelay: (props.i * 0.2) + 's',
-                transitionDuration: '2s'}}
-                >
+                transitionDuration: '2s'}}                
+            >
                 <img className='intro-pf__box-img' src= {`./img/bd0${props.i + 1}.jpg`} decoding="async"/><img />
                 <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div>
                 <div className='intro-pf__grid-sub'>강렬한 색감에 동적인 기능을 추가하여 유저의 반응도를 높인 사례</div>

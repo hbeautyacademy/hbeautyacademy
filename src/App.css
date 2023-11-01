@@ -941,6 +941,8 @@ a {
   /* 이미지 비율 (가로/세로) */
   aspect-ratio: 8/10; 
   object-fit: cover;
+  pointer-events: none;
+
 }
 
 
@@ -974,7 +976,7 @@ a {
     margin-right: 0;
   }
   .intro-pf__grid-con {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .intro-pf__grid-item {
     margin: 0 20px !important ; /* js 초기화 */
@@ -988,6 +990,7 @@ a {
     font-weight: 600;
   }
   .intro-pf__grid-sub {
+    margin-bottom: 30px;
     line-height: 28px;
   }  
 }
