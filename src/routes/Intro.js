@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import {useScroll} from '../components/useScroll/useScroll';
+// import {useScroll1} from '../components/useScroll/useScroll1';
 import './../App.css';
 
 
@@ -70,12 +71,11 @@ export default function Intro(){
     const [preLengthX, setPreLengthX] = useState(null) // 지난번 드래그길이
     const [onClick, setOnClick] = useState(false); // 클릭여부
 
-    console.log(lengthX);
     const mouseDown = (e) => {
         setOnClick(true);
         setStartX(e.clientX);
     }
-    const mouseMove = (e) => {
+    const mouseMove = (e) => { 
         let totalLengthX = preLengthX + e.clientX - startX // 최종 드래그길이
         if (onClick == true) { // 이미지가 화면 밖 벗어남 방지
             if (totalLengthX >= 0) {
@@ -93,12 +93,12 @@ export default function Intro(){
         setPreLengthX(lengthX) // 
     }
 
-    // --------------------------------------------------------
     // [event] 모바일 터치 스와이핑
     const touchStart = (e) => {
         setOnClick(true);
         setStartX(e.changedTouches[0].clientX);
     }
+
     const touchMove = (e) => {
         let totalLengthX = preLengthX + e.changedTouches[0].clientX - startX // 최종 드래그길이
         if (onClick == true) { // 이미지가 화면 밖 벗어남 방지
@@ -186,8 +186,7 @@ export default function Intro(){
                     <div className='intro-detail__content-con'>
                          <div className='intro-detail__content-txt'>
                             <div className={`intro-detail__content-txt-item 
-                            + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.65).isShow ? 'opacity-1' : ''}
-                            + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.3).isShow ? 'opacity-point3' : ''}
+                            + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.65, 0.35).isShow ? 'opacity-1' : 'opacity-point3'}
                             // 모바일
                             + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.85).isShow ? 'up--end1-mo' : ''}`}
                             >
@@ -203,8 +202,7 @@ export default function Intro(){
                                 <div className='arrow'></div>
                             </div>
                             <div className={`intro-detail__content-txt-item 
-                            + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? 'opacity-1' : ''}
-                            + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.3).isShow ? 'opacity-point3' : ''}
+                            + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65, 0.35).isShow ? 'opacity-1' : 'opacity-point3'}
                             // 모바일
                             + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.85).isShow ? 'up--end1-mo' : ''}`}
                             >
@@ -219,8 +217,7 @@ export default function Intro(){
                                 </div>
                             </div>
                             <div className={`intro-detail__content-txt-item 
-                            + ${useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65).isShow ? 'opacity-1' : ''}
-                            + ${useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.3).isShow ? 'opacity-point3' : ''}
+                            + ${useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65, 0.35).isShow ? 'opacity-1' : 'opacity-point3'}
                             // 모바일
                             + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.85).isShow ? 'up--end1-mo' : ''}`}
                             >
@@ -234,7 +231,7 @@ export default function Intro(){
                                     홈페이지는 만들어진 뒤가 중요합니다. 우리는 꼼꼼한 유지보수 시스템으로 사이트가 문제없이 운영되도록 노력합니다.
                                 </div>
                             </div>
-                            <div className={`intro-detail__content-txt-item + ${useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65).isShow ? 'opacity-1' : ''} + ${useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.3).isShow ? 'opacity-point3' : ''}
+                            <div className={`intro-detail__content-txt-item + ${useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65, 0.35).isShow ? 'opacity-1' : 'opacity-point3'}
                             + display-none-mo`}>
                                 <div className='intro-detail__img-wrap-mo'>
                                     <img src= './img/it07.jpg' decoding="async"/>
@@ -283,9 +280,6 @@ export default function Intro(){
                         onTouchStart={(e) => {touchStart(e)}}
                         onTouchMove={(e) => {touchMove(e)}}
                         onTouchEnd={(e) => {touchEnd(e)}}
-                        // onTouchStart={(e) => {console.log(e.changedTouches[0].clientX)}}
-                        // onTouchMove={(e) => {console.log(2)}}
-                        // onTouchEnd={(e) => {console.log(3)}}
 
                         style={{transform: `translateX(${lengthX}px)`}}
                     > 
