@@ -63,8 +63,8 @@ export default function Intro(){
         };
     }, [])
 
-    // ------------------------------------------------------------------
-    // [event] 캐러셀 터치 스와이핑
+    // --------------------------------------------------------
+    // [event] PC 마우스 스와이핑
     const [startX, setStartX] = useState(null); // 클릭한 시점
     const [lengthX, setLengthX] = useState(null); // 이번에 드래그길이
     const [preLengthX, setPreLengthX] = useState(null) // 지난번 드래그길이
@@ -89,6 +89,30 @@ export default function Intro(){
         }
     }
     const mouseUp = (e) => {
+        setOnClick(false)
+        setPreLengthX(lengthX) // 
+    }
+
+    // --------------------------------------------------------
+    // [event] 모바일 터치 스와이핑
+    const touchStart = (e) => {
+        setOnClick(true);
+        setStartX(e.changedTouches[0].clientX);
+    }
+    const touchMove = (e) => {
+        let totalLengthX = preLengthX + e.changedTouches[0].clientX - startX // 최종 드래그길이
+        if (onClick == true) { // 이미지가 화면 밖 벗어남 방지
+            if (totalLengthX >= 0) {
+                totalLengthX = 0
+                setPreLengthX(0)
+                setLengthX((totalLengthX))    
+            }
+            else {
+                setLengthX(totalLengthX) // 최종 길이가 (-) 이면 0으로 인식
+            }
+        }
+    }
+    const touchEnd = (e) => {
         setOnClick(false)
         setPreLengthX(lengthX) // 
     }
@@ -256,12 +280,12 @@ export default function Intro(){
                         onMouseMove={(e) => {mouseMove(e)}}
                         onMouseUp={(e) => {mouseUp(e)}}
 
-                        onTouchStart={(e) => {mouseDown(e)}}
-                        onTouchMove={(e) => {mouseMove(e)}}
-                        // onTouchEnd={(e) => {mouseUp(e)}}
-                        // onTouchStart={(e) => {console.log(1)}}
+                        onTouchStart={(e) => {touchStart(e)}}
+                        onTouchMove={(e) => {touchMove(e)}}
+                        onTouchEnd={(e) => {touchEnd(e)}}
+                        // onTouchStart={(e) => {console.log(e.changedTouches[0].clientX)}}
                         // onTouchMove={(e) => {console.log(2)}}
-                        onTouchEnd={(e) => {console.log(3)}}
+                        // onTouchEnd={(e) => {console.log(3)}}
 
                         style={{transform: `translateX(${lengthX}px)`}}
                     > 
