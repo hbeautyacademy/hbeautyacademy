@@ -42,23 +42,23 @@ export default function Reason(){
                         <div className='txt-line'></div>
                     </div>
 
-                    <div className='reason__con'>
-                        <img src="/img/test11.jpg" className='img-it' />
+                    <div className='reason__con fade-in-self'>
+                        <img src="/img/img04.jpg" className='img-it' />
                         <ul className='reason__box-con'>
                             <li className='reason__box-item'>
                                 <div className='reason__box-txt01'>1.</div>
-                                <div className='reason__box-txt02'>진정성있게 준비해요</div>
-                                <div className='reason__box-txt03'>저희는 결혼식의 소중한 의미를 알고 있어요. 신랑신부님의 기대감을 알기에, 고객님을 향한 진심을 담아서 정성스레 준비합니다.</div>
+                                <div className='reason__box-txt02'>진정성있게 제작해요</div>
+                                <div className='reason__box-txt03'>저희는 하나의 홈페이지를 정성스럽게 제작해요. 디자인부터 기획 개발까지, 고객님이 만족할만큼 최고의 결과물을 만듭니다.</div>
                             </li>
                             <li className='reason__box-item'>
                                 <div className='reason__box-txt01'>2.</div>
-                                <div className='reason__box-txt02'>실력이 남달라요</div>
-                                <div className='reason__box-txt03'>지금까지 에이치로드는 수많은 축하를 드려왔어요. 저희는 풍부한 경험을 바탕으로 최고의 결과를 연출한답니다.</div>
+                                <div className='reason__box-txt02'>실력이 뛰어나요</div>
+                                <div className='reason__box-txt03'>지금까지 위더스는 수많은 홈페이지를 제작했어요. 저희는 풍부한 노하우를 담아서 개발을 진행합니다.</div>
                             </li>
                             <li className='reason__box-item'>
                                 <div className='reason__box-txt01'>3.</div>
                                 <div className='reason__box-txt02'>감동적인 후기가 있어요</div>
-                                <div className='reason__box-txt03'>단순한 홍보글이 아니라 고객의 만족이 있는 업체를 선택하세요. 저희를 만난 신랑신부님들은 만족을 하시고 지인에게 소개하고 계세요.</div>
+                                <div className='reason__box-txt03'>단순한 홍보글이 아니라 고객의 만족이 있는 업체를 선택하세요. 저희를 만난 고객님들은 만족을 하시고 지인에게 소개하고 계세요.</div>
                             </li>
                         </ul>
                     </div>

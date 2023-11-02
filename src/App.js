@@ -3,7 +3,7 @@ import './App.css';
 import {
   Header, Intro, Footer,
   Introduction, OurService,
-  WeddingSong, WeddingMc, WeddingCamera, WeddingDirecting, WeddingEvent,
+  Service01, Service02, Service03, Service04,
   Portfolio,
   Review, Reason,
   Contact
@@ -22,11 +22,10 @@ function App() {
         </Route>
 
         <Route path="/service">
-          <Route path="weddingsong" element={ <WeddingSong /> } />
-          <Route path="weddingmc" element={ <WeddingMc /> } />
-          <Route path="weddingcamera" element={ <WeddingCamera /> } />
-          <Route path="weddingdirecting" element={ <WeddingDirecting /> } />
-          <Route path="weddingevent" element={ <WeddingEvent /> } />
+          <Route path="01" element={ <Service01 /> } />
+          <Route path="02" element={ <Service02 /> } />
+          <Route path="03" element={ <Service03 /> } />
+          <Route path="04" element={ <Service04 /> } />
         </Route>
 
         <Route path="/portfolio">

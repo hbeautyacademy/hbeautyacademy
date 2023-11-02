@@ -3,11 +3,10 @@ import Intro from "./Intro";
 import Footer from "./Footer";
 import Introduction from "./Menu/Company/Introduction"
 import OurService from "./Menu/Company/OurService"
-import WeddingSong from "./Menu/Service/WeddingSong"
-import WeddingMc from "./Menu/Service/WeddingMc"
-import WeddingCamera from "./Menu/Service/WeddingCamera"
-import WeddingDirecting from "./Menu/Service/WeddingDirecting"
-import WeddingEvent from "./Menu/Service/WeddingEvent"
+import Service01 from "./Menu/Service/Service01"
+import Service02 from "./Menu/Service/Service02"
+import Service03 from "./Menu/Service/Service03"
+import Service04 from "./Menu/Service/Service04"
 import Portfolio from "./Menu/Portfolio/Portfolio"
 import Review from "./Menu/Review/Review"
 import Reason from "./Menu/Review/Reason"
@@ -19,7 +18,7 @@ export {
         Intro,
         Footer,
         Introduction, OurService,
-        WeddingSong, WeddingMc, WeddingCamera, WeddingDirecting, WeddingEvent,
+        Service01, Service02, Service03, Service04,
         Portfolio,
         Review, Reason,
         Contact

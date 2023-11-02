@@ -124,7 +124,7 @@ export default function Intro(){
             <div className='intro-spot' style={{backgroundImage: 'url(/img/it02.jpg)'}}>
                 <div className='intro-spot__con'>
 
-                    <div className='intro-spot__bg-gray' style={{backgroundColor:'rgb(0,0,0,0.6)'}}></div>
+                    <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.6)'}}></div>
                     
                     <div className='intro-spot__txt-con'>
                         <div className='intro-spot__txt-sub01'>
@@ -385,7 +385,7 @@ export default function Intro(){
                         당신도<br/>
                         위더스를<br/>
                         만날 시간입니다.<br/><br/>
-                        <a><span>+ contact</span></a>
+                        <a href='https://open.kakao.com/o/srQs41Pf'><span>+ contact</span></a>
                 </div>
             </div>
         </>

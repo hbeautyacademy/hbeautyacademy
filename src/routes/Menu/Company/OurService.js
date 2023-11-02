@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './../../../App.css';
+import {useScroll} from '../../../components/useScroll/useScroll';
 
 
 export default function OurService(){
@@ -40,32 +41,120 @@ export default function OurService(){
                 <div className='detail-page__con'>
                     <div className='detail-page__title-con'>
                         <div className='detail-page__title-main'>서비스안내</div>
-                        <div className='detail-page__title-sub'>에이치로드는 전문적으로 연출합니다</div>
+                        <div className='detail-page__title-sub'>위더스는 고객님의 관점에서 제작합니다</div>
                         <div className='txt-line'></div>
                     </div>
                     
-                    <ul className='ourservice__img-con'>
-                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/ourservice_wedding.jpg)'}}>
+                    <ul className='ourservice__img-con fade-in-self'>
+                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it13.jpg)'}}>
+                            <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href='/service/weddingsong'>감동축가</a>
+                                <a href='/service/weddingsong'>홈페이지 제작</a>
                             </div>
                         </li>
-                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/ourservice_mic.jpg)'}}>
+                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it10.jpg)'}}>
+                            <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href='/service/weddingmc'>센스사회</a>
+                                <a href='/service/weddingmc'>앱 개발</a>
                             </div>
                         </li>
-                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/ourservice_camera.jpg)'}}>
+                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it17.jpg)'}}>
+                            <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href='/service/weddingcamera'>현장촬영</a>
+                                <a href='/service/weddingcamera'>온라인 마케팅</a>
                             </div>
                         </li>
-                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/ourservice_concept.jpg)'}}>
+                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it16.jpg)'}}>
+                            <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href='/service/weddingdirecting'>컨셉 컨설팅</a>
+                                <a href='/service/weddingdirecting'>사업 컨설팅</a>
                             </div>
                         </li>
                     </ul>
+                    <div className='ourservice__header-con'>
+                        <div className='ourservice__header-txt'>
+                            왜 우리에게 홈페이지를<br/>맡겨야 할까요?
+                        </div>
+                    </div>
+                    <div className='ourservice__content-con'>
+                        <div className='ourservice__content-txt'>
+                            <div className={`ourservice__content-txt-item 
+                            + ${useScroll('.ourservice__content-txt-item:nth-child(1)', 0.65, 0.35).isShow ? 'opacity-1' : 'opacity-point3'}
+                            // 모바일
+                            + up--start-mo + ${useScroll('.ourservice__content-txt-item:nth-child(1)', 0.90).isShow ? 'up--end1-mo' : ''}`}
+                            >
+                                <div className='ourservice__img-wrap-mo'>
+                                    <img src= './../img/it12.jpg' decoding="async"/>
+                                </div>
+                                <div className='ourservice__content-txt-title '>
+                                    소비자의 마음을 움직이다
+                                </div>
+                                <div className='ourservice__content-txt-sub'>
+                                    위더스는 소비자의 입장에서 홈페이지를 구상합니다. 나의 사업 매출에 직접적으로 도움이되는 결과물을 만들기 위해 노력합니다.
+                                </div>
+                                <div className='arrow'></div>
+                            </div>
+                            <div className={`ourservice__content-txt-item 
+                            + ${useScroll('.ourservice__content-txt-item:nth-child(2)', 0.65, 0.35).isShow ? 'opacity-1' : 'opacity-point3'}
+                            // 모바일
+                            + up--start-mo + ${useScroll('.ourservice__content-txt-item:nth-child(2)', 0.90).isShow ? 'up--end1-mo' : ''}`}
+                            >
+                                <div className='ourservice__img-wrap-mo'>
+                                    <img src= './../img/it14.jpg' decoding="async"/>
+                                </div>
+                                <div className='ourservice__content-txt-title'>
+                                    빠른 제작, 완성도 높은 결과
+                                </div>
+                                <div className='ourservice__content-txt-sub'>
+                                    전문 개발팀이 결과물을 빠르게 만들면서도 퀄리티 있게 제작합니다.
+                                </div>
+                            </div>
+                            <div className={`ourservice__content-txt-item 
+                            + ${useScroll('.ourservice__content-txt-item:nth-child(3)', 0.65, 0.35).isShow ? 'opacity-1' : 'opacity-point3'}
+                            // 모바일
+                            + up--start-mo + ${useScroll('.ourservice__content-txt-item:nth-child(3)', 0.90).isShow ? 'up--end1-mo' : ''}`}
+                            >
+                                <div className='ourservice__img-wrap-mo'>
+                                    <img src= './../img/it08.jpg' decoding="async"/>
+                                </div>
+                                <div className='ourservice__content-txt-title'>
+                                    꼼꼼한 유지보수 시스템
+                                </div>
+                                <div className='ourservice__content-txt-sub'>
+                                    홈페이지는 만들어진 뒤가 중요합니다. 우리는 꼼꼼한 유지보수 시스템으로 사이트가 문제없이 운영되도록 노력합니다.
+                                </div>
+                            </div>
+                            <div className={`ourservice__content-txt-item + ${useScroll('.ourservice__content-txt-item:nth-child(4)', 0.65, 0.35).isShow ? 'opacity-1' : 'opacity-point3'}
+                            // 모바일
+                            + up--start-mo + ${useScroll('.ourservice__content-txt-item:nth-child(4)', 0.90).isShow ? 'up--end1-mo' : ''}`}
+                            >
+                                <div className='ourservice__img-wrap-mo'>
+                                    <img src= './../img/it07.jpg' decoding="async"/>
+                                </div>
+                                <div className='ourservice__content-txt-title'>
+                                    업종에 최적화된 홈페이지
+                                </div>
+                                <div className='ourservice__content-txt-sub'>
+                                    의뢰인의 업종을 이해하고 사업에 적합한 사이트를 구상합니다.
+                                </div>
+                            </div>
+                        </div>
+                        <div className='ourservice__content-img-con'>
+                            <div className='ourservice__triangle'></div>
+                            <div className='ourservice__content-img'>
+                                <img src= './../img/it12.jpg' decoding="async"/>
+                                <img src= {useScroll('.ourservice__content-txt-item:nth-child(2)', 0.65).isShow ? './../img/it14.jpg' : ''} decoding="async"
+                                style={{opacity: useScroll('.ourservice__content-txt-item:nth-child(2)', 0.65).isShow ? '1' : '0'}}
+                                />
+                                <img src= {useScroll('.ourservice__content-txt-item:nth-child(3)', 0.65).isShow ? './../img/it08.jpg' : ''} decoding="async"
+                                style={{opacity: useScroll('.ourservice__content-txt-item:nth-child(3)', 0.65).isShow ? '1' : '0'}}
+                                />
+                                <img src= {useScroll('.ourservice__content-txt-item:nth-child(4)', 0.65).isShow ? './../img/it07.jpg' : ''} decoding="async"
+                                style={{opacity: useScroll('.ourservice__content-txt-item:nth-child(4)', 0.65).isShow ? '1' : '0'}}
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
