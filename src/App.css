@@ -946,6 +946,7 @@ a {
   /* 이미지 비율 (가로/세로) */
   aspect-ratio: 8/10; 
   object-fit: cover;
+  pointer-events: none;
 }
 
 

@@ -244,7 +244,7 @@ export default function Intro(){
                                 </div>
                             </div>
                             <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-detail .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
-                                <a>+ more</a>
+                                <a href='/company/ourservice'>+ more</a>
                             </div>
                          </div>
                          <div className='intro-detail__content-img-con'>
@@ -290,7 +290,7 @@ export default function Intro(){
                         }
                     </ul>
                     <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-pf .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
-                        <a>+ more</a>
+                        <a href='/portfolio/portfolio'>+ more</a>
                     </div>
                 </div>
             </div>
@@ -302,7 +302,7 @@ export default function Intro(){
                             실제 후기입니다.
                         </div>
                         <div className={`btn-more up--start display-none-mo + ${useScroll('.intro-review__header-title', 0.90).isShow ? 'up--end1' : ''}`}>
-                            <a>+ more</a>
+                            <a href='/review/review'>+ more</a>
                         </div>
                     </div>
                     <ul className='intro-review__txt-con'>
@@ -374,7 +374,7 @@ export default function Intro(){
                         </li>
                     </ul>
                     <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-review .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
-                        <a>+ more</a>
+                        <a href='/review/review'>+ more</a>
                     </div>
                 </div>
             </div>

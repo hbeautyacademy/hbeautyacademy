@@ -90,9 +90,9 @@ export default function Header(props){
 
                     {/* sns채널 */}
                     <ul className='header__icon-con'>
-                        <li><a href='https://www.youtube.com/channel/UC2Edi1ZsZ_ywd30Tu3vE2zQ'>YOUTUBE</a></li>
-                        <li><a href='https://blog.naver.com/sunpys_lifedance'>BLOG</a></li>
-                        <li><a href='https://www.instagram.com/sunpy.wedding'>INSTA</a></li>
+                        <li><a onClick={() => {alert('준비중 입니다')}}>YOUTUBE</a></li>
+                        <li><a onClick={() => {alert('준비중 입니다')}}>BLOG</a></li>
+                        <li><a onClick={() => {alert('준비중 입니다')}}>INSTA</a></li>
                     </ul>
 
                 </div>

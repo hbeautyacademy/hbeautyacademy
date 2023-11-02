@@ -49,25 +49,25 @@ export default function OurService(){
                         <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it13.jpg)'}}>
                             <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href='/service/weddingsong'>홈페이지 제작</a>
+                                <a href='/service/01'>홈페이지 제작</a>
                             </div>
                         </li>
                         <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it10.jpg)'}}>
                             <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href='/service/weddingmc'>앱 개발</a>
+                                <a href='/service/02'>앱 개발</a>
                             </div>
                         </li>
                         <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it17.jpg)'}}>
                             <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href='/service/weddingcamera'>온라인 마케팅</a>
+                                <a href='/service/03'>온라인 마케팅</a>
                             </div>
                         </li>
                         <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it16.jpg)'}}>
                             <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href='/service/weddingdirecting'>사업 컨설팅</a>
+                                <a href='/service/04'>사업 컨설팅</a>
                             </div>
                         </li>
                     </ul>
