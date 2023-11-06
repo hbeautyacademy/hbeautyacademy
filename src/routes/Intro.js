@@ -9,7 +9,7 @@ export default function Intro(){
     const [spotText, setSpotText] = useState(null);
     const spotTextData = [
         'GO  FURTHER,',
-        'WITHUS',
+        'TEST01',
         ''
     ]
     const lengthTextSub01 = spotTextData[0].split("").length; // 첫째줄까지 길이
