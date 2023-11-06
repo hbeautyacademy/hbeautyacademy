@@ -14,9 +14,9 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Intro />} />
+        <Route path={process.env.PUBLIC_URL + "/"} element={<Intro />} />
 
-        <Route path="/company">
+        <Route path={process.env.PUBLIC_URL + "/company"}>
           <Route path="introduction" element={ <Introduction /> } />
           <Route path="ourservice" element={ <OurService /> } />
         </Route>
