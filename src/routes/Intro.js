@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import {useScroll} from '../components/useScroll/useScroll';
-// import {useScroll1} from '../components/useScroll/useScroll1';
 import './../App.css';
 
 
@@ -9,7 +8,7 @@ export default function Intro(){
     const [spotText, setSpotText] = useState(null);
     const spotTextData = [
         'GO  FURTHER,',
-        'TEST01',
+        'CORES',
         ''
     ]
     const lengthTextSub01 = spotTextData[0].split("").length; // 첫째줄까지 길이
@@ -30,8 +29,8 @@ export default function Intro(){
     // ------------------------------------------------------------------
     // [event] 브랜드 설명 부분에 브랜드를 타이핑
     const typingTextData = [
-        '위더스' + '  ', // 마지막에 띄어쓰기 2번 이상하면 그만큼 완성단어를 오래 보여줌
-        'WITHUS' + '  '
+        '코어스' + '  ', // 마지막에 띄어쓰기 2번 이상하면 그만큼 완성단어를 오래 보여줌
+        'CORES' + '  '
     ]
     let [typingTxt, setTypingTxt] = useState('')
     let i = 0; // 함수 반복횟수
@@ -197,7 +196,7 @@ export default function Intro(){
                                     소비자의 마음을 움직이다
                                 </div>
                                 <div className='intro-detail__content-txt-sub'>
-                                    위더스는 소비자의 입장에서 홈페이지를 구상합니다. 나의 사업 매출에 직접적으로 도움이되는 결과물을 만들기 위해 노력합니다.
+                                    코어스는 소비자의 입장에서 홈페이지를 구상합니다. 나의 사업 매출에 직접적으로 도움이되는 결과물을 만들기 위해 노력합니다.
                                 </div>
                                 <div className='arrow'></div>
                             </div>
@@ -244,7 +243,7 @@ export default function Intro(){
                                 </div>
                             </div>
                             <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-detail .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
-                                <a href='/company/ourservice'>+ more</a>
+                                <a href={process.env.PUBLIC_URL + '/company/ourservice'}>+ more</a>
                             </div>
                          </div>
                          <div className='intro-detail__content-img-con'>
@@ -290,7 +289,7 @@ export default function Intro(){
                         }
                     </ul>
                     <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-pf .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
-                        <a href='/portfolio/portfolio'>+ more</a>
+                        <a href={process.env.PUBLIC_URL + '/portfolio/portfolio'}>+ more</a>
                     </div>
                 </div>
             </div>
@@ -302,7 +301,7 @@ export default function Intro(){
                             실제 후기입니다.
                         </div>
                         <div className={`btn-more up--start display-none-mo + ${useScroll('.intro-review__header-title', 0.90).isShow ? 'up--end1' : ''}`}>
-                            <a href='/review/review'>+ more</a>
+                            <a href={process.env.PUBLIC_URL + '/review/review'}>+ more</a>
                         </div>
                     </div>
                     <ul className='intro-review__txt-con'>
@@ -374,7 +373,7 @@ export default function Intro(){
                         </li>
                     </ul>
                     <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-review .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
-                        <a href='/review/review'>+ more</a>
+                        <a href={process.env.PUBLIC_URL + '/review/review'}>+ more</a>
                     </div>
                 </div>
             </div>
@@ -383,7 +382,7 @@ export default function Intro(){
                 <div className={`intro-img__txt fade-in00 + ${useScroll('.intro-img__txt', 0.90).isShow ? 'fade-in01' : ''}`}>
                         이제<br/>
                         당신도<br/>
-                        위더스를<br/>
+                        코어스를<br/>
                         만날 시간입니다.<br/><br/>
                         <a href='https://open.kakao.com/o/srQs41Pf'><span>+ contact</span></a>
                 </div>

@@ -16,11 +16,13 @@ export default function Reason(){
 
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
-                        <li className='detail-page__btn-home'><a href='/'>
-                            <span class="material-symbols-outlined">
+                        <li className='detail-page__btn-home'>
+                            <a href={process.env.PUBLIC_URL + '/'}>
+                                <span class="material-symbols-outlined">
                                     home
-                            </span>
-                        </a></li>
+                                </span>
+                            </a>
+                        </li>
                         {/* 현재 페이지 메인메뉴 */}
                         <li className='detail-page__btn-menu'><a>REVIEW</a></li>
                         <li className={`detail-page__btn-submenu + ${ clickBtn ? 'overflow-visible' : ''}`} onClick={showList}>
@@ -28,8 +30,8 @@ export default function Reason(){
                             <a>감동의이유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href='/review/reason'>감동의이유</a></li>
-                                <li><a href='/review/review'>후기모음</a></li>
+                                <li><a href={process.env.PUBLIC_URL + '/review/reason'}>감동의이유</a></li>
+                                <li><a href={process.env.PUBLIC_URL + '/review/review'}>후기모음</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -53,7 +55,7 @@ export default function Reason(){
                             <li className='reason__box-item'>
                                 <div className='reason__box-txt01'>2.</div>
                                 <div className='reason__box-txt02'>실력이 뛰어나요</div>
-                                <div className='reason__box-txt03'>지금까지 위더스는 수많은 홈페이지를 제작했어요. 저희는 풍부한 노하우를 담아서 개발을 진행합니다.</div>
+                                <div className='reason__box-txt03'>지금까지 코어스는 수많은 홈페이지를 제작했어요. 저희는 풍부한 노하우를 담아서 개발을 진행합니다.</div>
                             </li>
                             <li className='reason__box-item'>
                                 <div className='reason__box-txt01'>3.</div>

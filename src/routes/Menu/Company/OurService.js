@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import './../../../App.css';
 import {useScroll} from '../../../components/useScroll/useScroll';
+import './../../../App.css';
 
 
 export default function OurService(){
@@ -18,9 +18,10 @@ export default function OurService(){
 
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
-                        <li className='detail-page__btn-home'><a href='/'>
+                        <li className='detail-page__btn-home'>
+                            <a href={process.env.PUBLIC_URL + '/'}>
                                 <span   class="material-symbols-outlined">
-                                        home
+                                    home
                                 </span>
                             </a>
                         </li>
@@ -31,8 +32,8 @@ export default function OurService(){
                             <a>서비스안내&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href='/company/introduction'>회사소개</a></li>
-                                <li><a href='/company/ourservice'>서비스안내</a></li>
+                                <li><a href={process.env.PUBLIC_URL + '/company/introduction'}>회사소개</a></li>
+                                <li><a href={process.env.PUBLIC_URL + '/company/ourservice'}>서비스안내</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -41,7 +42,7 @@ export default function OurService(){
                 <div className='detail-page__con'>
                     <div className='detail-page__title-con'>
                         <div className='detail-page__title-main'>서비스안내</div>
-                        <div className='detail-page__title-sub'>위더스는 고객님의 관점에서 제작합니다</div>
+                        <div className='detail-page__title-sub'>코어스는 고객님의 관점에서 제작합니다</div>
                         <div className='txt-line'></div>
                     </div>
                     
@@ -90,7 +91,7 @@ export default function OurService(){
                                     소비자의 마음을 움직이다
                                 </div>
                                 <div className='ourservice__content-txt-sub'>
-                                    위더스는 소비자의 입장에서 홈페이지를 구상합니다. 나의 사업 매출에 직접적으로 도움이되는 결과물을 만들기 위해 노력합니다.
+                                    코어스는 소비자의 입장에서 홈페이지를 구상합니다. 나의 사업 매출에 직접적으로 도움이되는 결과물을 만들기 위해 노력합니다.
                                 </div>
                                 <div className='arrow'></div>
                             </div>

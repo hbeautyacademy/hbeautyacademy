@@ -10,7 +10,6 @@ import Service04 from "./Menu/Service/Service04"
 import Portfolio from "./Menu/Portfolio/Portfolio"
 import Review from "./Menu/Review/Review"
 import Reason from "./Menu/Review/Reason"
-import Contact from "./Menu/Contact/Contact"
 
 
 export { 
@@ -20,6 +19,5 @@ export {
         Introduction, OurService,
         Service01, Service02, Service03, Service04,
         Portfolio,
-        Review, Reason,
-        Contact
+        Review, Reason
         };

@@ -1,22 +1,22 @@
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Router, Routes, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import {
   Header, Intro, Footer,
   Introduction, OurService,
   Service01, Service02, Service03, Service04,
   Portfolio,
-  Review, Reason,
-  Contact
+  Review, Reason
 } from './routes'
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
-        <Route path={process.env.PUBLIC_URL + "/"} element={<Intro />} />
+        <Route path="/" element={<Intro />} />
 
-        <Route path={process.env.PUBLIC_URL + "/company"}>
+
+        <Route path="/company">
           <Route path="introduction" element={ <Introduction /> } />
           <Route path="ourservice" element={ <OurService /> } />
         </Route>
@@ -37,13 +37,10 @@ function App() {
           <Route path="reason" element={ <Reason /> } />
         </Route>
 
-        <Route path="/contact">
-          <Route path="contact" element={ <Contact /> } />
-        </Route>
       </Routes>
 
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

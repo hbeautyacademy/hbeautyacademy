@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import './../../../App.css';
 import {useScroll} from '../../../components/useScroll/useScroll';
+import './../../../App.css';
 
 export default function Review(){
     const [clickBtn, setClickBtn] = useState(false);
@@ -17,11 +17,13 @@ export default function Review(){
 
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
-                        <li className='detail-page__btn-home'><a href='/'>
-                            <span class="material-symbols-outlined">
-                                home
-                            </span>
-                        </a></li>
+                        <li className='detail-page__btn-home'>
+                            <a href={process.env.PUBLIC_URL + '/'}>
+                                <span class="material-symbols-outlined">
+                                    home
+                                </span>
+                            </a>
+                        </li>
                         {/* 현재 페이지 메인메뉴 */}
                         <li className='detail-page__btn-menu'><a>REVIEW</a></li>
                         <li className={`detail-page__btn-submenu + ${ clickBtn ? 'overflow-visible' : ''}`} onClick={showList}>
@@ -29,8 +31,8 @@ export default function Review(){
                             <a>후기모음&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href='/review/reason'>감동의이유</a></li>
-                                <li><a href='/review/review'>후기모음</a></li>
+                                <li><a href={process.env.PUBLIC_URL + '/review/reason'}>감동의이유</a></li>
+                                <li><a href={process.env.PUBLIC_URL + '/review/review'}>후기모음</a></li>
                             </ul>
                         </li>
                     </ul>

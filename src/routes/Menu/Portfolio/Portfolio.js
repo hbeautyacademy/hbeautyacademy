@@ -16,11 +16,13 @@ export default function Portfolio(){
 
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
-                        <li className='detail-page__btn-home'><a href='/'>
-                            <span class="material-symbols-outlined">
-                                    home
-                            </span>
-                        </a></li>
+                        <li className='detail-page__btn-home'>
+                            <a href={process.env.PUBLIC_URL + '/'}>
+                                <span class="material-symbols-outlined">
+                                        home
+                                </span>
+                            </a>
+                        </li>
                         {/* 현재 페이지 메인메뉴 */}
                         <li className='detail-page__btn-menu'><a>PORTFOLIO</a></li>
                         <li className={`detail-page__btn-submenu + ${ clickBtn ? 'overflow-visible' : ''}`} onClick={showList}>
@@ -28,7 +30,7 @@ export default function Portfolio(){
                             <a>포트폴리오&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href='/portfolio/portfolio'>포트폴리오</a></li>
+                                <li><a href={process.env.PUBLIC_URL + '/portfolio/portfolio'}>포트폴리오</a></li>
                                 <li><a onClick={() => {alert('준비중 입니다')}}>유튜브</a></li>
                                 <li><a onClick={() => {alert('준비중 입니다')}}>인스타그램</a></li>
                                 <li><a onClick={() => {alert('준비중 입니다')}}>블로그</a></li>
