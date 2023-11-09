@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Intro from "./Intro";
 import Footer from "./Footer";
+import License from "./License";
 import Introduction from "./Menu/Company/Introduction"
 import OurService from "./Menu/Company/OurService"
 import Service01 from "./Menu/Service/Service01"
@@ -15,7 +16,7 @@ import Reason from "./Menu/Review/Reason"
 export { 
         Header, 
         Intro,
-        Footer,
+        Footer, License,
         Introduction, OurService,
         Service01, Service02, Service03, Service04,
         Portfolio,

@@ -1,7 +1,7 @@
 import { Route, Router, Routes, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import {
-  Header, Intro, Footer,
+  Header, Intro, Footer, License,
   Introduction, OurService,
   Service01, Service02, Service03, Service04,
   Portfolio,
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Intro />} />
-
+        <Route path="/license" element={<License />} />
 
         <Route path="/company">
           <Route path="introduction" element={ <Introduction /> } />
