@@ -10,7 +10,7 @@ export default function Portfolio(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{background: 'url(/img/test09.jpg)'}}>
+                <div className='detail-page__banner-con' style={{background: 'url(../img/test09.jpg)'}}>
                     <div>PORTFOLIO</div>
                 </div>
 
@@ -70,7 +70,7 @@ function GridItem(props){
     return (
         <>
             <li className='portfolio__grid-item'>
-                <div className='portfolio__img-box' style={{backgroundImage:'url(/img/it' + props.a + '.jpg)'}} ></div>
+                <div className='portfolio__img-box' style={{backgroundImage:'url(../img/it' + props.a + '.jpg)'}} ></div>
             </li>    
         </>
     )

@@ -10,7 +10,7 @@ export default function Service01(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{background: 'url(/img/test04.jpg)'}}>
+                <div className='detail-page__banner-con' style={{backgroundImage: 'url(../img/test04.jpg)'}}>
                     <div>SERVICE</div>
                 </div>
 
@@ -47,7 +47,7 @@ export default function Service01(){
                     </div>
                     
                     <div className='service__con fade-in-self'>
-                        <img className='service__img-box' src='/img/it01.jpg' />
+                        <img className='service__img-box' src='../img/it01.jpg' />
                         <div className='service__txt'>
                             이제 사람들은 오프라인보다 온라인 활동에 더욱 친숙하게 되었습니다. 따라서 홈페이지는 회사를 나타내는 명함 이상의 가치를 가지고 있는데요. 소비자는 홈페이지를 통해 브랜드의 신뢰감과 호감을 가지기도 합니다.
                             <br/><br/>

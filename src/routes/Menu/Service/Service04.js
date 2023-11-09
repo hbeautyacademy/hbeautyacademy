@@ -10,7 +10,7 @@ export default function Service04(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{background: 'url(/img/test04.jpg)'}}>
+                <div className='detail-page__banner-con' style={{background: 'url(../img/test04.jpg)'}}>
                     <div>SERVICE</div>
                 </div>
 
@@ -47,7 +47,7 @@ export default function Service04(){
                     </div>
                     
                     <div className='service__con fade-in-self'>
-                        <img className='service__img-box' src='/img/img02.jpg' />
+                        <img className='service__img-box' src='../img/img02.jpg' />
                         <div className='service__txt'>
                             코어스는 전문적인 사업 컨설팅을 제공합니다. 실제로 저희는 다양한 업종의 창업과 운영을 도와드렸는데요. 이러한 경험을 바탕으로 해당 업종에 가장 적절한 사업 계획을 기획해드리고 상담을 해드리고 있습니다.
                             <br/><br/>

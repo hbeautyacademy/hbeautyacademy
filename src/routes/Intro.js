@@ -120,7 +120,7 @@ export default function Intro(){
     
     return (
         <>
-            <div className='intro-spot' style={{backgroundImage: 'url(/img/it02.jpg)'}}>
+            <div className='intro-spot' style={{backgroundImage: `url('./img/it02.jpg')`}}>
                 <div className='intro-spot__con'>
 
                     <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.6)'}}></div>
@@ -170,7 +170,7 @@ export default function Intro(){
                 </div>
                 <div className='intro-brand__img-wrap'>
                         <div className={`intro-brand__img slide-in00  + ${useScroll('.intro-brand__img-wrap', 0.85).isShow ? 'slide-in01' : ''}`}
-                         style={{backgroundImage: 'url(/img/it05.jpg)',
+                         style={{backgroundImage: 'url(./img/it05.jpg)',
                          backgroundPositionY: (500 + useScroll('.intro-brand__img', 0.90).stateY * 0.85) + 'px' 
                          }}></div>
                 </div>

@@ -11,7 +11,7 @@ export default function Review(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{background: 'url(/img/test02.jpg)'}}>
+                <div className='detail-page__banner-con' style={{background: 'url(../img/test02.jpg)'}}>
                     <div>REVIEW</div>
                 </div>
 

@@ -10,7 +10,7 @@ export default function Service03(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{background: 'url(/img/test04.jpg)'}}>
+                <div className='detail-page__banner-con' style={{backgroundImage: 'url(../img/test04.jpg)'}}>
                     <div>SERVICE</div>
                 </div>
 
@@ -47,7 +47,7 @@ export default function Service03(){
                     </div>
                     
                     <div className='service__con fade-in-self'>
-                        <img className='service__img-box' src='/img/img03.jpg' />
+                        <img className='service__img-box' src='../img/img03.jpg' />
                         <div className='service__txt'>
                             저희의 마케팅 철학은 다음과 같습니다. '고객님이 마케팅이 필요없는 수준까지 마케팅을 해드리자' 이게 어떤 의미인지 궁금해하시는 분들이 계실텐데요. 바로, 인위적인 홍보 없이도 자연스럽게 사업이 잘 되도록 도와드리겠다는 뜻이죠.
                             <br/><br/>

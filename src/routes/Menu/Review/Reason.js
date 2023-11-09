@@ -10,7 +10,7 @@ export default function Reason(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{background: 'url(/img/test02.jpg)'}}>
+                <div className='detail-page__banner-con' style={{background: 'url(../img/test02.jpg)'}}>
                     <div>REVIEW</div>
                 </div>
 
@@ -45,7 +45,7 @@ export default function Reason(){
                     </div>
 
                     <div className='reason__con fade-in-self'>
-                        <img src="/img/img04.jpg" className='img-it' />
+                        <img src="../img/img04.jpg" className='img-it' />
                         <ul className='reason__box-con'>
                             <li className='reason__box-item'>
                                 <div className='reason__box-txt01'>1.</div>

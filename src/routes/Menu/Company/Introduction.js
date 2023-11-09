@@ -15,7 +15,7 @@ export default function Introduction(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{background: 'url(/img/test05.jpg)'}}>
+                <div className='detail-page__banner-con' style={{backgroundImage: `url('../img/test05.jpg')`}}>
                     <div>COMPANY</div>
                 </div>
                 
