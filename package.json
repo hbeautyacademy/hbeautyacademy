@@ -21,7 +21,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://quokkawoo.github.io/portfolio01",
+  "homepage": "https://cores-portfolio01.netlify.app",
   "eslintConfig": {
     "extends": [
       "react-app",

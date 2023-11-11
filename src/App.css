@@ -30,9 +30,9 @@ body {
   font-family: 'Noto Sans KR', serif;
   }
 
-/* 오른쪽 공간 여백문제 해결? */
-html {
-  overflow-x: hidden !important;
+/* 오른쪽 공간 여백문제 해결 */
+body > div {
+  overflow-x: hidden;
 }
 
 
@@ -775,7 +775,7 @@ a {
 
 .intro-brand__img-wrap {  
   margin-top: 120px;
-  width: 100%;
+  width: 100vw;
   height: 400px;
   position: relative;
   overflow-y: hidden;
@@ -999,6 +999,7 @@ a {
 
 .intro-pf__con {
   width: 100%;
+  /* overflow-x: hidden; */
 }
 
 .intro-pf__title {

@@ -26,7 +26,7 @@ export default function License(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{background: 'url(../img/test16.jpg)'}}>
+                <div className='detail-page__banner-con' style={{background: 'url(./img/test16.jpg)'}}>
                     <div>LICENSE</div>
                 </div>
 
