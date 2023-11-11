@@ -12,14 +12,14 @@ export default function OurService(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{backgroundImage: 'url(../img/test05.jpg)'}}>
+                <div className='detail-page__banner-con' style={{backgroundImage: 'url(/img/test05.jpg)'}}>
                     <div>COMPANY</div>
                 </div>
 
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
                         <li className='detail-page__btn-home'>
-                            <a href={process.env.PUBLIC_URL + '/'}>
+                            <a href='/'>
                                 <span   class="material-symbols-outlined">
                                     home
                                 </span>
@@ -32,8 +32,8 @@ export default function OurService(){
                             <a>서비스안내&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href={process.env.PUBLIC_URL + '/company/introduction'}>회사소개</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/company/ourservice'}>서비스안내</a></li>
+                                <li><a href='/company/introduction'>회사소개</a></li>
+                                <li><a href='/company/ourservice'>서비스안내</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -47,28 +47,28 @@ export default function OurService(){
                     </div>
                     
                     <ul className='ourservice__img-con fade-in-self'>
-                        <li className='ourservice__img-item' style={{backgroundImage:'url(../img/it13.jpg)'}}>
+                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it13.jpg)'}}>
                             <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href={process.env.PUBLIC_URL + '/service/01'}>홈페이지 제작</a>
+                                <a href='/service/01'>홈페이지 제작</a>
                             </div>
                         </li>
-                        <li className='ourservice__img-item' style={{backgroundImage:'url(../img/it10.jpg)'}}>
+                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it10.jpg)'}}>
                             <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href={process.env.PUBLIC_URL + '/service/02'}>앱 개발</a>
+                                <a href='/service/02'>앱 개발</a>
                             </div>
                         </li>
-                        <li className='ourservice__img-item' style={{backgroundImage:'url(../img/it17.jpg)'}}>
+                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it17.jpg)'}}>
                             <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href={process.env.PUBLIC_URL + '/service/03'}>온라인 마케팅</a>
+                                <a href='/service/03'>온라인 마케팅</a>
                             </div>
                         </li>
-                        <li className='ourservice__img-item' style={{backgroundImage:'url(../img/it16.jpg)'}}>
+                        <li className='ourservice__img-item' style={{backgroundImage:'url(/img/it16.jpg)'}}>
                             <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.5)'}}></div>
                             <div className='ourservice__img-txt-con'>
-                                <a href={process.env.PUBLIC_URL + '/service/04'}>사업 컨설팅</a>
+                                <a href='/service/04'>사업 컨설팅</a>
                             </div>
                         </li>
                     </ul>
@@ -85,7 +85,7 @@ export default function OurService(){
                             + up--start-mo + ${useScroll('.ourservice__content-txt-item:nth-child(1)', 0.90).isShow ? 'up--end1-mo' : ''}`}
                             >
                                 <div className='ourservice__img-wrap-mo'>
-                                    <img src= './../img/it12.jpg' decoding="async"/>
+                                    <img src= '/img/it12.jpg' decoding="async"/>
                                 </div>
                                 <div className='ourservice__content-txt-title '>
                                     소비자의 마음을 움직이다
@@ -101,7 +101,7 @@ export default function OurService(){
                             + up--start-mo + ${useScroll('.ourservice__content-txt-item:nth-child(2)', 0.90).isShow ? 'up--end1-mo' : ''}`}
                             >
                                 <div className='ourservice__img-wrap-mo'>
-                                    <img src= './../img/it14.jpg' decoding="async"/>
+                                    <img src= '/img/it14.jpg' decoding="async"/>
                                 </div>
                                 <div className='ourservice__content-txt-title'>
                                     빠른 제작, 완성도 높은 결과
@@ -116,7 +116,7 @@ export default function OurService(){
                             + up--start-mo + ${useScroll('.ourservice__content-txt-item:nth-child(3)', 0.90).isShow ? 'up--end1-mo' : ''}`}
                             >
                                 <div className='ourservice__img-wrap-mo'>
-                                    <img src= './../img/it08.jpg' decoding="async"/>
+                                    <img src= '/img/it08.jpg' decoding="async"/>
                                 </div>
                                 <div className='ourservice__content-txt-title'>
                                     꼼꼼한 유지보수 시스템
@@ -130,7 +130,7 @@ export default function OurService(){
                             + up--start-mo + ${useScroll('.ourservice__content-txt-item:nth-child(4)', 0.90).isShow ? 'up--end1-mo' : ''}`}
                             >
                                 <div className='ourservice__img-wrap-mo'>
-                                    <img src= './../img/it07.jpg' decoding="async"/>
+                                    <img src= '/img/it07.jpg' decoding="async"/>
                                 </div>
                                 <div className='ourservice__content-txt-title'>
                                     업종에 최적화된 홈페이지
@@ -143,14 +143,14 @@ export default function OurService(){
                         <div className='ourservice__content-img-con'>
                             <div className='ourservice__triangle'></div>
                             <div className='ourservice__content-img'>
-                                <img src= './../img/it12.jpg' decoding="async"/>
-                                <img src= {useScroll('.ourservice__content-txt-item:nth-child(2)', 0.65).isShow ? './../img/it14.jpg' : ''} decoding="async"
+                                <img src= '/img/it12.jpg' decoding="async"/>
+                                <img src= {useScroll('.ourservice__content-txt-item:nth-child(2)', 0.65).isShow ? '/img/it14.jpg' : ''} decoding="async"
                                 style={{opacity: useScroll('.ourservice__content-txt-item:nth-child(2)', 0.65).isShow ? '1' : '0'}}
                                 />
-                                <img src= {useScroll('.ourservice__content-txt-item:nth-child(3)', 0.65).isShow ? './../img/it08.jpg' : ''} decoding="async"
+                                <img src= {useScroll('.ourservice__content-txt-item:nth-child(3)', 0.65).isShow ? '/img/it08.jpg' : ''} decoding="async"
                                 style={{opacity: useScroll('.ourservice__content-txt-item:nth-child(3)', 0.65).isShow ? '1' : '0'}}
                                 />
-                                <img src= {useScroll('.ourservice__content-txt-item:nth-child(4)', 0.65).isShow ? './../img/it07.jpg' : ''} decoding="async"
+                                <img src= {useScroll('.ourservice__content-txt-item:nth-child(4)', 0.65).isShow ? '/img/it07.jpg' : ''} decoding="async"
                                 style={{opacity: useScroll('.ourservice__content-txt-item:nth-child(4)', 0.65).isShow ? '1' : '0'}}
                                 />
                             </div>

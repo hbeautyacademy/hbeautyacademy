@@ -10,14 +10,14 @@ export default function Service02(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{backgroundImage: 'url(../img/test04.jpg)'}}>
+                <div className='detail-page__banner-con' style={{backgroundImage: 'url(/img/test04.jpg)'}}>
                     <div>SERVICE</div>
                 </div>
 
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
                         <li className='detail-page__btn-home'>
-                            <a href={process.env.PUBLIC_URL + '/'}>
+                            <a href='/'>
                                 <span class="material-symbols-outlined">
                                     home
                                 </span>
@@ -30,10 +30,10 @@ export default function Service02(){
                             <a>앱 개발&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href={process.env.PUBLIC_URL + '/service/01'}>홈페이지 제작</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/02'}>앱 개발</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/03'}>온라인 마케팅</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/04'}>사업 컨설팅</a></li>
+                                <li><a href='/service/01'>홈페이지 제작</a></li>
+                                <li><a href='/service/02'>앱 개발</a></li>
+                                <li><a href='/service/03'>온라인 마케팅</a></li>
+                                <li><a href='/service/04'>사업 컨설팅</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -47,7 +47,7 @@ export default function Service02(){
                     </div>
                     
                     <div className='service__con fade-in-self'>
-                        <img className='service__img-box' src='../img/it13.jpg' />
+                        <img className='service__img-box' src='/img/it13.jpg' />
                         <div className='service__txt'>
                             각종 검색포털의 유저들의 통계를 살펴보면 모바일의 사용률이 PC보다 높게 나오고 있습니다. 그만큼 사람들은 스마트폰 하나로 물건을 사고 팔며 서비스를 이용하는데요. 따라서 모바일을 통한 사업을 계획하고 있다면 앱이 필수적이죠.
                             <br/><br/>

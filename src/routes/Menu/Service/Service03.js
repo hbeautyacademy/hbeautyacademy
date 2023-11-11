@@ -10,14 +10,14 @@ export default function Service03(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{backgroundImage: 'url(../img/test04.jpg)'}}>
+                <div className='detail-page__banner-con' style={{backgroundImage: 'url(/img/test04.jpg)'}}>
                     <div>SERVICE</div>
                 </div>
 
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
                         <li className='detail-page__btn-home'>
-                            <a href={process.env.PUBLIC_URL + '/'}>
+                            <a href='/'>
                                 <span class="material-symbols-outlined">
                                     home
                                 </span>
@@ -30,10 +30,10 @@ export default function Service03(){
                             <a>온라인 마케팅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href={process.env.PUBLIC_URL + '/service/01'}>홈페이지 제작</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/02'}>앱 개발</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/03'}>온라인 마케팅</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/04'}>사업 컨설팅</a></li>
+                                <li><a href='/service/01'>홈페이지 제작</a></li>
+                                <li><a href='/service/02'>앱 개발</a></li>
+                                <li><a href='/service/03'>온라인 마케팅</a></li>
+                                <li><a href='/service/04'>사업 컨설팅</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -47,7 +47,7 @@ export default function Service03(){
                     </div>
                     
                     <div className='service__con fade-in-self'>
-                        <img className='service__img-box' src='../img/img03.jpg' />
+                        <img className='service__img-box' src='/img/img03.jpg' />
                         <div className='service__txt'>
                             저희의 마케팅 철학은 다음과 같습니다. '고객님이 마케팅이 필요없는 수준까지 마케팅을 해드리자' 이게 어떤 의미인지 궁금해하시는 분들이 계실텐데요. 바로, 인위적인 홍보 없이도 자연스럽게 사업이 잘 되도록 도와드리겠다는 뜻이죠.
                             <br/><br/>

@@ -10,14 +10,14 @@ export default function Service01(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{backgroundImage: 'url(../img/test04.jpg)'}}>
+                <div className='detail-page__banner-con' style={{backgroundImage: 'url(/img/test04.jpg)'}}>
                     <div>SERVICE</div>
                 </div>
 
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
                         <li className='detail-page__btn-home'>
-                            <a href={process.env.PUBLIC_URL + '/'}>
+                            <a href='/'>
                                 <span class="material-symbols-outlined">
                                     home
                                 </span>
@@ -30,10 +30,10 @@ export default function Service01(){
                             <a>홈페이지 제작&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href={process.env.PUBLIC_URL + '/service/01'}>홈페이지 제작</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/02'}>앱 개발</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/03'}>온라인 마케팅</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/04'}>사업 컨설팅</a></li>
+                                <li><a href='/service/01'>홈페이지 제작</a></li>
+                                <li><a href='/service/02'>앱 개발</a></li>
+                                <li><a href='/service/03'>온라인 마케팅</a></li>
+                                <li><a href='/service/04'>사업 컨설팅</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -47,7 +47,7 @@ export default function Service01(){
                     </div>
                     
                     <div className='service__con fade-in-self'>
-                        <img className='service__img-box' src='../img/it01.jpg' />
+                        <img className='service__img-box' src='/img/it01.jpg' />
                         <div className='service__txt'>
                             이제 사람들은 오프라인보다 온라인 활동에 더욱 친숙하게 되었습니다. 따라서 홈페이지는 회사를 나타내는 명함 이상의 가치를 가지고 있는데요. 소비자는 홈페이지를 통해 브랜드의 신뢰감과 호감을 가지기도 합니다.
                             <br/><br/>

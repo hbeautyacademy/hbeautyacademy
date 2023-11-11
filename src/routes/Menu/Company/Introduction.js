@@ -15,14 +15,14 @@ export default function Introduction(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{backgroundImage: `url('../img/test05.jpg')`}}>
+                <div className='detail-page__banner-con' style={{backgroundImage: `url('/img/test05.jpg')`}}>
                     <div>COMPANY</div>
                 </div>
                 
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
                         <li className='detail-page__btn-home'>
-                            <a href={process.env.PUBLIC_URL + '/'}>
+                            <a href='/'>
                                 <span class="material-symbols-outlined">
                                     home
                                 </span>
@@ -35,8 +35,8 @@ export default function Introduction(){
                             <a>회사소개&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href={process.env.PUBLIC_URL + '/company/introduction'}>회사소개</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/company/ourservice'}>서비스안내</a></li>
+                                <li><a href='/company/introduction'>회사소개</a></li>
+                                <li><a href='/company/ourservice'>서비스안내</a></li>
                             </ul>
                         </li>
                     </ul>

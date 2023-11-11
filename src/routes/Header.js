@@ -46,28 +46,28 @@ export default function Header(props){
                     {/* 메뉴 */}
                     <ul className='header__category-con'>
                         <li>
-                            <a href={process.env.PUBLIC_URL + '/'}>HOME</a>
+                            <a href='/'>HOME</a>
                         </li>
                         <li>
                             <a onClick={() => showSubMenu(1)}>COMPANY</a>
                             <ul className={`header__category-sub-con + ${clickMenu == 1 ? "block" : "" }`}>
-                                <li><a href={process.env.PUBLIC_URL + '/company/introduction'}>회사소개</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/company/ourservice'}>서비스안내</a></li>
+                                <li><a href='/company/introduction'>회사소개</a></li>
+                                <li><a href='/company/ourservice'>서비스안내</a></li>
                             </ul>
                         </li>
                         <li>
                             <a onClick={() => showSubMenu(2)}>SERVICE</a>
                             <ul className={`header__category-sub-con + ${clickMenu == 2 ? "block" : "" }`}>
-                                <li><a href={process.env.PUBLIC_URL + '/service/01'}>홈페이지 제작</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/02'}>앱 개발</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/03'}>온라인 마케팅</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/service/04'}>사업 컨설팅</a></li>
+                                <li><a href='/service/01'>홈페이지 제작</a></li>
+                                <li><a href='/service/02'>앱 개발</a></li>
+                                <li><a href='/service/03'>온라인 마케팅</a></li>
+                                <li><a href='/service/04'>사업 컨설팅</a></li>
                             </ul>
                         </li>
                         <li>
                             <a onClick={() => showSubMenu(3)}>PORTFOLIO</a>
                             <ul className={`header__category-sub-con + ${clickMenu == 3 ? "block" : "" }`}>
-                                <li><a href={process.env.PUBLIC_URL + '/portfolio/portfolio'}>포트폴리오</a></li>
+                                <li><a href='/portfolio/portfolio'>포트폴리오</a></li>
                                 <li><a onClick={() => {alert('준비중 입니다')}}>유튜브</a></li>
                                 <li><a onClick={() => {alert('준비중 입니다')}}>인스타그램</a></li>
                                 <li><a onClick={() => {alert('준비중 입니다')}}>블로그</a></li>
@@ -76,8 +76,8 @@ export default function Header(props){
                         <li>
                             <a onClick={() => showSubMenu(4)}>REVIEW</a>
                             <ul className={`header__category-sub-con + ${clickMenu == 4 ? "block" : "" }`}>
-                                <li><a href={process.env.PUBLIC_URL + '/review/reason'}>감동의이유</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/review/review'}>후기모음</a></li>
+                                <li><a href='/review/reason'>감동의이유</a></li>
+                                <li><a href='/review/review'>후기모음</a></li>
                             </ul>
                         </li>
                         <li>

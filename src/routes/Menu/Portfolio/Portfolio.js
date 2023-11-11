@@ -10,14 +10,14 @@ export default function Portfolio(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{background: 'url(../img/test09.jpg)'}}>
+                <div className='detail-page__banner-con' style={{background: 'url(/img/test09.jpg)'}}>
                     <div>PORTFOLIO</div>
                 </div>
 
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
                         <li className='detail-page__btn-home'>
-                            <a href={process.env.PUBLIC_URL + '/'}>
+                            <a href='/'>
                                 <span class="material-symbols-outlined">
                                         home
                                 </span>
@@ -30,7 +30,7 @@ export default function Portfolio(){
                             <a>포트폴리오&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href={process.env.PUBLIC_URL + '/portfolio/portfolio'}>포트폴리오</a></li>
+                                <li><a href='/portfolio/portfolio'>포트폴리오</a></li>
                                 <li><a onClick={() => {alert('준비중 입니다')}}>유튜브</a></li>
                                 <li><a onClick={() => {alert('준비중 입니다')}}>인스타그램</a></li>
                                 <li><a onClick={() => {alert('준비중 입니다')}}>블로그</a></li>
@@ -70,7 +70,7 @@ function GridItem(props){
     return (
         <>
             <li className='portfolio__grid-item'>
-                <div className='portfolio__img-box' style={{backgroundImage:'url(../img/it' + props.a + '.jpg)'}} ></div>
+                <div className='portfolio__img-box' style={{backgroundImage:'url(/img/it' + props.a + '.jpg)'}} ></div>
             </li>    
         </>
     )

@@ -120,7 +120,7 @@ export default function Intro(){
     
     return (
         <>
-            <div className='intro-spot' style={{backgroundImage: `url('./img/it02.jpg')`}}>
+            <div className='intro-spot' style={{backgroundImage: `url('/img/it02.jpg')`}}>
                 <div className='intro-spot__con'>
 
                     <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.6)'}}></div>
@@ -170,7 +170,7 @@ export default function Intro(){
                 </div>
                 <div className='intro-brand__img-wrap'>
                         <div className={`intro-brand__img slide-in00  + ${useScroll('.intro-brand__img-wrap', 0.85).isShow ? 'slide-in01' : ''}`}
-                         style={{backgroundImage: 'url(./img/it05.jpg)',
+                         style={{backgroundImage: 'url(/img/it05.jpg)',
                          backgroundPositionY: (500 + useScroll('.intro-brand__img', 0.90).stateY * 0.85) + 'px' 
                          }}></div>
                 </div>
@@ -190,7 +190,7 @@ export default function Intro(){
                             + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.85).isShow ? 'up--end1-mo' : ''}`}
                             >
                                 <div className='intro-detail__img-wrap-mo'>
-                                    <img src= './img/it12.jpg' decoding="async"/>
+                                    <img src= '/img/it12.jpg' decoding="async"/>
                                 </div>
                                 <div className='intro-detail__content-txt-title '>
                                     소비자의 마음을 움직이다
@@ -206,7 +206,7 @@ export default function Intro(){
                             + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.85).isShow ? 'up--end1-mo' : ''}`}
                             >
                                 <div className='intro-detail__img-wrap-mo'>
-                                    <img src= './img/it14.jpg' decoding="async"/>
+                                    <img src= '/img/it14.jpg' decoding="async"/>
                                 </div>
                                 <div className='intro-detail__content-txt-title'>
                                     빠른 제작, 완성도 높은 결과
@@ -221,7 +221,7 @@ export default function Intro(){
                             + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.85).isShow ? 'up--end1-mo' : ''}`}
                             >
                                 <div className='intro-detail__img-wrap-mo'>
-                                    <img src= './img/it08.jpg' decoding="async"/>
+                                    <img src= '/img/it08.jpg' decoding="async"/>
                                 </div>
                                 <div className='intro-detail__content-txt-title'>
                                     꼼꼼한 유지보수 시스템
@@ -233,7 +233,7 @@ export default function Intro(){
                             <div className={`intro-detail__content-txt-item + ${useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65, 0.35).isShow ? 'opacity-1' : 'opacity-point3'}
                             + display-none-mo`}>
                                 <div className='intro-detail__img-wrap-mo'>
-                                    <img src= './img/it07.jpg' decoding="async"/>
+                                    <img src= '/img/it07.jpg' decoding="async"/>
                                 </div>
                                 <div className='intro-detail__content-txt-title'>
                                     업종에 최적화된 홈페이지
@@ -243,20 +243,20 @@ export default function Intro(){
                                 </div>
                             </div>
                             <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-detail .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
-                                <a href={process.env.PUBLIC_URL + '/company/ourservice'}>+ more</a>
+                                <a href='/company/ourservice'>+ more</a>
                             </div>
                          </div>
                          <div className='intro-detail__content-img-con'>
                             <div className='intro-detail__triangle'></div>
                             <div className='intro-detail__content-img'>
-                                <img src= './img/it12.jpg' decoding="async"/>
-                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? './img/it14.jpg' : ''} decoding="async"
+                                <img src= '/img/it12.jpg' decoding="async"/>
+                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? '/img/it14.jpg' : ''} decoding="async"
                                 style={{opacity: useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? '1' : '0'}}
                                 />
-                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65).isShow ? './img/it08.jpg' : ''} decoding="async"
+                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65).isShow ? '/img/it08.jpg' : ''} decoding="async"
                                 style={{opacity: useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65).isShow ? '1' : '0'}}
                                 />
-                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65).isShow ? './img/it07.jpg' : ''} decoding="async"
+                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65).isShow ? '/img/it07.jpg' : ''} decoding="async"
                                 style={{opacity: useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65).isShow ? '1' : '0'}}
                                 />
                             </div>
@@ -289,7 +289,7 @@ export default function Intro(){
                         }
                     </ul>
                     <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-pf .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
-                        <a href={process.env.PUBLIC_URL + '/portfolio/portfolio'}>+ more</a>
+                        <a href='/portfolio/portfolio'>+ more</a>
                     </div>
                 </div>
             </div>
@@ -301,7 +301,7 @@ export default function Intro(){
                             실제 후기입니다.
                         </div>
                         <div className={`btn-more up--start display-none-mo + ${useScroll('.intro-review__header-title', 0.90).isShow ? 'up--end1' : ''}`}>
-                            <a href={process.env.PUBLIC_URL + '/review/review'}>+ more</a>
+                            <a href='/review/review'>+ more</a>
                         </div>
                     </div>
                     <ul className='intro-review__txt-con'>
@@ -373,12 +373,12 @@ export default function Intro(){
                         </li>
                     </ul>
                     <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-review .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
-                        <a href={process.env.PUBLIC_URL + '/review/review'}>+ more</a>
+                        <a href='/review/review'>+ more</a>
                     </div>
                 </div>
             </div>
             <div className='intro-img-wrap'>
-                <img className={`intro-img img-position-before + ${useScroll('.intro-img', 0.90).isShow ? 'img-position-after' : ''}`} src= {`./img/img10.jpg`} decoding="async" />
+                <img className={`intro-img img-position-before + ${useScroll('.intro-img', 0.90).isShow ? 'img-position-after' : ''}`} src= {`/img/img10.jpg`} decoding="async" />
                 <div className={`intro-img__txt fade-in00 + ${useScroll('.intro-img__txt', 0.90).isShow ? 'fade-in01' : ''}`}>
                         이제<br/>
                         당신도<br/>
@@ -415,7 +415,7 @@ function GridItem(props){
                 transitionDelay: (props.i * 0.2) + 's',
                 transitionDuration: '2s'}}                
             >
-                <img className='intro-pf__box-img' src= {`./img/bd0${props.i + 1}.jpg`} decoding="async"/><img />
+                <img className='intro-pf__box-img' src= {`/img/bd0${props.i + 1}.jpg`} decoding="async"/><img />
                 <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div>
                 <div className='intro-pf__grid-sub'>강렬한 색감에 동적인 기능을 추가하여 유저의 반응도를 높인 사례</div>
             </li>

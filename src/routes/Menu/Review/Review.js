@@ -11,14 +11,14 @@ export default function Review(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{background: 'url(../img/test02.jpg)'}}>
+                <div className='detail-page__banner-con' style={{background: 'url(/img/test02.jpg)'}}>
                     <div>REVIEW</div>
                 </div>
 
                 <div className='detail-page__btn'>
                     <ul className='detail-page__btn-con'>
                         <li className='detail-page__btn-home'>
-                            <a href={process.env.PUBLIC_URL + '/'}>
+                            <a href='/'>
                                 <span class="material-symbols-outlined">
                                     home
                                 </span>
@@ -31,8 +31,8 @@ export default function Review(){
                             <a>후기모음&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href={process.env.PUBLIC_URL + '/review/reason'}>감동의이유</a></li>
-                                <li><a href={process.env.PUBLIC_URL + '/review/review'}>후기모음</a></li>
+                                <li><a href='/review/reason'>감동의이유</a></li>
+                                <li><a href='/review/review'>후기모음</a></li>
                             </ul>
                         </li>
                     </ul>

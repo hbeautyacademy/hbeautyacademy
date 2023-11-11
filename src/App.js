@@ -10,7 +10,7 @@ import {
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <div>
       <Header />
       <Routes>
         <Route path="/" element={<Intro />} />
@@ -40,7 +40,7 @@ function App() {
       </Routes>
 
       <Footer />
-    </BrowserRouter>
+    </div>
   );
 }
 
