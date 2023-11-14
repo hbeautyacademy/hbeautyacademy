@@ -782,11 +782,11 @@ a {
 }
 
 .intro-brand__img {
-  position: fixed;
+  /* position: fixed; */
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 @media (max-width:834px) {  
@@ -804,6 +804,7 @@ a {
   height: 400px;
   position: relative;
   overflow: hidden;
+  z-index: 100;
 }
 
 
@@ -819,6 +820,7 @@ a {
   /* height: 400px; */
   /* position: relative; */
   overflow-y: hidden;
+  z-index: 100;
 }
 
 .fixed-bg {
