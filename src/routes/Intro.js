@@ -148,10 +148,11 @@ export default function Intro(){
                         </div>
                     </div>
                     
-                    <div class="intro-spot__scroll" style={{
+                    <div className="intro-spot__scroll" style={{
                     opacity: spotText ? '1' : '0',
                     transition: `all 1s ${(lengthTextSub03 * 0.03 + 0.3)}s cubic-bezier(0, 0, 0.17, 0.93)`
-                    }}></div>
+                    }}>
+                    </div>
 
                 </div>
             </div>
@@ -176,12 +177,6 @@ export default function Intro(){
                             }}></div>
                     </div>
                 </div>
-                {/* <div className='intro-brand__img-wrap'>
-                        <div className={`intro-brand__img slide-in00  + ${useScroll('.intro-brand__img-wrap', 0.85).isShow ? 'slide-in01' : ''}`}
-                         style={{backgroundImage: 'url(/img/it05.jpg)',
-                         backgroundPositionY: (500 + useScroll('.intro-brand__img', 0.90).stateY * 0.85) + 'px' 
-                         }}></div>
-                </div> */}
             </div>
             <div className='intro-detail'>
                 <div className='intro-detail__con'>
