@@ -599,7 +599,7 @@ a {
   .intro-spot__txt-title > span {
     font-size: 70px;
   }
-  .intro-spot__scroll {
+  /* .intro-spot__scroll {
     top: 83%;
     right: 8%;
     width: 40px;
@@ -627,7 +627,7 @@ a {
       opacity: 0;
       top: 40%;
     }
-  }
+  } */
   
 }
 
