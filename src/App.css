@@ -625,43 +625,23 @@ a {
     width: 8px;
     height: 8px;
     animation: scrolldown 2s infinite;
+    animation-delay: 5s;
   }
   @keyframes scrolldown {
-    from {
+    0% {
+      opacity: 0;
+      top: 75%;
+    }  
+    10% {
       opacity: 1;
       top: 75%;
     }  
-    to {
+    100% {
       opacity: 0;
       top: 40%;
     }
-  }
-  
+  } 
 }
-
-
-
-.intro-spot__arrow {
-  position: absolute;
-  left: 50%;
-  bottom: 100px;
-  translate: -25px;
-}
-
-.intro-spot__arrow > img {  
-  animation: arrowdown 0.5s ease-in-out infinite alternate;
-}
-
-@keyframes arrowdown{
-  from{
-    opacity: 0.1;
-  }
-  to{
-    opacity: 0.3;
-    transform: translateY(10px);
-  }
-}
-
 
 
 
