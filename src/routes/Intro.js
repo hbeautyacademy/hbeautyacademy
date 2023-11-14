@@ -169,19 +169,19 @@ export default function Intro(){
 
                 </div>
                 <div className='fixed-bg-wrap-wrap'>
-                    <div className={`fixed-bg-wrap slide-in00  + ${useScroll('.fixed-bg-wrap', 0.85).isShow ? 'slide-in01' : ''}`}>
+                    <div className={`fixed-bg-wrap`}>
                             <div className={`fixed-bg`}
                             style={{backgroundImage: 'url(/img/it05.jpg)',
-                            // backgroundPositionY: (0 + useScroll('.fixed-bg', 0.90).stateY * 0.3) + 'px' 
+                            backgroundPositionY: (0 + useScroll('.fixed-bg', 0.90).stateY * 0.3) + 'px' 
                             }}></div>
                     </div>
                 </div>
-                {/* <div className='intro-brand__img-wrap'>
+                <div className='intro-brand__img-wrap'>
                         <div className={`intro-brand__img slide-in00  + ${useScroll('.intro-brand__img-wrap', 0.85).isShow ? 'slide-in01' : ''}`}
                          style={{backgroundImage: 'url(/img/it05.jpg)',
                          backgroundPositionY: (500 + useScroll('.intro-brand__img', 0.90).stateY * 0.85) + 'px' 
                          }}></div>
-                </div> */}
+                </div>
             </div>
             <div className='intro-detail'>
                 <div className='intro-detail__con'>
