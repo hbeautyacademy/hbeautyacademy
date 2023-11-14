@@ -172,7 +172,7 @@ export default function Intro(){
                     <div className={`fixed-bg-wrap slide-in00  + ${useScroll('.fixed-bg-wrap', 0.85).isShow ? 'slide-in01' : ''}`}>
                             <div className={`fixed-bg`}
                             style={{backgroundImage: 'url(/img/it05.jpg)',
-                            transform: `translateY(${(0 + (useScroll('.fixed-bg-wrap', 0).stateY * 0.1)) + 'px'})` 
+                            transform: `translateY(${(-100 + (useScroll('.fixed-bg-wrap', 0).stateY * 0.1)) + 'px'})` 
                             }}></div>
                     </div>
                 </div>
