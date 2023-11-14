@@ -782,10 +782,11 @@ a {
 }
 
 .intro-brand__img {
+  position: fixed;
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 @media (max-width:834px) {  
@@ -803,7 +804,6 @@ a {
   height: 400px;
   position: relative;
   overflow: hidden;
-  -webkit-transform: translateZ(0); /* fixed일 때 모바일에서 스크롤시 흔들림 해결 */
 }
 
 
@@ -819,7 +819,6 @@ a {
   /* height: 400px; */
   /* position: relative; */
   overflow-y: hidden;
-  -webkit-transform: translateZ(0); /* fixed일 때 모바일에서 스크롤시 흔들림 해결 */
 }
 
 .fixed-bg {
