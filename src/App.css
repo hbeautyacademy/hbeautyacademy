@@ -611,7 +611,7 @@ a {
       transform: translateX(-50%);
       background-color: #fff;
       border-radius: 50%;*/
-      content: '/';
+      content: '/'; 
       width: 8px;
       height: 8px;
       animation: scrolldown 2s infinite;
