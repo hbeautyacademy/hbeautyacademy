@@ -800,12 +800,11 @@ a {
 
 .fixed-bg-wrap-wrap {
   width: 100%;
-  /* height: 100vh; */
-  height: 400px;
+  height: 100vh;
+  /* height: 400px; */
   position: relative;
-  -webkit-transform: translateZ(0); /* fixed일 때 모바일에서 스크롤시 흔들림 해결 */  
+  -webkit-transform: translateZ(0); /* fixed일 때) 모바일 스크롤시 떨림 해결(1/2) */  
 }
-
 
 .fixed-bg-wrap {  
   margin-top: 120px;
@@ -814,16 +813,13 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  /* width: 92vw; */
-  /* height: 400px; */
-  /* position: relative; */
+  /* height: 100%; */
+  height: 400px;
   overflow-y: hidden;
 }
 
 .fixed-bg {
   position: fixed;
-  /* background-attachment: fixed; */
   display: block;
   top: 0;
   left: 0;
@@ -832,8 +828,7 @@ a {
   background-size: cover;
   background-position-x: center;
   background-repeat: no-repeat;
-  -webkit-transform: translateZ(0); /* fixed일 때 모바일에서 스크롤시 흔들림 해결 */
-
+  -webkit-transform: translateZ(0); /* fixed일 때) 모바일에서 스크롤시 떨림 해결(2/2) */
 }
 
 @media (max-width:834px) {
