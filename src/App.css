@@ -793,6 +793,9 @@ a {
     margin-top: 50px;
     height: 280px;
   }
+  .intro-brand__img {
+    background-size: 400px 300px;
+  }
 }
 
 /* -------------------------------------------------  */
@@ -807,7 +810,7 @@ a {
 
 .fixed-bg-wrap {  
   margin-top: 120px;
-  clip: rect(0, auto, auto, 0);
+  clip: rect(0, auto, auto, 0)x;
   position: absolute;
   top: 0;
   left: 0;
