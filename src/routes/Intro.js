@@ -152,6 +152,7 @@ export default function Intro(){
                     opacity: spotText ? '1' : '0',
                     transition: `all 1s ${(lengthTextSub03 * 0.03 + 0.3)}s cubic-bezier(0, 0, 0.17, 0.93)`
                     }}>
+                        <div className='intro-spot__dot'></div>
                     </div>
 
                 </div>
