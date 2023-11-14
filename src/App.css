@@ -625,17 +625,17 @@ a {
     width: 8px;
     height: 8px;
     animation: scrolldown 2s infinite;
-    animation-delay: 5s;
+    animation-duration: 1s;
   }
   @keyframes scrolldown {
     0% {
       opacity: 0;
       top: 75%;
     }  
-    10% {
+    /* 20% {
       opacity: 1;
       top: 75%;
-    }  
+    }   */
     100% {
       opacity: 0;
       top: 40%;
