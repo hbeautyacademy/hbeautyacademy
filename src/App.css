@@ -599,20 +599,19 @@ a {
   .intro-spot__txt-title > span {
     font-size: 70px;
   }
-  /* .intro-spot__scroll {
+  .intro-spot__scroll {
     top: 83%;
     right: 8%;
     width: 40px;
     height: 70px;
     &::before {
-      content: '';
+      /* content: '';
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       background-color: #fff;
-      border-radius: 50%;
-  
-
+      border-radius: 50%;*/
+      content: '/';
       width: 8px;
       height: 8px;
       animation: scrolldown 2s infinite;
@@ -627,7 +626,7 @@ a {
       opacity: 0;
       top: 40%;
     }
-  } */
+  }
   
 }
 
