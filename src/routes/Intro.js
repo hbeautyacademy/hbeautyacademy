@@ -1,15 +1,33 @@
 import { useEffect, useState } from 'react';
 import {useScroll} from '../components/useScroll/useScroll';
 import './../App.css';
+import axios from 'axios';
 
 
 export default function Intro(){
+
+
+    const _id = '656eeb25e27c9004fa1ecf71';
+    useEffect(() => {
+        const axiosGetAd = () => {
+            axios
+            .get(`http://0.0.0.0:8000/items/${_id}`)
+            .then(response => {
+                console.log('success', response);
+                // setData(response.data);
+            })
+            .catch(err => {
+                console.log('fail', err);
+            })
+        }
+        axiosGetAd();
+    }, [])
+
     // 인트로 스포트라이트 부분 텍스트 효과
     const [spotText, setSpotText] = useState(null);
     const spotTextData = [
         'GO  FURTHER,',
-        'CORES',
-        ''
+        'CORES'
     ]
     const lengthTextSub01 = spotTextData[0].split("").length; // 첫째줄까지 길이
     const lengthTextSub02 = lengthTextSub01 + spotTextData[1].split("").length; // 둘째줄 길이
@@ -154,7 +172,6 @@ export default function Intro(){
                     }}>
                         <div className='intro-spot__dot'></div>
                     </div>
-
                 </div>
             </div>
 

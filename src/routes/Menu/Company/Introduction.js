@@ -23,9 +23,7 @@ export default function Introduction(){
                     <ul className='detail-page__btn-con'>
                         <li className='detail-page__btn-home'>
                             <a href='/'>
-                                <span class="material-symbols-outlined">
-                                    home
-                                </span>
+                                <img src= '/icons/home.svg' decoding="async"/>
                             </a>
                         </li>
                         {/* 현재 페이지 메인메뉴 */}
