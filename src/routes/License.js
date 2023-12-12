@@ -11,15 +11,15 @@ export default function License(){
         },
         {
             name: 'React Router',
-            url: 'https://github.com/remix-run/react-router',
+            url: 'https://github.com/remix-run/react-router/blob/main/LICENSE.md',
             type: 'MIT LICENSE',
-            writer: 'Copyright (c) 2015-present, Ryan Florence, Michael Jackson'
+            writer: 'Copyright (c) React Training LLC 2015-2019 Copyright (c) Remix Software Inc. 2020-2021 Copyright (c) Shopify Inc. 2022-2023'
         },
         {
-            name: 'Single Page Apps for GitHub Pages',
-            url: 'https://github.com/rafgraph/spa-github-pages',
+            name: 'Axios',
+            url: 'https://github.com/axios/axios/blob/v1.x/LICENSE',
             type: 'MIT LICENSE',
-            writer: 'Copyright (c) 2016 Rafael Pedicini'
+            writer: '(c) 2014-present Matt Zabriskie & Collaborators'
         }
     ]
 
@@ -34,9 +34,7 @@ export default function License(){
                     <ul className='detail-page__btn-con'>
                         <li className='detail-page__btn-home'>
                             <a href={process.env.PUBLIC_URL + '/'}>
-                                <span class="material-symbols-outlined">
-                                        home
-                                </span>
+                                <img src= '/icons/home.svg' decoding="async"/>
                             </a>
                         </li>
                         {/* 현재 페이지 메인메뉴 */}

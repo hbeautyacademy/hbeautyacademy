@@ -1,29 +1,11 @@
 import { useEffect, useState } from 'react';
 import {useScroll} from '../components/useScroll/useScroll';
 import './../App.css';
-import axios from 'axios';
 
 
 export default function Intro(){
 
-
-    const _id = '656eeb25e27c9004fa1ecf71';
-    useEffect(() => {
-        const axiosGetAd = () => {
-            axios
-            .get(`http://0.0.0.0:8000/items/${_id}`)
-            .then(response => {
-                console.log('success', response);
-                // setData(response.data);
-            })
-            .catch(err => {
-                console.log('fail', err);
-            })
-        }
-        axiosGetAd();
-    }, [])
-
-    // 인트로 스포트라이트 부분 텍스트 효과
+    // [Effect] text effect in intro-spot
     const [spotText, setSpotText] = useState(null);
     const spotTextData = [
         'GO  FURTHER,',
@@ -45,28 +27,28 @@ export default function Intro(){
 
     
     // ------------------------------------------------------------------
-    // [event] 브랜드 설명 부분에 브랜드를 타이핑
+    // [Effect] typing text effect in intro-brand
     const typingTextData = [
-        '코어스' + '  ', // 마지막에 띄어쓰기 2번 이상하면 그만큼 완성단어를 오래 보여줌
+        '코어스' + '  ',
         'CORES' + '  '
     ]
     let [typingTxt, setTypingTxt] = useState('')
-    let i = 0; // 함수 반복횟수
-    let j = 0; // textData 배열 순서
-    let txt = ''; // HTML에 입력될 내용
+    let i = 0; // Number of repetitons
+    let j = 0; // Arrangement order of typingTextData
+    let txt = '';
     const typing = () => {
-        if (i < typingTextData[j].length) { // 해당 문자가 조합되기 전
+        if (i < typingTextData[j].length) { // Before assembling text
             const string = typingTextData[j][i++]
             setTypingTxt(txt);
             txt = txt + string;
-        } else { // 해당 문자가 조합된 후
+        } else { // If text is already assembled
             setTypingTxt(txt);
-            // txt = ''; // 제거 옵션1. 한번에 지워지게
-            txt = txt.slice(0, -1); // 제거 옵션2. 한글자씩 지워지게
-            if (txt.length == 0) { // 텍스트 내용이 모두 사라진 경우
+            // txt = ''; // Obtion1. delete text 'in once'
+            txt = txt.slice(0, -1); // Obtion2. delete one letter at a time
+            if (txt.length == 0) { // If text is already deleted
                 i = 0; 
                 if (j == 0) {
-                    j = 1; // 배열 순서 변경
+                    j = 1; // Change arrangement order to next
                 } else {
                     j = 0;
                 }
@@ -74,26 +56,25 @@ export default function Intro(){
         }
     }
     useEffect(() => {
-        const timer_typing = setInterval(typing, 150);        
-        // const timer_moveBrandTxt = setInterval(()=>{window.addEventListener('scroll', moveBrandTxt);}, 100);
+        const timer_typing = setInterval(typing, 150);
         return () => {
             clearInterval(timer_typing);
         };
     }, [])
 
     // --------------------------------------------------------
-    // [event] PC 마우스 스와이핑
-    const [startX, setStartX] = useState(null); // 클릭한 시점
-    const [lengthX, setLengthX] = useState(null); // 이번에 드래그길이
-    const [preLengthX, setPreLengthX] = useState(null) // 지난번 드래그길이
-    const [onClick, setOnClick] = useState(false); // 클릭여부
+    // [Event] Mouse touching for PC
+    const [startX, setStartX] = useState(null); // point of click
+    const [lengthX, setLengthX] = useState(null); // length of drag in current time
+    const [preLengthX, setPreLengthX] = useState(null) // length of drag in previous time
+    const [onClick, setOnClick] = useState(false); // check click
 
     const mouseDown = (e) => {
         setOnClick(true);
         setStartX(e.clientX);
     }
     const mouseMove = (e) => { 
-        let totalLengthX = preLengthX + e.clientX - startX // 최종 드래그길이
+        let totalLengthX = preLengthX + e.clientX - startX // total length of drag
         if (onClick == true) { // 이미지가 화면 밖 벗어남 방지
             if (totalLengthX >= 0) {
                 totalLengthX = 0
@@ -110,14 +91,14 @@ export default function Intro(){
         setPreLengthX(lengthX) // 
     }
 
-    // [event] 모바일 터치 스와이핑
+    // [Event] Mouse touching for Mobile
     const touchStart = (e) => {
         setOnClick(true);
         setStartX(e.changedTouches[0].clientX);
     }
 
     const touchMove = (e) => {
-        let totalLengthX = preLengthX + e.changedTouches[0].clientX - startX // 최종 드래그길이
+        let totalLengthX = preLengthX + e.changedTouches[0].clientX - startX // total length of drag
         if (onClick == true) { // 이미지가 화면 밖 벗어남 방지
             if (totalLengthX >= 0) {
                 totalLengthX = 0
@@ -328,7 +309,6 @@ export default function Intro(){
                     <ul className='intro-review__txt-con'>
                         <li className={`intro-review__txt-item up--start + ${useScroll('.intro-review__txt-item:nth-child(1)', 0.90).isShow ? 'up--end1' : ''}`}>
                             <div className='intro-review__stars'>
-                                {/* test */}
                                 <span class="material-symbols-outlined">
                                     star
                                 </span>
@@ -350,7 +330,6 @@ export default function Intro(){
                         </li>
                         <li className={`intro-review__txt-item up--start + ${useScroll('.intro-review__txt-item:nth-child(2)', 0.90).isShow ? 'up--end1' : ''}`}>
                             <div className='intro-review__stars'>
-                                {/* test */}
                                 <span class="material-symbols-outlined">
                                     star
                                 </span>
@@ -372,7 +351,6 @@ export default function Intro(){
                         </li>
                         <li className={`intro-review__txt-item up--start + ${useScroll('.intro-review__txt-item:nth-child(3)', 0.90).isShow ? 'up--end1' : ''}`}>
                             <div className='intro-review__stars'>
-                                {/* test */}
                                 <span class="material-symbols-outlined">
                                     star
                                 </span>

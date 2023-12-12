@@ -37,8 +37,6 @@ export default function Header(props){
                 <div className='header__con'>
                     {/* 로고 */}
                     <ul className='header__logo-con'>
-                        {/* <li className='header__logo'><a href='/'>H ROAD</a></li> */}
-                        {/* <li className='header__hamburger'><a onClick={showList}>{clickHamburger ? "-" : "+"}</a></li> */}
                         <li className='header__hamburger'
                         style={{transform : clickHamburger ? "rotate(45deg)" : "rotate(0)"}}><a onClick={showList}>+</a></li>
                     </ul>
