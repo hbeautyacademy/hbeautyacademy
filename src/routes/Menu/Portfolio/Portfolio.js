@@ -11,7 +11,7 @@ export default function Portfolio(){
         <>
             <div className='detail-page'>
                 <div className='detail-page__banner-con' style={{background: 'url(/img/test09.jpg)'}}>
-                    <div>PORTFOLIO</div>
+                    <div>PORTFOLIO</div> 
                 </div>
 
                 <div className='detail-page__btn'>
