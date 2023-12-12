@@ -47,21 +47,8 @@ export default function Review(){
                         <ul className='review-page__txt-con'>
                             <li className='review-page__txt-item'>
                                 <div className='review-page__stars'>
-                                    {/* test */}
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
+                                    <span>
+                                        &#9733;&#9733;&#9733;&#9733;&#9733;
                                     </span>
                                 </div>
                                 <div className='review-page__txt-title'>"가격, 속도, 완성도까지 생각한다면 정답은 여기 하나인 것 같네요"</div>
@@ -69,21 +56,8 @@ export default function Review(){
                             </li>
                             <li className='review-page__txt-item'>
                                 <div className='review-page__stars'>
-                                    {/* test */}
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
+                                    <span>
+                                        &#9733;&#9733;&#9733;&#9733;&#9733;
                                     </span>
                                 </div>
                                 <div className='review-page__txt-title'>"홈페이지 제작은 어려워 보여서 막막했는데 친절한 대표님을 만나서 편하게 상담받았어요. 덕분에 고객 연락이 더 늘었습니다!"</div>
@@ -91,21 +65,8 @@ export default function Review(){
                             </li>
                             <li className='review-page__txt-item'>
                                 <div className='review-page__stars'>
-                                    {/* test */}
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        star
+                                    <span>
+                                        &#9733;&#9733;&#9733;&#9733;&#9733;
                                     </span>
                                 </div>
                                 <div className='review-page__txt-title'>"아는 사장님을 통해서 이곳을 소개를 받았습니다. 결과를 보니 여기서 하길 잘했네요. 디테일까지 완벽하게 해주셔서 감사합니다"</div>
