@@ -330,7 +330,7 @@ export default function Intro(){
                         </li>
                     </ul>
                     <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-pf .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
-                        <a href='/portfolio/portfolio'>+ more</a>
+                        <a href='/company/introduction'>+ more</a>
                     </div>
                 </div>
             </div>
@@ -341,7 +341,7 @@ export default function Intro(){
                             H beauty academy를<br/>선택해야하는 이유
                         </div>
                         <div className={`btn-more up--start display-none-mo + ${useScroll('.intro-review__header-title', 0.90).isShow ? 'up--end1' : ''}`}>
-                            <a href='/review/review'>+ more</a>
+                            <a href='/company/introduction'>+ more</a>
                         </div>
                     </div>
                     <ul className='intro-review__txt-con'>
