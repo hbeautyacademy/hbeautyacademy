@@ -12,8 +12,8 @@ export default function OurService(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{backgroundImage: 'url(/img/test05.jpg)'}}>
-                    <div>H뷰티소개</div>
+                <div className='detail-page__banner-con' style={{backgroundImage: 'url(/img/배경01.png)'}}>
+                    <div style={{color:"#111"}}>H뷰티소개</div>
                 </div>
 
                 <div className='detail-page__btn'>

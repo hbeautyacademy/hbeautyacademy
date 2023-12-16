@@ -119,7 +119,7 @@ export default function Intro(){
     
     return (
         <>
-            <div className='intro-spot' style={{backgroundImage: `url('/img/메인02.jpg')`}}>
+            <div className='intro-spot' style={{backgroundImage: `url('/img/메인03.png')`}}>
                 <div className='intro-spot__con'>
 
                     <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.6)'}}></div>
@@ -331,6 +331,15 @@ export default function Intro(){
                             <img className='intro-pf__box-img' src= {`/img/포트폴리오05.png`} decoding="async"/><img />
                             {/* <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div> */}
                             <div className='intro-pf__grid-sub'>4년제/2년제 대학교 정보<br/>4년제 실기과정<br/>2년제 대학교 준비과정</div>
+                        </li>
+                        <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
+                            style={{marginTop: (5 * 100) + 'px',
+                            transitionDelay: (5 * 0.2) + 's',
+                            transitionDuration: '2s'}}                
+                        >
+                            <img className='intro-pf__box-img' src= {`/img/포트폴리오06.png`} decoding="async"/><img />
+                            {/* <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div> */}
+                            <div className='intro-pf__grid-sub'></div>
                         </li>
                     </ul>
                     <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-pf .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>

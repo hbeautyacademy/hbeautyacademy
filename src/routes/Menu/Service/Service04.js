@@ -10,8 +10,8 @@ export default function Service04(){
     return(
         <>
             <div className='detail-page'>
-                <div className='detail-page__banner-con' style={{background: 'url(/img/test04.jpg)'}}>
-                    <div>교육과정</div>
+                <div className='detail-page__banner-con' style={{backgroundImage: 'url(/img/배경02.png)'}}>
+                    <div style={{color:'#111'}}>교육과정</div>
                 </div>
 
                 <div className='detail-page__btn'>
