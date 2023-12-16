@@ -119,7 +119,7 @@ export default function Intro(){
     
     return (
         <>
-            <div className='intro-spot' style={{backgroundImage: `url('/img/메인.png')`}}>
+            <div className='intro-spot' style={{backgroundImage: `url('/img/메인02.jpg')`}}>
                 <div className='intro-spot__con'>
 
                     <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.6)'}}></div>
@@ -171,7 +171,7 @@ export default function Intro(){
                 <div className='fixed-bg-wrap-wrap'>
                     <div className={`fixed-bg-wrap slide-in00  + ${useScroll('.fixed-bg-wrap', 0.85).isShow ? 'slide-in01' : ''}`}>
                             <div className={`fixed-bg`}
-                            style={{backgroundImage: 'url(/img/브랜드.png)',
+                            style={{backgroundImage: 'url(/img/브랜드.jpg)',
                             transform: `translateY(${(-100 + (useScroll('.fixed-bg-wrap', 0).stateY * 0.1)) + 'px'})` 
                             }}></div>
                     </div>

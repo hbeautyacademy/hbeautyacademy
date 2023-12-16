@@ -44,7 +44,7 @@ export default function Service01(){
                     </div>
                     
                     <div className='service__con fade-in-self'>
-                        <img className='service__img-box' src='/img/네일.jpg' />
+                        <img className='service__img-box' src='/img/헤어.jpg' />
                         <div className='service__txt'>
                             미용업무는 공중위생분야로서 국민의 건강과 직결되어 있는 중요한 분야로 향후 국가의 산업구조가 제조업에서 서비스업 중심으로 전환되는 4차산업에 수요가 증대되고 있는 산업입니다.분야별로 세분화 및 전문화 되고 있는 세계적인 추세에 맞추어 미용의 업무 중 하나인 헤어미용을 전문인으로 양성하는 과정입니다.
                             <br/><br/>

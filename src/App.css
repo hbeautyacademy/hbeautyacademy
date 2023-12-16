@@ -1481,6 +1481,22 @@ a {
   padding: 50px 0 40px 0;
 }
 
+.introduction__txt > div {
+  margin: 50px 0 30px 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #111;
+}
+
+.introduction__txt > img {
+  margin: 10px auto;
+  max-width: 600px;
+  width: 100%;
+  display: block;
+}
+
+
 @media (max-width: 767px) {
   .introduction__logo-wrap {
     /* margin-top: 120px;
