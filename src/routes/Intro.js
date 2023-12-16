@@ -171,7 +171,11 @@ export default function Intro(){
                 <div className='fixed-bg-wrap-wrap'>
                     <div className={`fixed-bg-wrap slide-in00  + ${useScroll('.fixed-bg-wrap', 0.85).isShow ? 'slide-in01' : ''}`}>
                             <div className={`fixed-bg`}
-                            style={{backgroundImage: 'url(/img/브랜드.jpg)',
+                            style={{backgroundImage: 'url(/img/브랜드06.jpg)',
+                            transform: `translateY(${(-300 + (useScroll('.fixed-bg-wrap', 0).stateY * 0.1)) + 'px'})` 
+                            }}></div>
+                            <div className={`display-block-mo fixed-bg`}
+                            style={{backgroundImage: 'url(/img/브랜드07.jpg)',
                             transform: `translateY(${(-100 + (useScroll('.fixed-bg-wrap', 0).stateY * 0.1)) + 'px'})` 
                             }}></div>
                     </div>
