@@ -364,7 +364,7 @@ export default function Intro(){
                                     &#9733;&#9733;&#9733;&#9733;&#9733;
                                 </span>
                             </div>
-                            <div className='intro-review__txt-title'>"성인취/창업을 위한 단기 속성 국가자격증과정이 가능합니다."</div>
+                            <div className='intro-review__txt-title'>"성인 취&#8901;창업을 위한 단기 속성 국가자격증과정이 가능합니다."</div>
                             <div className='intro-review__txt-sub'>단기국가자격증취득을 위해 포인트레슨과 소수맞춤레슨으로 진행합니다.</div>
                         </li>
                         <li className={`intro-review__txt-item up--start + ${useScroll('.intro-review__txt-item:nth-child(2)', 0.90).isShow ? 'up--end1' : ''}`}>
