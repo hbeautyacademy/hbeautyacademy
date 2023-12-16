@@ -9,8 +9,7 @@ import Service02 from "./Menu/Service/Service02"
 import Service03 from "./Menu/Service/Service03"
 import Service04 from "./Menu/Service/Service04"
 import Portfolio from "./Menu/Portfolio/Portfolio"
-import Review from "./Menu/Review/Review"
-import Reason from "./Menu/Review/Reason"
+import Portfolio2 from "./Menu/Portfolio/Portfolio2"
 
 
 export { 
@@ -19,6 +18,5 @@ export {
         Footer, License,
         Introduction, OurService,
         Service01, Service02, Service03, Service04,
-        Portfolio,
-        Review, Reason
+        Portfolio, Portfolio2
         };

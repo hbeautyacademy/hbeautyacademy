@@ -44,50 +44,42 @@ export default function Header(props){
                     {/* 메뉴 */}
                     <ul className='header__category-con'>
                         <li>
-                            <a href='/'>HOME</a>
+                            <a href='/'>홈</a>
                         </li>
                         <li>
-                            <a onClick={() => showSubMenu(1)}>COMPANY</a>
+                            <a onClick={() => showSubMenu(1)}>H뷰티소개</a>
                             <ul className={`header__category-sub-con + ${clickMenu == 1 ? "block" : "" }`}>
-                                <li><a href='/company/introduction'>회사소개</a></li>
-                                <li><a href='/company/ourservice'>서비스안내</a></li>
+                                <li><a href='/company/introduction'>학원소개</a></li>
+                                <li><a href='/company/ourservice'>과정소개</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a onClick={() => showSubMenu(2)}>SERVICE</a>
+                            <a onClick={() => showSubMenu(2)}>교육과정</a>
                             <ul className={`header__category-sub-con + ${clickMenu == 2 ? "block" : "" }`}>
-                                <li><a href='/service/01'>홈페이지 제작</a></li>
-                                <li><a href='/service/02'>앱 개발</a></li>
-                                <li><a href='/service/03'>온라인 마케팅</a></li>
-                                <li><a href='/service/04'>사업 컨설팅</a></li>
+                                <li><a href='/service/01'>헤어</a></li>
+                                <li><a href='/service/02'>메이크업</a></li>
+                                <li><a href='/service/03'>네일아트</a></li>
+                                <li><a href='/service/04'>피부</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a onClick={() => showSubMenu(3)}>PORTFOLIO</a>
+                            <a onClick={() => showSubMenu(3)}>현장사진</a>
                             <ul className={`header__category-sub-con + ${clickMenu == 3 ? "block" : "" }`}>
-                                <li><a href='/portfolio/portfolio'>포트폴리오</a></li>
-                                <li><a onClick={() => {alert('준비중 입니다')}}>유튜브</a></li>
-                                <li><a onClick={() => {alert('준비중 입니다')}}>인스타그램</a></li>
-                                <li><a onClick={() => {alert('준비중 입니다')}}>블로그</a></li>
+                                <li><a href='/portfolio/portfolio'>학원내부</a></li>
+                                <li><a href='/portfolio/portfolio2'>교육현장</a></li>
+                                <li><a href='https://m.blog.naver.com/PostList.naver?blogId=osanhbeautyacademy&tab=1'>블로그</a></li>
+                                <li><a href='https://www.instagram.com/h__beautyacademy'>인스타그램</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a onClick={() => showSubMenu(4)}>REVIEW</a>
-                            <ul className={`header__category-sub-con + ${clickMenu == 4 ? "block" : "" }`}>
-                                <li><a href='/review/reason'>감동의이유</a></li>
-                                <li><a href='/review/review'>후기모음</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href='https://open.kakao.com/o/srQs41Pf'>CONTACT</a>
+                            <a href='https://open.kakao.com/o/srQs41Pf'>온라인문의</a>
                         </li>
                     </ul>
 
                     {/* sns채널 */}
                     <ul className='header__icon-con'>
-                        <li><a onClick={() => {alert('준비중 입니다')}}>YOUTUBE</a></li>
-                        <li><a onClick={() => {alert('준비중 입니다')}}>BLOG</a></li>
-                        <li><a onClick={() => {alert('준비중 입니다')}}>INSTA</a></li>
+                        <li><a href='https://m.blog.naver.com/PostList.naver?blogId=osanhbeautyacademy&tab=1'>BLOG</a></li>
+                        <li><a href='https://www.instagram.com/h__beautyacademy'>INSTA</a></li>
                     </ul>
 
                 </div>

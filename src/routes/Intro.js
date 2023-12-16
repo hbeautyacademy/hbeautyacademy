@@ -8,8 +8,8 @@ export default function Intro(){
     // [Effect] text effect in intro-spot
     const [spotText, setSpotText] = useState(null);
     const spotTextData = [
-        'GO  FURTHER,',
-        'CORES'
+        'H beauty ',
+        'academy'
     ]
     const lengthTextSub01 = spotTextData[0].split("").length; // 첫째줄까지 길이
     const lengthTextSub02 = lengthTextSub01 + spotTextData[1].split("").length; // 둘째줄 길이
@@ -29,8 +29,8 @@ export default function Intro(){
     // ------------------------------------------------------------------
     // [Effect] typing text effect in intro-brand
     const typingTextData = [
-        '코어스' + '  ',
-        'CORES' + '  '
+        'H beauty academy' + '  ',
+        'H beauty academy' + '  '
     ]
     let [typingTxt, setTypingTxt] = useState('')
     let i = 0; // Number of repetitons
@@ -119,7 +119,7 @@ export default function Intro(){
     
     return (
         <>
-            <div className='intro-spot' style={{backgroundImage: `url('/img/it02.jpg')`}}>
+            <div className='intro-spot' style={{backgroundImage: `url('/img/메인.png')`}}>
                 <div className='intro-spot__con'>
 
                     <div className='bg-gray' style={{backgroundColor:'rgb(0,0,0,0.6)'}}></div>
@@ -162,16 +162,16 @@ export default function Intro(){
                     }}>
                         <div className={`intro-brand__triangle up--start  + ${useScroll('.intro-brand__triangle', 0.90).isShow ? 'up--end1' : ''}`}></div>
                         <span className={`intro-brand__txt-title up--start  + ${useScroll('.intro-brand__triangle', 0.90).isShow ? 'up--end1' : ''}`}>
-                            웹 개발팀,&nbsp;&nbsp;<span className='typing-txt' dangerouslySetInnerHTML={{__html: typingTxt}}></span><span className='display-in-block-pc'>를 소개합니다.</span><span className='display-in-block-mo'>입니다.</span>
+                        꿈을 실현 시키는 곳,&nbsp;&nbsp;<br/><span className='typing-txt' dangerouslySetInnerHTML={{__html: typingTxt}}></span><span className='display-in-block-pc'></span><span className='display-in-block-mo'></span>
                         </span>
-                        <span className={`intro-brand__txt-sub up--start  + ${useScroll('.intro-brand__txt-sub', 0.90).isShow ? 'up--end1' : ''}`}>지금 홈페이지를 알아보고 계신가요? 이것은 단순한 명함의 역할을 넘어서 매출을 상승시키는 광고효과 까지 있어야 합니다. <span className='display-block-mo'><br/></span>그렇기에 제대로된 제작사를 만나는 것은 정말로 중요하죠. 저희는 마케팅 경험을 바탕으로 사업에 도움이 되는 홈페이지를 개발해서 제작합니다.</span>
+                        <span className={`intro-brand__txt-sub up--start  + ${useScroll('.intro-brand__txt-sub', 0.90).isShow ? 'up--end1' : ''}`}>전문 교육 강사진으로 구성된 H BEAUTY에서<br/>당신의 꿈을 완성시키세요.<br/>모든시작을 응원하고<br/>H BEAUTY에서 함께하겠습니다.</span>
                     </div>
 
                 </div>
                 <div className='fixed-bg-wrap-wrap'>
                     <div className={`fixed-bg-wrap slide-in00  + ${useScroll('.fixed-bg-wrap', 0.85).isShow ? 'slide-in01' : ''}`}>
                             <div className={`fixed-bg`}
-                            style={{backgroundImage: 'url(/img/it05.jpg)',
+                            style={{backgroundImage: 'url(/img/브랜드.png)',
                             transform: `translateY(${(-100 + (useScroll('.fixed-bg-wrap', 0).stateY * 0.1)) + 'px'})` 
                             }}></div>
                     </div>
@@ -181,7 +181,7 @@ export default function Intro(){
                 <div className='intro-detail__con'>
                     <div className='intro-detail__header-con'>
                         <div className={`intro-detail__header-txt up--start  + ${useScroll('.intro-detail__header-txt', 0.90).isShow ? 'up--end1' : ''}`}>
-                            왜 우리에게 홈페이지를<br/>맡겨야 할까요?
+                            H beauty academy를<br/>선택한 수강생의 혜택
                         </div>
                     </div>
                     <div className='intro-detail__content-con'>
@@ -192,13 +192,13 @@ export default function Intro(){
                             + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(1)', 0.85).isShow ? 'up--end1-mo' : ''}`}
                             >
                                 <div className='intro-detail__img-wrap-mo'>
-                                    <img src= '/img/it12.jpg' decoding="async"/>
+                                    <img src= '/img/서비스01.png' decoding="async"/>
                                 </div>
                                 <div className='intro-detail__content-txt-title '>
-                                    소비자의 마음을 움직이다
+                                    학생을 위한 집중케어
                                 </div>
                                 <div className='intro-detail__content-txt-sub'>
-                                    코어스는 소비자의 입장에서 홈페이지를 구상합니다. 나의 사업 매출에 직접적으로 도움이되는 결과물을 만들기 위해 노력합니다.
+                                    대학교 수시 면접 교육 / 담당선생님관리 / 입시과정 컨설팅 / 미용대회 및 포트폴리오 까지 각 학교에 맞는 집중케어가 가능합니다.
                                 </div>
                                 <div className='arrow'></div>
                             </div>
@@ -208,13 +208,13 @@ export default function Intro(){
                             + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.85).isShow ? 'up--end1-mo' : ''}`}
                             >
                                 <div className='intro-detail__img-wrap-mo'>
-                                    <img src= '/img/it14.jpg' decoding="async"/>
+                                    <img src= '/img/서비스02.png' decoding="async"/>
                                 </div>
                                 <div className='intro-detail__content-txt-title'>
-                                    빠른 제작, 완성도 높은 결과
+                                    취업부터 창업까지 함께
                                 </div>
                                 <div className='intro-detail__content-txt-sub'>
-                                    전문 개발팀이 결과물을 빠르게 만들면서도 퀄리티 있게 제작합니다.
+                                    취&#8901;창업과정에 전문적으로 인원이 배치돼어 취&#8901;창업까지 함께합니다. 창업하실때 필요한 샵 실무과정을 학원에서 경험하실 수 있습니다.
                                 </div>
                             </div>
                             <div className={`intro-detail__content-txt-item 
@@ -223,25 +223,25 @@ export default function Intro(){
                             + up--start-mo + ${useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.85).isShow ? 'up--end1-mo' : ''}`}
                             >
                                 <div className='intro-detail__img-wrap-mo'>
-                                    <img src= '/img/it08.jpg' decoding="async"/>
+                                    <img src= '/img/서비스03.png' decoding="async"/>
                                 </div>
                                 <div className='intro-detail__content-txt-title'>
-                                    꼼꼼한 유지보수 시스템
+                                    높은 합격률의 집중교육
                                 </div>
                                 <div className='intro-detail__content-txt-sub'>
-                                    홈페이지는 만들어진 뒤가 중요합니다. 우리는 꼼꼼한 유지보수 시스템으로 사이트가 문제없이 운영되도록 노력합니다.
+                                    (성인반) 소수정원과 집중교육으로<br/>단기 속성 국가자격증 합격이 가능합니다. <br/>- 네일 2개월 합격률 90%이상 <br/>- 피부 10회 합격률 92%이상 <br/>- 메이크업 3개월 합격률 89%이상 <br/>- 헤어 4개월 합격률 96%이상
                                 </div>
                             </div>
                             <div className={`intro-detail__content-txt-item + ${useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65, 0.35).isShow ? 'opacity-1' : 'opacity-point3'}
                             + display-none-mo`}>
                                 <div className='intro-detail__img-wrap-mo'>
-                                    <img src= '/img/it07.jpg' decoding="async"/>
+                                    <img src= '/img/서비스04.png' decoding="async"/>
                                 </div>
                                 <div className='intro-detail__content-txt-title'>
-                                    업종에 최적화된 홈페이지
+                                    학생에게 맞는 맞춤교육
                                 </div>
                                 <div className='intro-detail__content-txt-sub'>
-                                    의뢰인의 업종을 이해하고 사업에 적합한 사이트를 구상합니다.
+                                    다수로 연습방식의 수업이 아닌 소수정원 수업으로 구성합니다. 각 학생들에게 맞는 수업방식과 맞춤 케어가 가능한 곳 입니다.
                                 </div>
                             </div>
                             <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-detail .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
@@ -251,14 +251,14 @@ export default function Intro(){
                          <div className='intro-detail__content-img-con'>
                             <div className='intro-detail__triangle'></div>
                             <div className='intro-detail__content-img'>
-                                <img src= '/img/it12.jpg' decoding="async"/>
-                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? '/img/it14.jpg' : ''} decoding="async"
+                                <img src= '/img/서비스01.png' decoding="async"/>
+                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? '/img/서비스02.png' : ''} decoding="async"
                                 style={{opacity: useScroll('.intro-detail__content-txt-item:nth-child(2)', 0.65).isShow ? '1' : '0'}}
                                 />
-                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65).isShow ? '/img/it08.jpg' : ''} decoding="async"
+                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65).isShow ? '/img/서비스03.png' : ''} decoding="async"
                                 style={{opacity: useScroll('.intro-detail__content-txt-item:nth-child(3)', 0.65).isShow ? '1' : '0'}}
                                 />
-                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65).isShow ? '/img/it07.jpg' : ''} decoding="async"
+                                <img src= {useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65).isShow ? '/img/서비스04.png' : ''} decoding="async"
                                 style={{opacity: useScroll('.intro-detail__content-txt-item:nth-child(4)', 0.65).isShow ? '1' : '0'}}
                                 />
                             </div>
@@ -269,8 +269,7 @@ export default function Intro(){
             <div className='intro-pf'>
                 <div className='intro-pf__con'>
                     <div className={`intro-pf__title + up--start  + ${useScroll('.intro-pf__title', 0.90).isShow ? 'up--end1' : ''}`}>
-                        감각적인 디자인의<br/>
-                        홈페이지를 만나세요.
+                        헤어 / 네일 / 메이크업 / 에스테틱<br/>취&#8901;창업실무 / 입시진학
                     </div>
                     <ul className='intro-pf__grid-con'
                     
@@ -284,11 +283,51 @@ export default function Intro(){
 
                         style={{transform: `translateX(${lengthX}px)`}}
                     > 
-                        {
-                            [1,2,3,4,5,6].map((a, i) => {
-                                return <GridItem a={a} i={i} />
-                            })
-                        }
+                        <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
+                            style={{marginTop: (0 * 100) + 'px',
+                            transitionDelay: (0 * 0.2) + 's',
+                            transitionDuration: '2s'}}                
+                        >
+                            <img className='intro-pf__box-img' src= {`/img/포트폴리오01.png`} decoding="async"/><img />
+                            {/* <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div> */}
+                            <div className='intro-pf__grid-sub'>헤어국가자격증<br/>이용사국가자격증<br/>헤어업스타일과정<br/>헤어컷트과정<br/>헤어염색과정<br/>두피스케일링과정</div>
+                        </li>
+                        <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
+                            style={{marginTop: (1 * 100) + 'px',
+                            transitionDelay: (1 * 0.2) + 's',
+                            transitionDuration: '2s'}}                
+                        >
+                            <img className='intro-pf__box-img' src= {`/img/포트폴리오02.png`} decoding="async"/><img />
+                            {/* <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div> */}
+                            <div className='intro-pf__grid-sub'>네일국가자격증<br/>네일실무과정<br/>네일드릴 과정<br/>포크아크 과정</div>
+                        </li>
+                        <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
+                            style={{marginTop: (2 * 100) + 'px',
+                            transitionDelay: (2 * 0.2) + 's',
+                            transitionDuration: '2s'}}                
+                        >
+                            <img className='intro-pf__box-img' src= {`/img/포트폴리오03.png`} decoding="async"/><img />
+                            {/* <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div> */}
+                            <div className='intro-pf__grid-sub'>메이크업국가자격증<br/>메이크업민간자격증<br/>웨딩 메이크업<br/>데일리 메이크업<br/>아트마스크<br/>속눈썹 연장/펌 실무과정</div>
+                        </li>
+                        <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
+                            style={{marginTop: (3 * 100) + 'px',
+                            transitionDelay: (3 * 0.2) + 's',
+                            transitionDuration: '2s'}}                
+                        >
+                            <img className='intro-pf__box-img' src= {`/img/포트폴리오04.png`} decoding="async"/><img />
+                            {/* <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div> */}
+                            <div className='intro-pf__grid-sub'>피부국가자격증<br/>피부살롱실무과정<br/>왁싱실무과정</div>
+                        </li>
+                        <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
+                            style={{marginTop: (4 * 100) + 'px',
+                            transitionDelay: (4 * 0.2) + 's',
+                            transitionDuration: '2s'}}                
+                        >
+                            <img className='intro-pf__box-img' src= {`/img/포트폴리오05.png`} decoding="async"/><img />
+                            {/* <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div> */}
+                            <div className='intro-pf__grid-sub'>4년제/2년제 대학교 정보<br/>4년제 실기과정<br/>2년제 대학교 준비과정</div>
+                        </li>
                     </ul>
                     <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-pf .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
                         <a href='/portfolio/portfolio'>+ more</a>
@@ -299,8 +338,7 @@ export default function Intro(){
                 <div className='intro-review__con'>
                     <div className='intro-review__header-con'>
                         <div className={`intro-review__header-title up--start  + ${useScroll('.intro-review__header-title', 0.90).isShow ? 'up--end1' : ''}`}>
-                            저희를 만난 고객님들의<br/>
-                            실제 후기입니다.
+                            H beauty academy를<br/>선택해야하는 이유
                         </div>
                         <div className={`btn-more up--start display-none-mo + ${useScroll('.intro-review__header-title', 0.90).isShow ? 'up--end1' : ''}`}>
                             <a href='/review/review'>+ more</a>
@@ -313,8 +351,8 @@ export default function Intro(){
                                     &#9733;&#9733;&#9733;&#9733;&#9733;
                                 </span>
                             </div>
-                            <div className='intro-review__txt-title'>"가격, 속도, 완성도까지 생각한다면 정답은 여기 하나인 것 같네요"</div>
-                            <div className='intro-review__txt-sub'>제조업 대표, 김**</div>
+                            <div className='intro-review__txt-title'>"성인취/창업을 위한 단기 속성 국가자격증과정이 가능합니다."</div>
+                            <div className='intro-review__txt-sub'>단기국가자격증취득을 위해 포인트레슨과 소수맞춤레슨으로 진행합니다.</div>
                         </li>
                         <li className={`intro-review__txt-item up--start + ${useScroll('.intro-review__txt-item:nth-child(2)', 0.90).isShow ? 'up--end1' : ''}`}>
                             <div className='intro-review__stars'>
@@ -322,17 +360,8 @@ export default function Intro(){
                                     &#9733;&#9733;&#9733;&#9733;&#9733;
                                 </span>
                             </div>
-                            <div className='intro-review__txt-title'>"홈페이지 제작은 어려워 보여서 막막했는데 친절한 대표님을 만나서 편하게 상담받았어요. 덕분에 고객 연락이 더 늘었습니다!"</div>
-                            <div className='intro-review__txt-sub'>제조업 대표, 김**</div>
-                        </li>
-                        <li className={`intro-review__txt-item up--start + ${useScroll('.intro-review__txt-item:nth-child(3)', 0.90).isShow ? 'up--end1' : ''}`}>
-                            <div className='intro-review__stars'>
-                                <span>
-                                    &#9733;&#9733;&#9733;&#9733;&#9733;
-                                </span>
-                            </div>
-                            <div className='intro-review__txt-title'>"아는 사장님을 통해서 이곳을 소개를 받았습니다. 결과를 보니 여기서 하길 잘했네요. 디테일까지 완벽하게 해주셔서 감사합니다"</div>
-                            <div className='intro-review__txt-sub'>미용업 대표, 박**</div>
+                            <div className='intro-review__txt-title'>"1:1 맞춤 진도 레슨과 소수정원수업과 무제한 연습"</div>
+                            <div className='intro-review__txt-sub'>성인반뿐만아니라 대학교진학을 위한 학생들의 수업에도 소수정원으로만 수업을 유지합니다.<br/>평일 10:00-21:00까지 연습이 가능합니다.</div>
                         </li>
                     </ul>
                     <div className={`btn-more-static display-block-mo display-none up--start-mo + ${useScroll('.intro-review .btn-more-static', 0.90).isShow ? 'up--end1-mo' : ''}`}>
@@ -343,11 +372,11 @@ export default function Intro(){
             <div className='intro-img-wrap'>
                 <img className={`intro-img img-position-before + ${useScroll('.intro-img', 0.90).isShow ? 'img-position-after' : ''}`} src= {`/img/img10.jpg`} decoding="async" />
                 <div className={`intro-img__txt fade-in00 + ${useScroll('.intro-img__txt', 0.90).isShow ? 'fade-in01' : ''}`}>
-                        이제<br/>
-                        당신도<br/>
-                        코어스를<br/>
-                        만날 시간입니다.<br/><br/>
-                        <a href='https://open.kakao.com/o/srQs41Pf'><span>+ contact</span></a>
+                        전문적인 강사진 구성과<br/>
+                        소수정원 한정수업으로<br/>
+                        아티스트를 꿈꾸는 모두에게<br/>
+                        꿈을 실현시키는 곳 입니다.<br/><br/>
+                        <a href='https://open.kakao.com/o/sqTqVgDf'><span>+ contact</span></a>
                 </div>
             </div>
         </>
@@ -368,20 +397,20 @@ function SpotTextItem(props){
     )
 }
 
-function GridItem(props){
+// function GridItem(props){
 
 
-    return (
-        <>
-            <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
-                style={{marginTop: (props.i * 100) + 'px',
-                transitionDelay: (props.i * 0.2) + 's',
-                transitionDuration: '2s'}}                
-            >
-                <img className='intro-pf__box-img' src= {`/img/bd0${props.i + 1}.jpg`} decoding="async"/><img />
-                <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div>
-                <div className='intro-pf__grid-sub'>강렬한 색감에 동적인 기능을 추가하여 유저의 반응도를 높인 사례</div>
-            </li>
-        </>
-    )
-}
+//     return (
+//         <>
+//             <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
+//                 style={{marginTop: (props.i * 100) + 'px',
+//                 transitionDelay: (props.i * 0.2) + 's',
+//                 transitionDuration: '2s'}}                
+//             >
+//                 <img className='intro-pf__box-img' src= {`/img/bd0${props.i + 1}.jpg`} decoding="async"/><img />
+//                 <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div>
+//                 <div className='intro-pf__grid-sub'>{props.a}</div>
+//             </li>
+//         </>
+//     )
+// }

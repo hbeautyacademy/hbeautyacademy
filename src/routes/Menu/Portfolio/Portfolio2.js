@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './../../../App.css';
 
-export default function Portfolio(){
+export default function Portfolio2(){
     const [clickBtn, setClickBtn] = useState(false);
     const showList = () => {
         setClickBtn(!clickBtn);
@@ -25,7 +25,7 @@ export default function Portfolio(){
                         <li className='detail-page__btn-menu'><a>현장사진</a></li>
                         <li className={`detail-page__btn-submenu + ${ clickBtn ? 'overflow-visible' : ''}`} onClick={showList}>
                             {/* 현재 페이지 서브메뉴 */}
-                            <a>학원내부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
+                            <a>교육현장&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
                                 <li><a href='/portfolio/portfolio'>학원내부</a></li>
@@ -37,7 +37,7 @@ export default function Portfolio(){
 
                 <div className='detail-page__con'>
                     <div className='detail-page__title-con'>
-                        <div className='detail-page__title-main'>학원내부</div>
+                        <div className='detail-page__title-main'>교육현장</div>
                         <div className='txt-line'></div>
                     </div>
 
@@ -45,7 +45,7 @@ export default function Portfolio(){
                             {/* hw. 그리드 안에 vimeo 영상이 들어가게 */}
                             <ul className='portfolio__grid-con'>
                                 {
-                                    ['01','02','03','04','05'].map((a, i) => {
+                                    ['01','02','03','04','05','06','07','08','09'].map((a, i) => {
                                         return <GridItem a={a} i={i} />
                                     })
                                 }
@@ -65,7 +65,7 @@ function GridItem(props){
     return (
         <>
             <li className='portfolio__grid-item'>
-                <div className='portfolio__img-box' style={{backgroundImage:'url(/img/내부' + props.a + '.jpg)'}} ></div>
+                <div className='portfolio__img-box' style={{backgroundImage:'url(/img/현장' + props.a + '.jpg)'}} ></div>
             </li>    
         </>
     )

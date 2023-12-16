@@ -12,18 +12,18 @@ export default function Footer(){
         <>
             <div className='footer'>
                 <div className='footer__con'>
-                    <div className='footer__logo'>CORES</div>
+                    <div className='footer__logo'>H Beauty Academy</div>
                     <div className='footer__txt-con'>
                         <div className='footer__txt01'>
-                            상호 : 포트폴리오01 입니다 | 사업장소재지 : ㅇㅇ시 | 대표자명 : 김ㅇㅇ
+                            상호 : 에이치 뷰티 아카데미 | 사업장소재지 : 경기도 오산시 오산동 882-2번지 2층 | 대표자명 : 조혜련
                         <br/>
-                            사업자등록번호 : 000-00-00000
+                            사업자등록번호 : 606-95-68634
                         <br/>
-                            상담번호 : 카톡링크 참조
+                            상담번호 : 031-378-7415
                         <br/>
                         </div>
                         <div className='footer__txt02'>
-                            <span>©</span> ㅇㅇㅇ. All Rights Reserved.
+                            <span>©</span> H beauty academy. All Rights Reserved.
                         </div>
                     </div>
                     

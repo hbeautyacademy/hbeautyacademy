@@ -11,7 +11,7 @@ export default function Service01(){
         <>
             <div className='detail-page'>
                 <div className='detail-page__banner-con' style={{backgroundImage: 'url(/img/test04.jpg)'}}>
-                    <div>SERVICE</div>
+                    <div>교육과정</div>
                 </div>
 
                 <div className='detail-page__btn'>
@@ -22,16 +22,16 @@ export default function Service01(){
                             </a>
                         </li>
                         {/* 현재 페이지 메인메뉴 */}
-                        <li className='detail-page__btn-menu'><a>SERVICE</a></li>
+                        <li className='detail-page__btn-menu'><a>교육과정</a></li>
                         <li className={`detail-page__btn-submenu + ${ clickBtn ? 'overflow-visible' : ''}`} onClick={showList}>
                             {/* 현재 페이지 서브메뉴 */}
-                            <a>홈페이지 제작&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
+                            <a>헤어&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href='/service/01'>홈페이지 제작</a></li>
-                                <li><a href='/service/02'>앱 개발</a></li>
-                                <li><a href='/service/03'>온라인 마케팅</a></li>
-                                <li><a href='/service/04'>사업 컨설팅</a></li>
+                                <li><a href='/service/01'>헤어</a></li>
+                                <li><a href='/service/02'>메이크업</a></li>
+                                <li><a href='/service/03'>네일아트</a></li>
+                                <li><a href='/service/04'>피부</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -39,21 +39,18 @@ export default function Service01(){
 
                 <div className='detail-page__con'>
                     <div className='detail-page__title-con'>
-                        <div className='detail-page__title-main'>홈페이지 제작</div>
-                        <div className='detail-page__title-sub'>소비자에게 신뢰를 더하는 브랜딩</div>
+                        <div className='detail-page__title-main'>헤어</div>
                         <div className='txt-line'></div>
                     </div>
                     
                     <div className='service__con fade-in-self'>
-                        <img className='service__img-box' src='/img/it01.jpg' />
+                        <img className='service__img-box' src='/img/네일.jpg' />
                         <div className='service__txt'>
-                            이제 사람들은 오프라인보다 온라인 활동에 더욱 친숙하게 되었습니다. 따라서 홈페이지는 회사를 나타내는 명함 이상의 가치를 가지고 있는데요. 소비자는 홈페이지를 통해 브랜드의 신뢰감과 호감을 가지기도 합니다.
+                            미용업무는 공중위생분야로서 국민의 건강과 직결되어 있는 중요한 분야로 향후 국가의 산업구조가 제조업에서 서비스업 중심으로 전환되는 4차산업에 수요가 증대되고 있는 산업입니다.분야별로 세분화 및 전문화 되고 있는 세계적인 추세에 맞추어 미용의 업무 중 하나인 헤어미용을 전문인으로 양성하는 과정입니다.
                             <br/><br/>
-                            코어스는 고객님이 소비자에게 더욱 다가갈 수 있도록 홈페이지를 제작합니다. 저희는 마케팅적인 사고를 기반으로 디자인을 구성하고 기능을 개발합니다. 따라서 실제 매출이 도움이 되는 사이트를 만들고자 노력하고 있습니다.
+                            미용에 관한 최상급 숙련기능을 가지고 있으며, 산업현장에서 작업관리, 소속기능인력의 지도 및 감독, 현장훈련, 현장관리업무를 수행할 수 있는 전문인력을 양성하고자합니다.
                             <br/><br/>
-                            또한 감각적인 디자인과 UX/UI로 회사의 브랜드를 더욱 가치있게 보이도록 노력합니다. 만약 사업의 성장을 위해 홈페이지를 고려하고 계시다면 저희와 함께하시길 적극 권해드립니다.
-                            <br/><br/>
-                            감동적인 후기가 풍부하게 있는 코어스와 함께해보세요. 상담부터 제작과 이후 유지보수까지 꼼꼼하게 도와드리겠습니다. 저희는 고객님께 언제나 열려있습니다. 편하게 상담을 요청해주시길 바라겠습니다.
+                            얼굴, 머리, 손·발톱을 아름답게 하기 위하여 헤어 및 두피, 메이크업에 적절한 관리법과 기기 및 제품을 사용하여 일반미용을 수행할 수 있습니다.
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ export default function Service02(){
         <>
             <div className='detail-page'>
                 <div className='detail-page__banner-con' style={{backgroundImage: 'url(/img/test04.jpg)'}}>
-                    <div>SERVICE</div>
+                    <div>교육과정</div>
                 </div>
 
                 <div className='detail-page__btn'>
@@ -22,16 +22,16 @@ export default function Service02(){
                             </a>
                         </li>
                         {/* 현재 페이지 메인메뉴 */}
-                        <li className='detail-page__btn-menu'><a>SERVICE</a></li>
+                        <li className='detail-page__btn-menu'><a>교육과정</a></li>
                         <li className={`detail-page__btn-submenu + ${ clickBtn ? 'overflow-visible' : ''}`} onClick={showList}>
                             {/* 현재 페이지 서브메뉴 */}
-                            <a>앱 개발&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
+                            <a>메이크업&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#8744;</span>
                             </a>
                             <ul>
-                                <li><a href='/service/01'>홈페이지 제작</a></li>
-                                <li><a href='/service/02'>앱 개발</a></li>
-                                <li><a href='/service/03'>온라인 마케팅</a></li>
-                                <li><a href='/service/04'>사업 컨설팅</a></li>
+                                <li><a href='/service/01'>헤어</a></li>
+                                <li><a href='/service/02'>메이크업</a></li>
+                                <li><a href='/service/03'>네일아트</a></li>
+                                <li><a href='/service/04'>피부</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -39,19 +39,16 @@ export default function Service02(){
 
                 <div className='detail-page__con'>
                     <div className='detail-page__title-con'>
-                        <div className='detail-page__title-main'>앱 개발</div>
-                        <div className='detail-page__title-sub'>소비자의 반응을 이끌어내는 앱</div>
+                        <div className='detail-page__title-main'>메이크업</div>
                         <div className='txt-line'></div>
                     </div>
                     
                     <div className='service__con fade-in-self'>
-                        <img className='service__img-box' src='/img/it13.jpg' />
+                        <img className='service__img-box' src='/img/메이크업.jpg' />
                         <div className='service__txt'>
-                            각종 검색포털의 유저들의 통계를 살펴보면 모바일의 사용률이 PC보다 높게 나오고 있습니다. 그만큼 사람들은 스마트폰 하나로 물건을 사고 팔며 서비스를 이용하는데요. 따라서 모바일을 통한 사업을 계획하고 있다면 앱이 필수적이죠.
+                            메이크업은 특정한 상황과 목적에 맞게 얼굴·신체를 연출하고 표현하여 이미지, 캐릭터 창출을 목적으로 이미지분석, 디자인, 메이크업 및 분장에 관한 전문지식 또는 숙련 기능을 바탕으로 효과적인 표현을 수행 할 수 있는 전문기능인력을 양성하고자 합니다.
                             <br/><br/>
-                            하지만 단순히 어플리케이션은 홈페이지보다 단가도 높고 어렵게 느껴지는 것이 사실입니다. 하지만 코어스를 만난다면 그런 고민은 날려버리실 수 있습니다. 저희는 비개발자 분들의 입장에서 상세히 상담해드리며 앱에 필요한 부분들을 개발해서 제작합니다.
-                            <br/><br/>
-                            감각적인 디자인부터 소비자의 반응을 이끌어내느 기능까지. 이 모든 것을 담아낸 트렌디한 앱을 원하시나요? 저희와 함께 모바일 환경에서도 사업을 진행해보시면 좋겠습니다.
+                            얼굴·신체를 아름답게 하거나 특정한 상황과 목적에 맞는 이미지분석, 디자인, 메이크업, 뷰티코디네이션, 후속관리 등을 실행하기 위해 적절한 관리법과 도구, 기기 및 제품을 사용하여 메이크업을 수행할 수 있습니다.
                         </div>
                     </div>
                 </div>
