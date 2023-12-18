@@ -1481,6 +1481,10 @@ a {
   padding: 50px 0 40px 0;
 }
 
+.map__txt {
+  padding-top: 20px;
+}
+
 .introduction__txt > div {
   margin: 50px 0 30px 0;
   font-size: 30px;
@@ -1489,12 +1493,35 @@ a {
   color: #111;
 }
 
-.introduction__txt > img {
-  margin: 10px auto;
-  max-width: 600px;
+.introduction__txt img {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 500px;
   width: 100%;
   display: block;
+  border: 3px solid #111;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
+
+.introduction__txt > ul {
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 600px;
+  width: 100%;
+  border: 2px solid #dfdfdf;
+  box-sizing: border-box;
+}
+
+.introduction__txt > ul > li {
+  padding: 7px 20px;
+  color: #2f2f2f;
+}
+
+.introduction__txt > ul > li:not(:last-child) {
+  border-bottom: 2px solid #dfdfdf;
+}
+
 
 
 @media (max-width: 767px) {
@@ -1507,6 +1534,15 @@ a {
     letter-spacing: -2px;
     text-shadow: 3px 3px 2px #aaa;
   }
+
+  .introduction__txt img {
+    padding: 10px;
+    max-width: 400px;
+    width: 100%;
+    border: 3px solid #111;
+    border-radius: 20px;
+  }
+  
 
   /* .introduction__logo-wrap > img {
     width: 300px;

@@ -72,6 +72,9 @@ export default function Header(props){
                             </ul>
                         </li>
                         <li>
+                            <a href='/map'>오시는길</a>
+                        </li>
+                        <li>
                             <a href='https://open.kakao.com/o/sqTqVgDf'>온라인문의</a>
                         </li>
                     </ul>

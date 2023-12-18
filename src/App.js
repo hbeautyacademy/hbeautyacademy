@@ -4,7 +4,8 @@ import {
   Header, Intro, Footer, License,
   Introduction, OurService,
   Service01, Service02, Service03, Service04,
-  Portfolio, Portfolio2
+  Portfolio, Portfolio2,
+  Map
 } from './routes'
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
           <Route path="portfolio" element={ <Portfolio /> } />
           <Route path="portfolio2" element={ <Portfolio2 /> } />
         </Route>
+
+        <Route path="/map" element={<Map />} />
 
       </Routes>
 

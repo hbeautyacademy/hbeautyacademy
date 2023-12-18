@@ -218,7 +218,7 @@ export default function Intro(){
                                     취업부터 창업까지 함께
                                 </div>
                                 <div className='intro-detail__content-txt-sub'>
-                                    취&#8901;창업과정에 전문적으로 인원이 배치돼어 취&#8901;창업까지 함께합니다. 창업하실때 필요한 샵 실무과정을 학원에서 경험하실 수 있습니다.
+                                    취&#8901;창업과정에 전문적으로 인원이 배치되어 취&#8901;창업까지 함께합니다. 창업하실때 필요한 샵 실무과정을 학원에서 경험하실 수 있습니다.
                                 </div>
                             </div>
                             <div className={`intro-detail__content-txt-item 
