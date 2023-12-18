@@ -1494,6 +1494,14 @@ a {
 }
 
 .introduction__txt img {
+  margin: 20px auto;
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.map__txt img {
   margin: 0 auto;
   padding: 40px;
   max-width: 500px;
@@ -1535,7 +1543,7 @@ a {
     text-shadow: 3px 3px 2px #aaa;
   }
 
-  .introduction__txt img {
+  .map__txt img {
     padding: 10px;
     max-width: 400px;
     width: 100%;
