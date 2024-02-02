@@ -55,9 +55,10 @@ export default function Introduction(){
 
                         전문 뷰티아티스트 배출을 위해 뷰티산업교육의 필요한 목표를 두고 노력하는 교육인으로 진심을 다해 수강생한분한분께 교육하는 현장으로 나아가겠습니다.
                         <div>강사진 소개</div>
-                        <img src= '/img/강사진01.png' decoding="async"/>
+                        <img src= '/img/강사진01.jpg' decoding="async"/>
                         <img src= '/img/강사진02.png' decoding="async"/>
                         <img src= '/img/강사진03.png' decoding="async"/>
+                        <img src= '/img/강사진04.jpg' decoding="async"/>
                     </div>
 
                 </div>

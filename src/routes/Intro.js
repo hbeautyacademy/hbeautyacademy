@@ -335,9 +335,18 @@ export default function Intro(){
                         <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
                             style={{marginTop: (5 * 100) + 'px',
                             transitionDelay: (5 * 0.2) + 's',
-                            transitionDuration: '2s'}}                
+                            transitionDuration: '2s'}}
                         >
-                            <img className='intro-pf__box-img' src= {`/img/포트폴리오06.png`} decoding="async"/><img />
+                            <img className='intro-pf__box-img' src= {`/img/포트폴리오07.jpg`} decoding="async"/><img />
+                            {/* <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div> */}
+                            <div className='intro-pf__grid-sub'></div>
+                        </li>
+                        <li className={`intro-pf__grid-item up--start + ${useScroll('.intro-pf__grid-item', 0.90).isShow ? 'up--end1' : ''}`}
+                            style={{marginTop: (5 * 100) + 'px',
+                                transitionDelay: (5 * 0.2) + 's',
+                                transitionDuration: '2s'}}
+                        >
+                            <img className='intro-pf__box-img' src= {`/img/포트폴리오08.jpg`} decoding="async"/><img />
                             {/* <div className='intro-pf__grid-title'>포트폴리오 홈페이지</div> */}
                             <div className='intro-pf__grid-sub'></div>
                         </li>
